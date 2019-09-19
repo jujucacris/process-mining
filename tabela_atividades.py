@@ -23,19 +23,22 @@ def converte(file, a):
     f = csv.reader(f, delimiter=",")
     p = []
     r = open("%s-atividades.csv" % file.replace(".csv",""), "w")
-    for i in range(25):
-        p.append(0)
+    for atividade in a:
+        p.append(atividade)
+    p.sort()
     i = 0
     for row in f:
         if row[0] == str(i):
             atividade = a[row[2]] - 1
             p[atividade] = 1
         else:
-            if i != 0:
-                b = str(p).replace("[", "").replace("]", "\n")
-                r.write(b)
-                for n in range(25):
-                    p[n] = 0
+            b = str(p).replace("[", "").replace("]", "\n")
+            r.write(b)
+            for n in range(25):
+                p[n] = 0
+
+
+
             i = i + 1
 
 def main(file):
