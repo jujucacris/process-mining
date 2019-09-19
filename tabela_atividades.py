@@ -34,7 +34,7 @@ def converte(file, a):
         else:
             b = str(p).replace("[", "").replace("]", "\n")
             r.write(b)
-            for n in range(25):
+            for n in range(len(a)):
                 p[n] = 0
 
 
