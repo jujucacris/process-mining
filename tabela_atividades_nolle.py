@@ -51,8 +51,12 @@ def converte(file, a):
         if row[0] == str(i):
             atividade = a[row[2]]
             p.append(atividade)
+            tipo = row[1]
         else:
+            p.append(tipo[0])
             b = str(p).replace("[", "").replace("]", "\n")
+            b = b.replace("'", "").replace(", ", "")
+            b = ",".join(b)
             r.write(b)
             p = []
             i = i + 1
