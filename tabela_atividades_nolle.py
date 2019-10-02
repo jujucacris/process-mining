@@ -38,34 +38,56 @@ def descobre_atividades(file):
     atividades_dict = dict(zip(atividades, c))
     return atividades_dict
 
+def formata(p):
+    p = str(p).replace("[", "").replace("]", "\n")
+    p = p.replace("'", "").replace(", ", "")
+    p = ",".join(p)
+    return p
+
+def completa(rows, max_size):
+    for row in rows:
+        tipo = row.pop()
+        while len(row) < max_size:
+            row.append("0000000000000000000000000")
+        row.append(tipo)
+    return rows
+
 def converte(file, a):
     f = open(file, "r")
     f = csv.reader(f, delimiter=",")
     p = []
     r = open("%s-nolle.csv" % file.replace(".csv",""), "w")
     i = 0
+    max_size = 0
+    rows = []
     for row in f:
         if i == 0:
             i = i + 1
             continue
         if row[0] == str(i):
+            tipo = row[1]
             atividade = a[row[2]]
             p.append(atividade)
-            tipo = row[1]
         else:
             p.append(tipo[0])
-            b = str(p).replace("[", "").replace("]", "\n")
-            b = b.replace("'", "").replace(", ", "")
-            b = ",".join(b)
-            r.write(b)
+            if len(p) > max_size:
+                max_size = len(p)
+            rows.append(p)
             p = []
             i = i + 1
+    rows = completa(rows, max_size)
+    for row in rows:
+        r.write(formata(row))
+    print "done!"
+
+
+
 
 def main(file):
 
     atividades = descobre_atividades(file)
-    pp = pprint.PrettyPrinter()
-    pp.pprint(atividades)
+    #pp = pprint.PrettyPrinter()
+    #pp.pprint(atividades)
     converte(file, atividades)
 
 
