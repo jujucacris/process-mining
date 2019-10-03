@@ -35,6 +35,7 @@ def descobre_atividades(file):
     #for n in range(1, i):
     #    b.append(str(bin(n)).replace("0b", ""))
     atividades.sort()
+    print str(len(atividades)) + " atividades"
     atividades_dict = dict(zip(atividades, c))
     return atividades_dict
 
@@ -78,6 +79,7 @@ def converte(file, a):
     rows = completa(rows, max_size)
     for row in rows:
         r.write(formata(row))
+    print str(max_size) + " eventos"
     print "done!"
 
 
