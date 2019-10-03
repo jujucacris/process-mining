@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from sklearn.preprocessing import LabelEncoder
 
 # leer arquivo do log
 data_act = pd.read_csv("p2p-0.3-4.csv")
@@ -69,15 +70,45 @@ plt.ylabel('frequencia', color='r')
 plt.show()
 plt.savefig('barras.png', bbox_inches='tight')
 
+# Grafico de barras empilhadas para ver quais atividades aparecem em traces anomalos ou normal
+tabela = pd.pivot_table(data=data_act, values='traceid', index='activity', columns='label', aggfunc='count')
+tabela[np.isnan(tabela)] = 0
+
+##$$$$
+
+# Ajusta o espaço entre os dois gráficos
+plt.subplots_adjust(wspace=1)
+plt.show()
+
+
 # Frequencia de eventos por trace
 data_trace['nr_events'].plot.hist()
 plt.savefig('histograma.png', bbox_inches='tight')
 
-# quantidade de eventos por traces
-plt.scatter(data_trace['traceid'], data_trace['nr_events'], label = 'Pontos', color = 'r', marker = '*', s = 6)
-plt.legend()
+# Scatter de traces, quantidade de eventos e categoría
+tabela_trace = data_trace.drop_duplicates(['trace'], keep='last')
+label_encoder = LabelEncoder()
+tabela_trace['label'] = label_encoder.fit_transform(tabela_trace['label'])
+
+scatter_plot = plt.scatter(tabela_trace['nr_events'], tabela_trace['nr_distinct_users'], alpha=0.5, c = tabela_trace['label'], s = 6)
+plt.legend('eventos, usuarios')
+plt.xlabel('Numero de eventos no trace')
+plt.ylabel('Numero de usuarios distintos no trace')
 plt.show()
 plt.savefig('scatter.png', bbox_inches='tight')
+
+
+y = tabela_trace['label']
+X = tabela_trace.ix[:, 'nr_events':]
+plt.scatter(X[y==0]['traceid'], X[y==0]['nr_distinct_users'], label='normal', s= np.pi, c='red',alpha=0.5)
+plt.scatter(X[y==1]['traceid'], X[y==1]['nr_distinct_users'], label='anomaly', s= np.pi, c='blue',alpha=0.5)
+plt.legend('eventos, usuarios')
+plt.xlabel('Numero de eventos no trace')
+plt.ylabel('Numero de usuarios distintos no trace')
+plt.show()
+
+
+
 
 #  Gráficos boxplot - O retângulo é formado por três Quartis que dividem o dados em quatro rols com 25% dos dados cada.
 sns.set(style="whitegrid", color_codes=True)
@@ -89,21 +120,26 @@ plt.savefig('boxplot.png', bbox_inches='tight')
 # ---------------------------------------
 
 def log_to_traces(data_log):
-    data_traces = pd.DataFrame(columns = ['traceid','trace','nr_events','label'])
-    trace = ''
+    data_traces = pd.DataFrame(columns = ['traceid','trace', 'users','nr_events','nr_distinct_users','label'])
+    trace = []
+    users = []
     traceid = 1
-    nr_events = 0
+    nr_distinct_users = 0
 
     for index, row in data_log.iterrows():
-        if (row['traceid'] ==  traceid):
-            trace = trace + row['activity'] + ','
-            nr_events += 1
+        if row['traceid'] ==  traceid:
+            trace.append(row['activity'])
+            if row['user'] not in users:
+                nr_distinct_users += 1
+            users.append(row['user'])
         else:
-            data_traces.loc[traceid-1] = [traceid, trace[:-1], nr_events, row['label']]
+            data_traces.loc[traceid-1] = [traceid, ",".join(trace), ",".join(users), len(trace), nr_distinct_users, row['label']]
             traceid += 1
-            trace=''
-            nr_events=0
-    data_traces.loc[traceid-1] = [traceid, trace[:-1], nr_events, row['label']]
+            nr_distinct_users = 0
+            trace = []
+            users = []
+    data_traces.loc[traceid-1] = [traceid, ",".join(trace), ",".join(users), len(trace), nr_distinct_users, row['label']]
     return data_traces
 
 
+data_trace = log_to_traces(data_act)
