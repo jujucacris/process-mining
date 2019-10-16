@@ -36,7 +36,7 @@ def descobre_atividades(file): # recebe o nome do arquivo a ser tratado
             i = i + 1
     c = gera_numeros(atividades) # armazena o vetor de representações binárias
     atividades.sort() # ordena as atividades alfabeticamente
-    print str(len(atividades)) + " atividades" # imprime a quantidade de atividades descobertas
+    print(str(len(atividades)) + " atividades") # imprime a quantidade de atividades descobertas
     atividades_dict = dict(zip(atividades, c)) # cria um dicionário associando atividades e binários
     return atividades_dict # retorna o dicionário criado
 
@@ -89,8 +89,8 @@ def converte(file, a): # recebe o nome do arquivo de entrada e o dicionário de 
     rows = completa(rows, max_size) # chama função que nivela todos os traces
     for row in rows: # para cada linha na matriz de traces
         r.write(formata(row)) # imprime linha formatada no arquivo
-    print str(max_size) + " eventos" # imprime o tamanho do maior trace
-    print "done!"
+    print(str(max_size) + " eventos") # imprime o tamanho do maior trace
+    print("done!")
 
 
 
