@@ -106,14 +106,9 @@ class cMLP(object):
             d=1
         return d
 
-    # teste derivada_funcao
-    #df=derivada_funcao('sig',6)
-
-
     def calc_saida(self,X,WA,WB,N,funcao_f,funcao_g):
         Zin=X@(WA.T) 
         Z=self.ativacao(funcao_f,Zin)
-        #Yin=[ones(N,1),Z]*WB';
         Yin=np.concatenate((np.ones((N,1),float),Z),axis=1)@(WB.T)
         Y=self.ativacao(funcao_g,Yin)
         return [Y,Z]
@@ -121,12 +116,8 @@ class cMLP(object):
     def calc_grad(self,Xtr,Z,Y,erro,WB,N,funcao_f,funcao_g):
         df=self.derivada_funcao(funcao_f,Z) # calculo de derivadas das funcoes
         dg=self.derivada_funcao(funcao_g,Y)
-
-        #1/N*(erro.*(dg))' *   [ones(N,1),Z];
         grad_WB = 1/N*((erro*dg).T)@(np.concatenate((np.ones((N,1),float), Z),axis=1))
-        #dJdZ = (erro.*(dg))*WB(:,2:end);
         dJdZ = (erro*dg)@WB[:,1:]
-        #grad_WA = 1/N*(dJdZ.*(df))'*Xtr;
         grad_WA = 1/N*((dJdZ*df).T)@Xtr
         return grad_WA,grad_WB
 
