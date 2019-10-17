@@ -1,0 +1,28 @@
+p2p-0.3-1.json
+222 anomalias de usuário tratadas
+139 usuários diferentes
+25 atividades descobertas
+15 eventos no maior trace
+done!
+
+p2p-0.3-2.json
+258 anomalias de usuário tratadas
+138 usuários diferentes
+25 atividades descobertas
+14 eventos no maior trace
+done!
+
+p2p-0.3-3.json
+245 anomalias de usuário tratadas
+138 usuários diferentes
+25 atividades descobertas
+14 eventos no maior trace
+done!
+
+p2p-0.3-4.json
+264 anomalias de usuário tratadas
+139 usuários diferentes
+25 atividades descobertas
+15 eventos no maior trace
+done!
+

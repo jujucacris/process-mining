@@ -30,13 +30,13 @@ traceid,label,activity,user
 4,normal,Post GR,Keven
 4,normal,Post IR,Roy
 4,normal,Pay,Elisha
-5,anomaly,Create PR,Keven
-5,anomaly,Release PR,Donald
-5,anomaly,Create PO,Donald
-5,anomaly,Release PO,Hugo
-5,anomaly,Post GR,Carmella
-5,anomaly,Post IR,Chan
-5,anomaly,Pay,Sherlene
+5,normal,Create PR,Keven
+5,normal,Release PR,Donald
+5,normal,Create PO,Donald
+5,normal,Release PO,Hugo
+5,normal,Post GR,Carmella
+5,normal,Post IR,Chan
+5,normal,Pay,Sherlene
 6,anomaly,Create PR,Keven
 6,anomaly,Release PR,Donald
 6,anomaly,Create PO,Josef
@@ -62,13 +62,13 @@ traceid,label,activity,user
 8,normal,Post GR,James
 8,normal,Post IR,Chan
 8,normal,Pay,Josef
-9,anomaly,Create PR,Keven
-9,anomaly,Release PR,Donald
-9,anomaly,Create PO,Alyce
-9,anomaly,Release PO,Elisha
-9,anomaly,Post GR,Anna
-9,anomaly,Post IR,Chan
-9,anomaly,Pay,Josef
+9,normal,Create PR,Keven
+9,normal,Release PR,Donald
+9,normal,Create PO,Alyce
+9,normal,Release PO,Elisha
+9,normal,Post GR,Anna
+9,normal,Post IR,Chan
+9,normal,Pay,Josef
 10,normal,Create PR,Keven
 10,normal,Release PR,Donald
 10,normal,Create PO,Lisa
@@ -102,14 +102,14 @@ traceid,label,activity,user
 13,anomaly,Post GR,Anna
 13,anomaly,Post IR,Chan
 13,anomaly,Pay,Josef
-14,anomaly,Create SC,Alyce
-14,anomaly,Purchase SC,Hassie
-14,anomaly,Approve SC,Sandra
-14,anomaly,Create PO,Josef
-14,anomaly,Release PO,Shandi
-14,anomaly,Post GR,Lourdes
-14,anomaly,Post IR,Roy
-14,anomaly,Pay,Vickie
+14,normal,Create SC,Alyce
+14,normal,Purchase SC,Hassie
+14,normal,Approve SC,Sandra
+14,normal,Create PO,Josef
+14,normal,Release PO,Shandi
+14,normal,Post GR,Lourdes
+14,normal,Post IR,Roy
+14,normal,Pay,Vickie
 15,anomaly,Create SC,Seth
 15,anomaly,Purchase SC,Lucy
 15,anomaly,Approve SC,Sandra
@@ -486,14 +486,14 @@ traceid,label,activity,user
 62,anomaly,Approve PO 1,Donald
 62,anomaly,Release PO,Della
 62,anomaly,Pay,Josef
-63,anomaly,Create SC,Seth
-63,anomaly,Purchase SC,Paul
-63,anomaly,Approve SC,Micheline
-63,anomaly,Create PO,Josef
-63,anomaly,Release PO,Craig
-63,anomaly,Post GR,Marilyn
-63,anomaly,Post IR,Chan
-63,anomaly,Pay,Josef
+63,normal,Create SC,Seth
+63,normal,Purchase SC,Paul
+63,normal,Approve SC,Micheline
+63,normal,Create PO,Josef
+63,normal,Release PO,Craig
+63,normal,Post GR,Marilyn
+63,normal,Post IR,Chan
+63,normal,Pay,Josef
 64,normal,Create PR,Keven
 64,normal,Release PR,Donald
 64,normal,Create PO,Alyce
@@ -509,15 +509,15 @@ traceid,label,activity,user
 65,normal,Post GR,Tiffiny
 65,normal,Post IR,Roy
 65,normal,Pay,Elisha
-66,anomaly,Create PR,Keven
-66,anomaly,Release PR,Donald
-66,anomaly,Create PO,Ryan
-66,anomaly,Approve PO 1,Brant
-66,anomaly,Approve PO 2,Donald
-66,anomaly,Release PO,Della
-66,anomaly,Post GR,Jin
-66,anomaly,Post IR,Chan
-66,anomaly,Pay,Josef
+66,normal,Create PR,Keven
+66,normal,Release PR,Donald
+66,normal,Create PO,Ryan
+66,normal,Approve PO 1,Brant
+66,normal,Approve PO 2,Donald
+66,normal,Release PO,Della
+66,normal,Post GR,Jin
+66,normal,Post IR,Chan
+66,normal,Pay,Josef
 67,anomaly,Create SC,Alyce
 67,anomaly,Post IR,Roy
 67,anomaly,Purchase SC,Paul
@@ -558,13 +558,13 @@ traceid,label,activity,user
 71,normal,Post GR,James
 71,normal,Post IR,Roy
 71,normal,Pay,Vickie
-72,anomaly,Create PR,Keven
-72,anomaly,Release PR,Donald
-72,anomaly,Create PO,Donald
-72,anomaly,Release PO,Marilyn
-72,anomaly,Post GR,Tiffiny
-72,anomaly,Post IR,Chan
-72,anomaly,Pay,Josef
+72,normal,Create PR,Keven
+72,normal,Release PR,Donald
+72,normal,Create PO,Donald
+72,normal,Release PO,Marilyn
+72,normal,Post GR,Tiffiny
+72,normal,Post IR,Chan
+72,normal,Pay,Josef
 73,normal,Create PR,Keven
 73,normal,Release PR,Donald
 73,normal,Create PO,Donald
@@ -975,13 +975,13 @@ traceid,label,activity,user
 124,normal,Post GR,Carmella
 124,normal,Post IR,Chan
 124,normal,Pay,Josef
-125,anomaly,Create PR,Keven
-125,anomaly,Release PR,Donald
-125,anomaly,Create PO,Alyce
-125,anomaly,Release PO,Craig
-125,anomaly,Post GR,Jin
-125,anomaly,Post IR,Roy
-125,anomaly,Pay,Vickie
+125,normal,Create PR,Keven
+125,normal,Release PR,Donald
+125,normal,Create PO,Alyce
+125,normal,Release PO,Craig
+125,normal,Post GR,Jin
+125,normal,Post IR,Roy
+125,normal,Pay,Vickie
 126,anomaly,Create SC,Alyce
 126,anomaly,Purchase SC,Hassie
 126,anomaly,Approve SC,Sandra
@@ -1001,15 +1001,15 @@ traceid,label,activity,user
 127,anomaly,Post GR,James
 127,anomaly,Post IR,Chan
 127,anomaly,Pay,Josef
-128,anomaly,Create PR,Keven
-128,anomaly,Release PR,Donald
-128,anomaly,Create PO,Marilyn
-128,anomaly,Approve PO 1,Clayton
-128,anomaly,Approve PO 2,Emily
-128,anomaly,Release PO,Della
-128,anomaly,Post GR,Keven
-128,anomaly,Post IR,Roy
-128,anomaly,Pay,Elisha
+128,normal,Create PR,Keven
+128,normal,Release PR,Donald
+128,normal,Create PO,Marilyn
+128,normal,Approve PO 1,Clayton
+128,normal,Approve PO 2,Emily
+128,normal,Release PO,Della
+128,normal,Post GR,Keven
+128,normal,Post IR,Roy
+128,normal,Pay,Elisha
 129,anomaly,Approve SC,Sandra
 129,anomaly,Create PO,Josef
 129,anomaly,Release PO,Shandi
@@ -1028,14 +1028,14 @@ traceid,label,activity,user
 130,normal,Post GR,James
 130,normal,Post IR,Chan
 130,normal,Pay,Josef
-131,anomaly,Create PR,Keven
-131,anomaly,Release PR,Donald
-131,anomaly,Create PO,Grayce
-131,anomaly,Approve PO 1,Donald
-131,anomaly,Release PO,Pam
-131,anomaly,Post GR,Keven
-131,anomaly,Post IR,Amanda
-131,anomaly,Pay,Josef
+131,normal,Create PR,Keven
+131,normal,Release PR,Donald
+131,normal,Create PO,Grayce
+131,normal,Approve PO 1,Donald
+131,normal,Release PO,Pam
+131,normal,Post GR,Keven
+131,normal,Post IR,Amanda
+131,normal,Pay,Josef
 132,anomaly,Create PR,Keven
 132,anomaly,Post GR,James
 132,anomaly,Release PR,Donald
@@ -1087,22 +1087,22 @@ traceid,label,activity,user
 137,normal,Post GR,Anna
 137,normal,Post IR,Roy
 137,normal,Pay,Elisha
-138,anomaly,Create PR,Keven
-138,anomaly,Release PR,Donald
-138,anomaly,Create PO,Alyce
-138,anomaly,Release PO,Grayce
-138,anomaly,Post GR,Anna
-138,anomaly,Post IR,Roy
-138,anomaly,Pay,Vickie
-139,anomaly,Create PR,Keven
-139,anomaly,Release PR,Issac
-139,anomaly,Create PO,Ling
-139,anomaly,Approve PO 1,Evelin
-139,anomaly,Approve PO 2,Elisha
-139,anomaly,Release PO,Della
-139,anomaly,Post GR,Keven
-139,anomaly,Post IR,Roy
-139,anomaly,Pay,Vickie
+138,normal,Create PR,Keven
+138,normal,Release PR,Donald
+138,normal,Create PO,Alyce
+138,normal,Release PO,Grayce
+138,normal,Post GR,Anna
+138,normal,Post IR,Roy
+138,normal,Pay,Vickie
+139,normal,Create PR,Keven
+139,normal,Release PR,Issac
+139,normal,Create PO,Ling
+139,normal,Approve PO 1,Evelin
+139,normal,Approve PO 2,Elisha
+139,normal,Release PO,Della
+139,normal,Post GR,Keven
+139,normal,Post IR,Roy
+139,normal,Pay,Vickie
 140,normal,Create PR,Keven
 140,normal,Release PR,Donald
 140,normal,Create PO,Howard
@@ -1117,14 +1117,14 @@ traceid,label,activity,user
 141,normal,Post GR,Anna
 141,normal,Post IR,Chan
 141,normal,Pay,Josef
-142,anomaly,Create PR,Keven
-142,anomaly,Release PR,Donald
-142,anomaly,Create PO,Lisa
-142,anomaly,Approve PO 1,Donald
-142,anomaly,Release PO,Della
-142,anomaly,Post GR,Carmella
-142,anomaly,Post IR,Chan
-142,anomaly,Pay,Josef
+142,normal,Create PR,Keven
+142,normal,Release PR,Donald
+142,normal,Create PO,Lisa
+142,normal,Approve PO 1,Donald
+142,normal,Release PO,Della
+142,normal,Post GR,Carmella
+142,normal,Post IR,Chan
+142,normal,Pay,Josef
 143,anomaly,Create PR,Keven
 143,anomaly,Release PR,Donald
 143,anomaly,Release PO,Della
@@ -1222,15 +1222,15 @@ traceid,label,activity,user
 154,normal,Post GR,Lourdes
 154,normal,Post IR,Roy
 154,normal,Pay,Elisha
-155,anomaly,Create PR,Jamika
-155,anomaly,Release PR,Donald
-155,anomaly,Create PO,Ling
-155,anomaly,Approve PO 1,Evelin
-155,anomaly,Approve PO 2,Paul
-155,anomaly,Release PO,Della
-155,anomaly,Post GR,James
-155,anomaly,Post IR,Roy
-155,anomaly,Pay,Vickie
+155,normal,Create PR,Jamika
+155,normal,Release PR,Donald
+155,normal,Create PO,Ling
+155,normal,Approve PO 1,Evelin
+155,normal,Approve PO 2,Paul
+155,normal,Release PO,Della
+155,normal,Post GR,James
+155,normal,Post IR,Roy
+155,normal,Pay,Vickie
 156,normal,Create SC,Seth
 156,normal,Purchase SC,Paul
 156,normal,Approve SC,Micheline
@@ -1280,13 +1280,13 @@ traceid,label,activity,user
 161,anomaly,Random activity 10,Random user 38
 161,anomaly,Post IR,Roy
 161,anomaly,Pay,Elisha
-162,anomaly,Create PR,Keven
-162,anomaly,Release PR,Donald
-162,anomaly,Create PO,Alyce
-162,anomaly,Release PO,Craig
-162,anomaly,Post GR,James
-162,anomaly,Post IR,Chan
-162,anomaly,Pay,Josef
+162,normal,Create PR,Keven
+162,normal,Release PR,Donald
+162,normal,Create PO,Alyce
+162,normal,Release PO,Craig
+162,normal,Post GR,James
+162,normal,Post IR,Chan
+162,normal,Pay,Josef
 163,normal,Create SC,Alyce
 163,normal,Purchase SC,Lucy
 163,normal,Approve SC,Micheline
@@ -1305,14 +1305,14 @@ traceid,label,activity,user
 164,normal,Post GR,Keven
 164,normal,Post IR,Roy
 164,normal,Pay,Elisha
-165,anomaly,Create SC,Alyce
-165,anomaly,Purchase SC,Hassie
-165,anomaly,Approve SC,Sandra
-165,anomaly,Create PO,Evelin
-165,anomaly,Release PO,Elisha
-165,anomaly,Post GR,Gema
-165,anomaly,Post IR,Chan
-165,anomaly,Pay,Josef
+165,normal,Create SC,Alyce
+165,normal,Purchase SC,Hassie
+165,normal,Approve SC,Sandra
+165,normal,Create PO,Evelin
+165,normal,Release PO,Elisha
+165,normal,Post GR,Gema
+165,normal,Post IR,Chan
+165,normal,Pay,Josef
 166,normal,Create PR,Keven
 166,normal,Release PR,Donald
 166,normal,Create PO,Alyce
@@ -1533,14 +1533,14 @@ traceid,label,activity,user
 194,normal,Post GR,Jin
 194,normal,Post IR,Chan
 194,normal,Pay,Josef
-195,anomaly,Create SC,Seth
-195,anomaly,Purchase SC,Paul
-195,anomaly,Approve SC,Sandra
-195,anomaly,Create PO,Josef
-195,anomaly,Release PO,Shandi
-195,anomaly,Post GR,Lourdes
-195,anomaly,Post IR,Chan
-195,anomaly,Pay,Roy
+195,normal,Create SC,Seth
+195,normal,Purchase SC,Paul
+195,normal,Approve SC,Sandra
+195,normal,Create PO,Josef
+195,normal,Release PO,Shandi
+195,normal,Post GR,Lourdes
+195,normal,Post IR,Chan
+195,normal,Pay,Roy
 196,normal,Create PR,Keven
 196,normal,Release PR,Donald
 196,normal,Create PO,Donald
@@ -1699,15 +1699,15 @@ traceid,label,activity,user
 214,normal,Post GR,Anna
 214,normal,Post IR,Chan
 214,normal,Pay,Josef
-215,anomaly,Create PR,Keven
-215,anomaly,Release PR,Donald
-215,anomaly,Create PO,Josef
-215,anomaly,Approve PO 1,Ling
-215,anomaly,Approve PO 2,Paul
-215,anomaly,Release PO,Hassie
-215,anomaly,Post GR,Keven
-215,anomaly,Post IR,Roy
-215,anomaly,Pay,Vickie
+215,normal,Create PR,Keven
+215,normal,Release PR,Donald
+215,normal,Create PO,Josef
+215,normal,Approve PO 1,Ling
+215,normal,Approve PO 2,Paul
+215,normal,Release PO,Hassie
+215,normal,Post GR,Keven
+215,normal,Post IR,Roy
+215,normal,Pay,Vickie
 216,normal,Create PR,Keven
 216,normal,Release PR,Donald
 216,normal,Create PO,Josef
@@ -1852,13 +1852,13 @@ traceid,label,activity,user
 234,anomaly,Post IR,Chan
 234,anomaly,Create PR,Keven
 234,anomaly,Pay,Josef
-235,anomaly,Create PR,Keven
-235,anomaly,Release PR,Donald
-235,anomaly,Create PO,Roy
-235,anomaly,Release PO,Shandi
-235,anomaly,Post GR,Lourdes
-235,anomaly,Post IR,Roy
-235,anomaly,Pay,Sandra
+235,normal,Create PR,Keven
+235,normal,Release PR,Donald
+235,normal,Create PO,Roy
+235,normal,Release PO,Shandi
+235,normal,Post GR,Lourdes
+235,normal,Post IR,Roy
+235,normal,Pay,Sandra
 236,normal,Create PR,Keven
 236,normal,Release PR,Donald
 236,normal,Create PO,Josef
@@ -1905,16 +1905,16 @@ traceid,label,activity,user
 241,normal,Post GR,Anna
 241,normal,Post IR,Roy
 241,normal,Pay,Vickie
-242,anomaly,Create PR,Keven
-242,anomaly,Release PR,Donald
-242,anomaly,Create PO,Ling
-242,anomaly,Approve PO 1,Sandra
-242,anomaly,Approve PO 2,Brant
-242,anomaly,Approve PO 3,Carmella
-242,anomaly,Release PO,Brant
-242,anomaly,Post GR,Tiffiny
-242,anomaly,Post IR,Roy
-242,anomaly,Pay,Elisha
+242,normal,Create PR,Keven
+242,normal,Release PR,Donald
+242,normal,Create PO,Ling
+242,normal,Approve PO 1,Sandra
+242,normal,Approve PO 2,Brant
+242,normal,Approve PO 3,Carmella
+242,normal,Release PO,Brant
+242,normal,Post GR,Tiffiny
+242,normal,Post IR,Roy
+242,normal,Pay,Elisha
 243,normal,Create PR,Keven
 243,normal,Release PR,Donald
 243,normal,Create PO,Ling
@@ -1931,13 +1931,13 @@ traceid,label,activity,user
 244,normal,Post GR,Lourdes
 244,normal,Post IR,Chan
 244,normal,Pay,Josef
-245,anomaly,Create PR,Keven
-245,anomaly,Release PR,Iluminada
-245,anomaly,Create PO,Alyce
-245,anomaly,Release PO,Carmella
-245,anomaly,Post GR,Carmella
-245,anomaly,Post IR,Roy
-245,anomaly,Pay,Vickie
+245,normal,Create PR,Keven
+245,normal,Release PR,Iluminada
+245,normal,Create PO,Alyce
+245,normal,Release PO,Carmella
+245,normal,Post GR,Carmella
+245,normal,Post IR,Roy
+245,normal,Pay,Vickie
 246,anomaly,Create PR,Keven
 246,anomaly,Release PR,Donald
 246,anomaly,Create PO,Josef
@@ -2068,13 +2068,13 @@ traceid,label,activity,user
 261,anomaly,Create PO,Alyce
 261,anomaly,Release PO,Craig
 261,anomaly,Pay,Josef
-262,anomaly,Create PR,Keven
-262,anomaly,Release PR,Donald
-262,anomaly,Create PO,Alyce
-262,anomaly,Release PO,Vickie
-262,anomaly,Post GR,Roseanne
-262,anomaly,Post IR,Gema
-262,anomaly,Pay,Vickie
+262,normal,Create PR,Keven
+262,normal,Release PR,Donald
+262,normal,Create PO,Alyce
+262,normal,Release PO,Vickie
+262,normal,Post GR,Roseanne
+262,normal,Post IR,Gema
+262,normal,Pay,Vickie
 263,normal,Create PR,Keven
 263,normal,Release PR,Donald
 263,normal,Create PO,Josef
@@ -2503,13 +2503,13 @@ traceid,label,activity,user
 315,normal,Post GR,Carmella
 315,normal,Post IR,Roy
 315,normal,Pay,Vickie
-316,anomaly,Create PR,Keven
-316,anomaly,Release PR,Donald
-316,anomaly,Create PO,Sherell
-316,anomaly,Release PO,Elisha
-316,anomaly,Post GR,Anna
-316,anomaly,Post IR,Roy
-316,anomaly,Pay,Vickie
+316,normal,Create PR,Keven
+316,normal,Release PR,Donald
+316,normal,Create PO,Sherell
+316,normal,Release PO,Elisha
+316,normal,Post GR,Anna
+316,normal,Post IR,Roy
+316,normal,Pay,Vickie
 317,normal,Create PR,Keven
 317,normal,Release PR,Donald
 317,normal,Create PO,Alyce
@@ -2599,21 +2599,21 @@ traceid,label,activity,user
 327,normal,Post GR,Anna
 327,normal,Post IR,Chan
 327,normal,Pay,Josef
-328,anomaly,Create PR,Keven
-328,anomaly,Release PR,Wilton
-328,anomaly,Create PO,Alyce
-328,anomaly,Release PO,Elisha
-328,anomaly,Post GR,Anna
-328,anomaly,Post IR,Chan
-328,anomaly,Pay,Josef
-329,anomaly,Create SC,Alyce
-329,anomaly,Purchase SC,Marilyn
-329,anomaly,Approve SC,Micheline
-329,anomaly,Create PO,Josef
-329,anomaly,Release PO,Hugo
-329,anomaly,Post GR,James
-329,anomaly,Post IR,Jimmy
-329,anomaly,Pay,Vickie
+328,normal,Create PR,Keven
+328,normal,Release PR,Wilton
+328,normal,Create PO,Alyce
+328,normal,Release PO,Elisha
+328,normal,Post GR,Anna
+328,normal,Post IR,Chan
+328,normal,Pay,Josef
+329,normal,Create SC,Alyce
+329,normal,Purchase SC,Marilyn
+329,normal,Approve SC,Micheline
+329,normal,Create PO,Josef
+329,normal,Release PO,Hugo
+329,normal,Post GR,James
+329,normal,Post IR,Jimmy
+329,normal,Pay,Vickie
 330,normal,Create PR,Keven
 330,normal,Release PR,Donald
 330,normal,Create PO,Alyce
@@ -2801,15 +2801,15 @@ traceid,label,activity,user
 352,normal,Post GR,Jin
 352,normal,Post IR,Chan
 352,normal,Pay,Josef
-353,anomaly,Create PR,Keven
-353,anomaly,Release PR,Donald
-353,anomaly,Create PO,Ling
-353,anomaly,Approve PO 1,Clayton
-353,anomaly,Approve PO 2,Elisha
-353,anomaly,Release PO,Della
-353,anomaly,Post GR,Keven
-353,anomaly,Post IR,Chan
-353,anomaly,Pay,Josef
+353,normal,Create PR,Keven
+353,normal,Release PR,Donald
+353,normal,Create PO,Ling
+353,normal,Approve PO 1,Clayton
+353,normal,Approve PO 2,Elisha
+353,normal,Release PO,Della
+353,normal,Post GR,Keven
+353,normal,Post IR,Chan
+353,normal,Pay,Josef
 354,normal,Create PR,Keven
 354,normal,Release PR,Donald
 354,normal,Create PO,Ling
@@ -2906,14 +2906,14 @@ traceid,label,activity,user
 364,normal,Post GR,Anna
 364,normal,Post IR,Roy
 364,normal,Pay,Elisha
-365,anomaly,Create SC,Alyce
-365,anomaly,Purchase SC,Elisha
-365,anomaly,Approve SC,Sandra
-365,anomaly,Create PO,Josef
-365,anomaly,Release PO,Grayce
-365,anomaly,Post GR,Anna
-365,anomaly,Post IR,Roy
-365,anomaly,Pay,Vickie
+365,normal,Create SC,Alyce
+365,normal,Purchase SC,Elisha
+365,normal,Approve SC,Sandra
+365,normal,Create PO,Josef
+365,normal,Release PO,Grayce
+365,normal,Post GR,Anna
+365,normal,Post IR,Roy
+365,normal,Pay,Vickie
 366,anomaly,Create SC,Alyce
 366,anomaly,Purchase SC,Lucy
 366,anomaly,Approve SC,Micheline
@@ -3141,16 +3141,16 @@ traceid,label,activity,user
 395,normal,Post GR,James
 395,normal,Post IR,Roy
 395,normal,Pay,Elisha
-396,anomaly,Create PR,Keven
-396,anomaly,Release PR,Donald
-396,anomaly,Create PO,Ling
-396,anomaly,Approve PO 1,Steve
-396,anomaly,Approve PO 2,Jimmy
-396,anomaly,Approve PO 3,Jin
-396,anomaly,Release PO,Junior
-396,anomaly,Post GR,Keven
-396,anomaly,Post IR,Chan
-396,anomaly,Pay,Josef
+396,normal,Create PR,Keven
+396,normal,Release PR,Donald
+396,normal,Create PO,Ling
+396,normal,Approve PO 1,Steve
+396,normal,Approve PO 2,Jimmy
+396,normal,Approve PO 3,Jin
+396,normal,Release PO,Junior
+396,normal,Post GR,Keven
+396,normal,Post IR,Chan
+396,normal,Pay,Josef
 397,anomaly,Create PR,Keven
 397,anomaly,Release PR,Donald
 397,anomaly,Approve PO 1,Evelin
@@ -3426,13 +3426,13 @@ traceid,label,activity,user
 429,normal,Post GR,Anna
 429,normal,Post IR,Roy
 429,normal,Pay,Vickie
-430,anomaly,Create PR,Keven
-430,anomaly,Release PR,Donald
-430,anomaly,Create PO,Howard
-430,anomaly,Release PO,Hugo
-430,anomaly,Post GR,James
-430,anomaly,Post IR,Roy
-430,anomaly,Pay,Elisha
+430,normal,Create PR,Keven
+430,normal,Release PR,Donald
+430,normal,Create PO,Howard
+430,normal,Release PO,Hugo
+430,normal,Post GR,James
+430,normal,Post IR,Roy
+430,normal,Pay,Elisha
 431,anomaly,Post GR,Anna
 431,anomaly,Post IR,Roy
 431,anomaly,Create SC,Alyce
@@ -3719,16 +3719,16 @@ traceid,label,activity,user
 466,normal,Post GR,James
 466,normal,Post IR,Roy
 466,normal,Pay,Elisha
-467,anomaly,Create SC,Seth
-467,anomaly,Purchase SC,Hassie
-467,anomaly,Approve SC,Micheline
-467,anomaly,Create PO,Sonia
-467,anomaly,Approve PO 1,Evelin
-467,anomaly,Approve PO 2,Elisha
-467,anomaly,Release PO,Jack
-467,anomaly,Post GR,James
-467,anomaly,Post IR,Chan
-467,anomaly,Pay,Josef
+467,normal,Create SC,Seth
+467,normal,Purchase SC,Hassie
+467,normal,Approve SC,Micheline
+467,normal,Create PO,Sonia
+467,normal,Approve PO 1,Evelin
+467,normal,Approve PO 2,Elisha
+467,normal,Release PO,Jack
+467,normal,Post GR,James
+467,normal,Post IR,Chan
+467,normal,Pay,Josef
 468,normal,Create SC,Alyce
 468,normal,Purchase SC,Lucy
 468,normal,Approve SC,Sandra
@@ -4067,16 +4067,16 @@ traceid,label,activity,user
 510,anomaly,Create PO,Josef
 510,anomaly,Post IR,Chan
 510,anomaly,Pay,Josef
-511,anomaly,Create PR,Keven
-511,anomaly,Release PR,Donald
-511,anomaly,Create PO,Josef
-511,anomaly,Approve PO 1,Clayton
-511,anomaly,Approve PO 2,Brant
-511,anomaly,Approve PO 3,Carmella
-511,anomaly,Release PO,Ronald
-511,anomaly,Post GR,James
-511,anomaly,Post IR,Roy
-511,anomaly,Pay,Vickie
+511,normal,Create PR,Keven
+511,normal,Release PR,Donald
+511,normal,Create PO,Josef
+511,normal,Approve PO 1,Clayton
+511,normal,Approve PO 2,Brant
+511,normal,Approve PO 3,Carmella
+511,normal,Release PO,Ronald
+511,normal,Post GR,James
+511,normal,Post IR,Roy
+511,normal,Pay,Vickie
 512,normal,Create SC,Seth
 512,normal,Purchase SC,Paul
 512,normal,Approve SC,Micheline
@@ -4817,13 +4817,13 @@ traceid,label,activity,user
 603,normal,Post GR,Anna
 603,normal,Post IR,Roy
 603,normal,Pay,Elisha
-604,anomaly,Create PR,Ryan
-604,anomaly,Release PR,Donald
-604,anomaly,Create PO,Alyce
-604,anomaly,Release PO,Shandi
-604,anomaly,Post GR,Lourdes
-604,anomaly,Post IR,Roy
-604,anomaly,Pay,Emily
+604,normal,Create PR,Ryan
+604,normal,Release PR,Donald
+604,normal,Create PO,Alyce
+604,normal,Release PO,Shandi
+604,normal,Post GR,Lourdes
+604,normal,Post IR,Roy
+604,normal,Pay,Emily
 605,normal,Create SC,Alyce
 605,normal,Purchase SC,Lucy
 605,normal,Approve SC,Micheline
@@ -5033,14 +5033,14 @@ traceid,label,activity,user
 628,normal,Post GR,Anna
 628,normal,Post IR,Chan
 628,normal,Pay,Josef
-629,anomaly,Create PR,Keven
-629,anomaly,Release PR,Donald
-629,anomaly,Create PO,Ling
-629,anomaly,Approve PO 1,Issac
-629,anomaly,Release PO,Della
-629,anomaly,Post GR,Keven
-629,anomaly,Post IR,Chan
-629,anomaly,Pay,Josef
+629,normal,Create PR,Keven
+629,normal,Release PR,Donald
+629,normal,Create PO,Ling
+629,normal,Approve PO 1,Issac
+629,normal,Release PO,Della
+629,normal,Post GR,Keven
+629,normal,Post IR,Chan
+629,normal,Pay,Josef
 630,normal,Create PR,Keven
 630,normal,Release PR,Donald
 630,normal,Create PO,Alyce
@@ -5181,13 +5181,13 @@ traceid,label,activity,user
 647,normal,Post GR,James
 647,normal,Post IR,Roy
 647,normal,Pay,Vickie
-648,anomaly,Create PR,Keven
-648,anomaly,Release PR,Donald
-648,anomaly,Create PO,Paul
-648,anomaly,Release PO,Carmella
-648,anomaly,Post GR,Tiffiny
-648,anomaly,Post IR,Roy
-648,anomaly,Pay,Frances
+648,normal,Create PR,Keven
+648,normal,Release PR,Donald
+648,normal,Create PO,Paul
+648,normal,Release PO,Carmella
+648,normal,Post GR,Tiffiny
+648,normal,Post IR,Roy
+648,normal,Pay,Frances
 649,anomaly,Create PR,Keven
 649,anomaly,Release PR,Donald
 649,anomaly,Create PO,Alyce
@@ -5217,24 +5217,24 @@ traceid,label,activity,user
 651,normal,Post GR,Jin
 651,normal,Post IR,Roy
 651,normal,Pay,Vickie
-652,anomaly,Create SC,Brian
-652,anomaly,Purchase SC,Lucy
-652,anomaly,Approve SC,Micheline
-652,anomaly,Create PO,Earl
-652,anomaly,Approve PO 1,Evelin
-652,anomaly,Approve PO 2,Elisha
-652,anomaly,Release PO,Della
-652,anomaly,Post GR,Jin
-652,anomaly,Post IR,Roy
-652,anomaly,Pay,Elisha
-653,anomaly,Create SC,Alyce
-653,anomaly,Purchase SC,Hassie
-653,anomaly,Approve SC,Micheline
-653,anomaly,Create PO,Deloras
-653,anomaly,Release PO,Shandi
-653,anomaly,Post GR,Lourdes
-653,anomaly,Post IR,Roy
-653,anomaly,Pay,Vickie
+652,normal,Create SC,Brian
+652,normal,Purchase SC,Lucy
+652,normal,Approve SC,Micheline
+652,normal,Create PO,Earl
+652,normal,Approve PO 1,Evelin
+652,normal,Approve PO 2,Elisha
+652,normal,Release PO,Della
+652,normal,Post GR,Jin
+652,normal,Post IR,Roy
+652,normal,Pay,Elisha
+653,normal,Create SC,Alyce
+653,normal,Purchase SC,Hassie
+653,normal,Approve SC,Micheline
+653,normal,Create PO,Deloras
+653,normal,Release PO,Shandi
+653,normal,Post GR,Lourdes
+653,normal,Post IR,Roy
+653,normal,Pay,Vickie
 654,normal,Create PR,Keven
 654,normal,Release PR,Donald
 654,normal,Create PO,Alyce
@@ -5308,13 +5308,13 @@ traceid,label,activity,user
 662,normal,Post GR,Keven
 662,normal,Post IR,Chan
 662,normal,Pay,Josef
-663,anomaly,Create PR,Keven
-663,anomaly,Release PR,Donald
-663,anomaly,Create PO,Maryellen
-663,anomaly,Release PO,Hugo
-663,anomaly,Post GR,Tiffiny
-663,anomaly,Post IR,Ronald
-663,anomaly,Pay,Josef
+663,normal,Create PR,Keven
+663,normal,Release PR,Donald
+663,normal,Create PO,Maryellen
+663,normal,Release PO,Hugo
+663,normal,Post GR,Tiffiny
+663,normal,Post IR,Ronald
+663,normal,Pay,Josef
 664,anomaly,Create SC,Alyce
 664,anomaly,Random activity 6,Random user 5
 664,anomaly,Purchase SC,Lucy
@@ -5553,14 +5553,14 @@ traceid,label,activity,user
 693,normal,Post GR,Keven
 693,normal,Post IR,Roy
 693,normal,Pay,Elisha
-694,anomaly,Create PR,Keven
-694,anomaly,Release PR,Donald
-694,anomaly,Create PO,Ling
-694,anomaly,Approve PO 1,Donald
-694,anomaly,Release PO,Della
-694,anomaly,Post GR,Jin
-694,anomaly,Post IR,Roy
-694,anomaly,Pay,Vickie
+694,normal,Create PR,Keven
+694,normal,Release PR,Donald
+694,normal,Create PO,Ling
+694,normal,Approve PO 1,Donald
+694,normal,Release PO,Della
+694,normal,Post GR,Jin
+694,normal,Post IR,Roy
+694,normal,Pay,Vickie
 695,normal,Create SC,Alyce
 695,normal,Purchase SC,Hassie
 695,normal,Approve SC,Sandra
@@ -5713,14 +5713,14 @@ traceid,label,activity,user
 713,anomaly,Random activity 7,Random user 47
 713,anomaly,Post IR,Roy
 713,anomaly,Pay,Vickie
-714,anomaly,Create SC,Evelin
-714,anomaly,Purchase SC,Lucy
-714,anomaly,Approve SC,Micheline
-714,anomaly,Create PO,Evelin
-714,anomaly,Release PO,Carmella
-714,anomaly,Post GR,James
-714,anomaly,Post IR,Roy
-714,anomaly,Pay,Alpha
+714,normal,Create SC,Evelin
+714,normal,Purchase SC,Lucy
+714,normal,Approve SC,Micheline
+714,normal,Create PO,Evelin
+714,normal,Release PO,Carmella
+714,normal,Post GR,James
+714,normal,Post IR,Roy
+714,normal,Pay,Alpha
 715,normal,Create SC,Seth
 715,normal,Purchase SC,Lucy
 715,normal,Approve SC,Micheline
@@ -5845,14 +5845,14 @@ traceid,label,activity,user
 729,normal,Post GR,James
 729,normal,Post IR,Chan
 729,normal,Pay,Josef
-730,anomaly,Create SC,Alyce
-730,anomaly,Purchase SC,Lucy
-730,anomaly,Approve SC,Micheline
-730,anomaly,Create PO,Michaele
-730,anomaly,Release PO,Shandi
-730,anomaly,Post GR,Lourdes
-730,anomaly,Post IR,Chan
-730,anomaly,Pay,Josef
+730,normal,Create SC,Alyce
+730,normal,Purchase SC,Lucy
+730,normal,Approve SC,Micheline
+730,normal,Create PO,Michaele
+730,normal,Release PO,Shandi
+730,normal,Post GR,Lourdes
+730,normal,Post IR,Chan
+730,normal,Pay,Josef
 731,normal,Create SC,Alyce
 731,normal,Purchase SC,Lucy
 731,normal,Approve SC,Sandra
@@ -5935,14 +5935,14 @@ traceid,label,activity,user
 740,anomaly,Create PO,Alyce
 740,anomaly,Release PO,Carmella
 740,anomaly,Pay,Josef
-741,anomaly,Create SC,Alyce
-741,anomaly,Purchase SC,Lucy
-741,anomaly,Approve SC,Micheline
-741,anomaly,Create PO,Josef
-741,anomaly,Release PO,Shandi
-741,anomaly,Post GR,Lourdes
-741,anomaly,Post IR,Chan
-741,anomaly,Pay,Josef
+741,normal,Create SC,Alyce
+741,normal,Purchase SC,Lucy
+741,normal,Approve SC,Micheline
+741,normal,Create PO,Josef
+741,normal,Release PO,Shandi
+741,normal,Post GR,Lourdes
+741,normal,Post IR,Chan
+741,normal,Pay,Josef
 742,anomaly,Create PR,Keven
 742,anomaly,Release PR,Donald
 742,anomaly,Create PO,Alyce
@@ -5991,17 +5991,17 @@ traceid,label,activity,user
 747,normal,Post GR,Carmella
 747,normal,Post IR,Roy
 747,normal,Pay,Vickie
-748,anomaly,Create SC,Alyce
-748,anomaly,Purchase SC,Paul
-748,anomaly,Approve SC,Micheline
-748,anomaly,Create PO,Roseanne
-748,anomaly,Approve PO 1,Brant
-748,anomaly,Approve PO 2,Brant
-748,anomaly,Approve PO 3,Amanda
-748,anomaly,Release PO,Hoyt
-748,anomaly,Post GR,Jin
-748,anomaly,Post IR,Roy
-748,anomaly,Pay,Vickie
+748,normal,Create SC,Alyce
+748,normal,Purchase SC,Paul
+748,normal,Approve SC,Micheline
+748,normal,Create PO,Roseanne
+748,normal,Approve PO 1,Brant
+748,normal,Approve PO 2,Brant
+748,normal,Approve PO 3,Amanda
+748,normal,Release PO,Hoyt
+748,normal,Post GR,Jin
+748,normal,Post IR,Roy
+748,normal,Pay,Vickie
 749,normal,Create PR,Keven
 749,normal,Release PR,Donald
 749,normal,Create PO,Lisa
@@ -6181,13 +6181,13 @@ traceid,label,activity,user
 770,normal,Post GR,Anna
 770,normal,Post IR,Chan
 770,normal,Pay,Josef
-771,anomaly,Create PR,Keven
-771,anomaly,Release PR,Donald
-771,anomaly,Create PO,Alyce
-771,anomaly,Release PO,Grayce
-771,anomaly,Post GR,Anna
-771,anomaly,Post IR,Roy
-771,anomaly,Pay,Elisha
+771,normal,Create PR,Keven
+771,normal,Release PR,Donald
+771,normal,Create PO,Alyce
+771,normal,Release PO,Grayce
+771,normal,Post GR,Anna
+771,normal,Post IR,Roy
+771,normal,Pay,Elisha
 772,normal,Create PR,Keven
 772,normal,Release PR,Donald
 772,normal,Create PO,Howard
@@ -6256,14 +6256,14 @@ traceid,label,activity,user
 780,normal,Post GR,Lourdes
 780,normal,Post IR,Chan
 780,normal,Pay,Josef
-781,anomaly,Create SC,Craig
-781,anomaly,Purchase SC,Paul
-781,anomaly,Approve SC,Micheline
-781,anomaly,Create PO,Josef
-781,anomaly,Release PO,Carmella
-781,anomaly,Post GR,James
-781,anomaly,Post IR,Chan
-781,anomaly,Pay,Josef
+781,normal,Create SC,Craig
+781,normal,Purchase SC,Paul
+781,normal,Approve SC,Micheline
+781,normal,Create PO,Josef
+781,normal,Release PO,Carmella
+781,normal,Post GR,James
+781,normal,Post IR,Chan
+781,normal,Pay,Josef
 782,anomaly,Create SC,Alyce
 782,anomaly,Purchase SC,Lucy
 782,anomaly,Approve SC,Sandra
@@ -6532,15 +6532,15 @@ traceid,label,activity,user
 815,normal,Post GR,Anna
 815,normal,Post IR,Chan
 815,normal,Pay,Josef
-816,anomaly,Create PR,Keven
-816,anomaly,Release PR,Donald
-816,anomaly,Create PO,Ling
-816,anomaly,Approve PO 1,Ling
-816,anomaly,Approve PO 2,Donald
-816,anomaly,Release PO,Deloras
-816,anomaly,Post GR,Keven
-816,anomaly,Post IR,Roy
-816,anomaly,Pay,Elisha
+816,normal,Create PR,Keven
+816,normal,Release PR,Donald
+816,normal,Create PO,Ling
+816,normal,Approve PO 1,Ling
+816,normal,Approve PO 2,Donald
+816,normal,Release PO,Deloras
+816,normal,Post GR,Keven
+816,normal,Post IR,Roy
+816,normal,Pay,Elisha
 817,normal,Create PR,Keven
 817,normal,Release PR,Donald
 817,normal,Create PO,Donald
@@ -6592,14 +6592,14 @@ traceid,label,activity,user
 823,normal,Post GR,Anna
 823,normal,Post IR,Roy
 823,normal,Pay,Vickie
-824,anomaly,Create SC,Alyce
-824,anomaly,Purchase SC,Hassie
-824,anomaly,Approve SC,Micheline
-824,anomaly,Create PO,Evelin
-824,anomaly,Release PO,Hugo
-824,anomaly,Post GR,James
-824,anomaly,Post IR,Roseanne
-824,anomaly,Pay,Josef
+824,normal,Create SC,Alyce
+824,normal,Purchase SC,Hassie
+824,normal,Approve SC,Micheline
+824,normal,Create PO,Evelin
+824,normal,Release PO,Hugo
+824,normal,Post GR,James
+824,normal,Post IR,Roseanne
+824,normal,Pay,Josef
 825,normal,Create PR,Keven
 825,normal,Release PR,Donald
 825,normal,Create PO,Alyce
@@ -6742,13 +6742,13 @@ traceid,label,activity,user
 841,normal,Post GR,Jin
 841,normal,Post IR,Roy
 841,normal,Pay,Vickie
-842,anomaly,Create PR,Jin
-842,anomaly,Release PR,Donald
-842,anomaly,Create PO,Alyce
-842,anomaly,Release PO,Alpha
-842,anomaly,Post GR,Keven
-842,anomaly,Post IR,Chan
-842,anomaly,Pay,Josef
+842,normal,Create PR,Jin
+842,normal,Release PR,Donald
+842,normal,Create PO,Alyce
+842,normal,Release PO,Alpha
+842,normal,Post GR,Keven
+842,normal,Post IR,Chan
+842,normal,Pay,Josef
 843,normal,Create SC,Seth
 843,normal,Purchase SC,Lucy
 843,normal,Approve SC,Sandra
@@ -6868,15 +6868,15 @@ traceid,label,activity,user
 858,normal,Post GR,Carmella
 858,normal,Post IR,Roy
 858,normal,Pay,Elisha
-859,anomaly,Create PR,Keven
-859,anomaly,Release PR,Donald
-859,anomaly,Create PO,Maryellen
-859,anomaly,Approve PO 1,Evelin
-859,anomaly,Approve PO 2,Donald
-859,anomaly,Release PO,Della
-859,anomaly,Post GR,Keven
-859,anomaly,Post IR,Roy
-859,anomaly,Pay,Vickie
+859,normal,Create PR,Keven
+859,normal,Release PR,Donald
+859,normal,Create PO,Maryellen
+859,normal,Approve PO 1,Evelin
+859,normal,Approve PO 2,Donald
+859,normal,Release PO,Della
+859,normal,Post GR,Keven
+859,normal,Post IR,Roy
+859,normal,Pay,Vickie
 860,normal,Create PR,Keven
 860,normal,Release PR,Donald
 860,normal,Create PO,Alyce
@@ -6965,14 +6965,14 @@ traceid,label,activity,user
 870,normal,Post GR,Carmella
 870,normal,Post IR,Roy
 870,normal,Pay,Vickie
-871,anomaly,Create PR,Keven
-871,anomaly,Release PR,Donald
-871,anomaly,Create PO,Lisa
-871,anomaly,Approve PO 1,Donald
-871,anomaly,Release PO,Della
-871,anomaly,Post GR,Keven
-871,anomaly,Post IR,Chan
-871,anomaly,Pay,Josef
+871,normal,Create PR,Keven
+871,normal,Release PR,Donald
+871,normal,Create PO,Lisa
+871,normal,Approve PO 1,Donald
+871,normal,Release PO,Della
+871,normal,Post GR,Keven
+871,normal,Post IR,Chan
+871,normal,Pay,Josef
 872,normal,Create PR,Keven
 872,normal,Release PR,Donald
 872,normal,Create PO,Alyce
@@ -7229,13 +7229,13 @@ traceid,label,activity,user
 903,normal,Post GR,Carmella
 903,normal,Post IR,Chan
 903,normal,Pay,Josef
-904,anomaly,Create PR,Keven
-904,anomaly,Release PR,Donald
-904,anomaly,Create PO,Alyce
-904,anomaly,Release PO,Keven
-904,anomaly,Post GR,Lourdes
-904,anomaly,Post IR,Roy
-904,anomaly,Pay,Vickie
+904,normal,Create PR,Keven
+904,normal,Release PR,Donald
+904,normal,Create PO,Alyce
+904,normal,Release PO,Keven
+904,normal,Post GR,Lourdes
+904,normal,Post IR,Roy
+904,normal,Pay,Vickie
 905,normal,Create PR,Keven
 905,normal,Release PR,Donald
 905,normal,Create PO,Donald
@@ -7308,13 +7308,13 @@ traceid,label,activity,user
 913,normal,Post GR,James
 913,normal,Post IR,Chan
 913,normal,Pay,Josef
-914,anomaly,Create PR,Keven
-914,anomaly,Release PR,Donald
-914,anomaly,Create PO,Johnny
-914,anomaly,Release PO,Carmella
-914,anomaly,Post GR,Keven
-914,anomaly,Post IR,Roy
-914,anomaly,Pay,Vickie
+914,normal,Create PR,Keven
+914,normal,Release PR,Donald
+914,normal,Create PO,Johnny
+914,normal,Release PO,Carmella
+914,normal,Post GR,Keven
+914,normal,Post IR,Roy
+914,normal,Pay,Vickie
 915,normal,Create PR,Keven
 915,normal,Release PR,Donald
 915,normal,Create PO,Alyce
@@ -7355,14 +7355,14 @@ traceid,label,activity,user
 919,normal,Post GR,Anna
 919,normal,Post IR,Roy
 919,normal,Pay,Vickie
-920,anomaly,Create SC,Alyce
-920,anomaly,Purchase SC,Paul
-920,anomaly,Approve SC,Howard
-920,anomaly,Create PO,Josef
-920,anomaly,Release PO,Elisha
-920,anomaly,Post GR,Anna
-920,anomaly,Post IR,Roy
-920,anomaly,Pay,Vickie
+920,normal,Create SC,Alyce
+920,normal,Purchase SC,Paul
+920,normal,Approve SC,Howard
+920,normal,Create PO,Josef
+920,normal,Release PO,Elisha
+920,normal,Post GR,Anna
+920,normal,Post IR,Roy
+920,normal,Pay,Vickie
 921,normal,Create SC,Seth
 921,normal,Purchase SC,Hassie
 921,normal,Approve SC,Micheline
@@ -7613,13 +7613,13 @@ traceid,label,activity,user
 951,anomaly,Post GR,Anna
 951,anomaly,Post IR,Roy
 951,anomaly,Pay,Elisha
-952,anomaly,Create PR,Keven
-952,anomaly,Release PR,Donald
-952,anomaly,Create PO,Alyce
-952,anomaly,Release PO,Craig
-952,anomaly,Post GR,James
-952,anomaly,Post IR,Paul
-952,anomaly,Pay,Elisha
+952,normal,Create PR,Keven
+952,normal,Release PR,Donald
+952,normal,Create PO,Alyce
+952,normal,Release PO,Craig
+952,normal,Post GR,James
+952,normal,Post IR,Paul
+952,normal,Pay,Elisha
 953,anomaly,Create SC,Seth
 953,anomaly,Purchase SC,Lucy
 953,anomaly,Approve SC,Micheline
@@ -7782,24 +7782,24 @@ traceid,label,activity,user
 972,normal,Post GR,Anna
 972,normal,Post IR,Chan
 972,normal,Pay,Josef
-973,anomaly,Create PR,Keven
-973,anomaly,Release PR,Donald
-973,anomaly,Create PO,Lisa
-973,anomaly,Approve PO 1,Hannah
-973,anomaly,Approve PO 2,Brant
-973,anomaly,Approve PO 3,Carmella
-973,anomaly,Release PO,Della
-973,anomaly,Post GR,Carmella
-973,anomaly,Post IR,Roy
-973,anomaly,Pay,Elisha
-974,anomaly,Create SC,Alyce
-974,anomaly,Purchase SC,Lucy
-974,anomaly,Approve SC,Micheline
-974,anomaly,Create PO,Josef
-974,anomaly,Release PO,Carmella
-974,anomaly,Post GR,James
-974,anomaly,Post IR,Della
-974,anomaly,Pay,Vickie
+973,normal,Create PR,Keven
+973,normal,Release PR,Donald
+973,normal,Create PO,Lisa
+973,normal,Approve PO 1,Hannah
+973,normal,Approve PO 2,Brant
+973,normal,Approve PO 3,Carmella
+973,normal,Release PO,Della
+973,normal,Post GR,Carmella
+973,normal,Post IR,Roy
+973,normal,Pay,Elisha
+974,normal,Create SC,Alyce
+974,normal,Purchase SC,Lucy
+974,normal,Approve SC,Micheline
+974,normal,Create PO,Josef
+974,normal,Release PO,Carmella
+974,normal,Post GR,James
+974,normal,Post IR,Della
+974,normal,Pay,Vickie
 975,normal,Create PR,Keven
 975,normal,Release PR,Donald
 975,normal,Create PO,Alyce
@@ -7829,14 +7829,14 @@ traceid,label,activity,user
 978,normal,Post GR,Anna
 978,normal,Post IR,Roy
 978,normal,Pay,Elisha
-979,anomaly,Create SC,Jimmy
-979,anomaly,Purchase SC,Paul
-979,anomaly,Approve SC,Micheline
-979,anomaly,Create PO,Josef
-979,anomaly,Release PO,Elisha
-979,anomaly,Post GR,Anna
-979,anomaly,Post IR,Chan
-979,anomaly,Pay,Josef
+979,normal,Create SC,Jimmy
+979,normal,Purchase SC,Paul
+979,normal,Approve SC,Micheline
+979,normal,Create PO,Josef
+979,normal,Release PO,Elisha
+979,normal,Post GR,Anna
+979,normal,Post IR,Chan
+979,normal,Pay,Josef
 980,anomaly,Create SC,Alyce
 980,anomaly,Create PO,Sonia
 980,anomaly,Approve PO 1,Evelin
@@ -7848,14 +7848,14 @@ traceid,label,activity,user
 980,anomaly,Post GR,Jin
 980,anomaly,Post IR,Roy
 980,anomaly,Pay,Vickie
-981,anomaly,Create SC,Alyce
-981,anomaly,Purchase SC,Lucy
-981,anomaly,Approve SC,Sandra
-981,anomaly,Create PO,Josef
-981,anomaly,Release PO,Carmella
-981,anomaly,Post GR,James
-981,anomaly,Post IR,Roy
-981,anomaly,Pay,Vickie
+981,normal,Create SC,Alyce
+981,normal,Purchase SC,Lucy
+981,normal,Approve SC,Sandra
+981,normal,Create PO,Josef
+981,normal,Release PO,Carmella
+981,normal,Post GR,James
+981,normal,Post IR,Roy
+981,normal,Pay,Vickie
 982,anomaly,Create PR,Keven
 982,anomaly,Release PR,Donald
 982,anomaly,Random activity 7,Random user 55
@@ -8140,24 +8140,24 @@ traceid,label,activity,user
 1015,normal,Post GR,James
 1015,normal,Post IR,Roy
 1015,normal,Pay,Elisha
-1016,anomaly,Create SC,Alyce
-1016,anomaly,Purchase SC,Hassie
-1016,anomaly,Approve SC,Micheline
-1016,anomaly,Create PO,Josef
-1016,anomaly,Release PO,Sandra
-1016,anomaly,Post GR,Lourdes
-1016,anomaly,Post IR,Chan
-1016,anomaly,Pay,Josef
-1017,anomaly,Create SC,Alyce
-1017,anomaly,Purchase SC,Johnny
-1017,anomaly,Approve SC,Micheline
-1017,anomaly,Create PO,Sonia
-1017,anomaly,Approve PO 1,Clayton
-1017,anomaly,Approve PO 2,Paul
-1017,anomaly,Release PO,Della
-1017,anomaly,Post GR,Carmella
-1017,anomaly,Post IR,Roy
-1017,anomaly,Pay,Elisha
+1016,normal,Create SC,Alyce
+1016,normal,Purchase SC,Hassie
+1016,normal,Approve SC,Micheline
+1016,normal,Create PO,Josef
+1016,normal,Release PO,Sandra
+1016,normal,Post GR,Lourdes
+1016,normal,Post IR,Chan
+1016,normal,Pay,Josef
+1017,normal,Create SC,Alyce
+1017,normal,Purchase SC,Johnny
+1017,normal,Approve SC,Micheline
+1017,normal,Create PO,Sonia
+1017,normal,Approve PO 1,Clayton
+1017,normal,Approve PO 2,Paul
+1017,normal,Release PO,Della
+1017,normal,Post GR,Carmella
+1017,normal,Post IR,Roy
+1017,normal,Pay,Elisha
 1018,anomaly,Create PR,Keven
 1018,anomaly,Release PR,Donald
 1018,anomaly,Create PO,Donald
@@ -8288,13 +8288,13 @@ traceid,label,activity,user
 1033,anomaly,Pay,Josef
 1033,anomaly,Post GR,Anna
 1033,anomaly,Post IR,Chan
-1034,anomaly,Create PR,Keven
-1034,anomaly,Release PR,Hassie
-1034,anomaly,Create PO,Donald
-1034,anomaly,Release PO,Carmella
-1034,anomaly,Post GR,Jin
-1034,anomaly,Post IR,Roy
-1034,anomaly,Pay,Elisha
+1034,normal,Create PR,Keven
+1034,normal,Release PR,Hassie
+1034,normal,Create PO,Donald
+1034,normal,Release PO,Carmella
+1034,normal,Post GR,Jin
+1034,normal,Post IR,Roy
+1034,normal,Pay,Elisha
 1035,normal,Create PR,Keven
 1035,normal,Release PR,Donald
 1035,normal,Create PO,Alyce
@@ -8474,13 +8474,13 @@ traceid,label,activity,user
 1057,normal,Post GR,Carmella
 1057,normal,Post IR,Chan
 1057,normal,Pay,Josef
-1058,anomaly,Create PR,Keven
-1058,anomaly,Release PR,Donald
-1058,anomaly,Create PO,Craig
-1058,anomaly,Release PO,Lannie
-1058,anomaly,Post GR,Keven
-1058,anomaly,Post IR,Roy
-1058,anomaly,Pay,Vickie
+1058,normal,Create PR,Keven
+1058,normal,Release PR,Donald
+1058,normal,Create PO,Craig
+1058,normal,Release PO,Lannie
+1058,normal,Post GR,Keven
+1058,normal,Post IR,Roy
+1058,normal,Pay,Vickie
 1059,normal,Create PR,Keven
 1059,normal,Release PR,Donald
 1059,normal,Create PO,Lisa
@@ -9128,14 +9128,14 @@ traceid,label,activity,user
 1138,normal,Post GR,Jin
 1138,normal,Post IR,Chan
 1138,normal,Pay,Josef
-1139,anomaly,Create SC,Johnny
-1139,anomaly,Purchase SC,Hassie
-1139,anomaly,Approve SC,Micheline
-1139,anomaly,Create PO,Evelin
-1139,anomaly,Release PO,Lannie
-1139,anomaly,Post GR,Keven
-1139,anomaly,Post IR,Roy
-1139,anomaly,Pay,Vickie
+1139,normal,Create SC,Johnny
+1139,normal,Purchase SC,Hassie
+1139,normal,Approve SC,Micheline
+1139,normal,Create PO,Evelin
+1139,normal,Release PO,Lannie
+1139,normal,Post GR,Keven
+1139,normal,Post IR,Roy
+1139,normal,Pay,Vickie
 1140,normal,Create PR,Keven
 1140,normal,Release PR,Donald
 1140,normal,Create PO,Lisa
@@ -9522,13 +9522,13 @@ traceid,label,activity,user
 1188,normal,Post GR,Jin
 1188,normal,Post IR,Chan
 1188,normal,Pay,Josef
-1189,anomaly,Create PR,Howard
-1189,anomaly,Release PR,Donald
-1189,anomaly,Create PO,Alyce
-1189,anomaly,Release PO,Carmella
-1189,anomaly,Post GR,Keven
-1189,anomaly,Post IR,Roy
-1189,anomaly,Pay,Elisha
+1189,normal,Create PR,Howard
+1189,normal,Release PR,Donald
+1189,normal,Create PO,Alyce
+1189,normal,Release PO,Carmella
+1189,normal,Post GR,Keven
+1189,normal,Post IR,Roy
+1189,normal,Pay,Elisha
 1190,normal,Create PR,Keven
 1190,normal,Release PR,Donald
 1190,normal,Create PO,Alyce
@@ -9728,13 +9728,13 @@ traceid,label,activity,user
 1213,normal,Post GR,James
 1213,normal,Post IR,Chan
 1213,normal,Pay,Josef
-1214,anomaly,Create PR,Elisha
-1214,anomaly,Release PR,Hassie
-1214,anomaly,Create PO,Howard
-1214,anomaly,Release PO,Craig
-1214,anomaly,Post GR,James
-1214,anomaly,Post IR,Roy
-1214,anomaly,Pay,Elisha
+1214,normal,Create PR,Elisha
+1214,normal,Release PR,Hassie
+1214,normal,Create PO,Howard
+1214,normal,Release PO,Craig
+1214,normal,Post GR,James
+1214,normal,Post IR,Roy
+1214,normal,Pay,Elisha
 1215,normal,Create PR,Keven
 1215,normal,Release PR,Donald
 1215,normal,Create PO,Alyce
@@ -9877,14 +9877,14 @@ traceid,label,activity,user
 1231,normal,Post GR,Tiffiny
 1231,normal,Post IR,Chan
 1231,normal,Pay,Josef
-1232,anomaly,Create SC,Joe
-1232,anomaly,Purchase SC,Lucy
-1232,anomaly,Approve SC,Micheline
-1232,anomaly,Create PO,Josef
-1232,anomaly,Release PO,Craig
-1232,anomaly,Post GR,Carmella
-1232,anomaly,Post IR,Chan
-1232,anomaly,Pay,Josef
+1232,normal,Create SC,Joe
+1232,normal,Purchase SC,Lucy
+1232,normal,Approve SC,Micheline
+1232,normal,Create PO,Josef
+1232,normal,Release PO,Craig
+1232,normal,Post GR,Carmella
+1232,normal,Post IR,Chan
+1232,normal,Pay,Josef
 1233,normal,Create PR,Keven
 1233,normal,Release PR,Donald
 1233,normal,Create PO,Ling
@@ -10069,13 +10069,13 @@ traceid,label,activity,user
 1256,normal,Post GR,Jin
 1256,normal,Post IR,Chan
 1256,normal,Pay,Josef
-1257,anomaly,Create PR,Keven
-1257,anomaly,Release PR,Donald
-1257,anomaly,Create PO,Alyce
-1257,anomaly,Release PO,Rossana
-1257,anomaly,Post GR,Anna
-1257,anomaly,Post IR,Chan
-1257,anomaly,Pay,Josef
+1257,normal,Create PR,Keven
+1257,normal,Release PR,Donald
+1257,normal,Create PO,Alyce
+1257,normal,Release PO,Rossana
+1257,normal,Post GR,Anna
+1257,normal,Post IR,Chan
+1257,normal,Pay,Josef
 1258,normal,Create PR,Keven
 1258,normal,Release PR,Donald
 1258,normal,Create PO,Alyce
@@ -10147,14 +10147,14 @@ traceid,label,activity,user
 1266,normal,Post GR,Jin
 1266,normal,Post IR,Roy
 1266,normal,Pay,Elisha
-1267,anomaly,Create SC,Alyce
-1267,anomaly,Purchase SC,Lucy
-1267,anomaly,Approve SC,Sandra
-1267,anomaly,Create PO,Evelin
-1267,anomaly,Release PO,Shandi
-1267,anomaly,Post GR,Roy
-1267,anomaly,Post IR,Rossana
-1267,anomaly,Pay,Vickie
+1267,normal,Create SC,Alyce
+1267,normal,Purchase SC,Lucy
+1267,normal,Approve SC,Sandra
+1267,normal,Create PO,Evelin
+1267,normal,Release PO,Shandi
+1267,normal,Post GR,Roy
+1267,normal,Post IR,Rossana
+1267,normal,Pay,Vickie
 1268,normal,Create SC,Seth
 1268,normal,Purchase SC,Lucy
 1268,normal,Approve SC,Sandra
@@ -10215,13 +10215,13 @@ traceid,label,activity,user
 1274,anomaly,Post GR,Keven
 1274,anomaly,Post IR,Roy
 1274,anomaly,Pay,Vickie
-1275,anomaly,Create PR,Keven
-1275,anomaly,Release PR,Donald
-1275,anomaly,Create PO,Alyce
-1275,anomaly,Release PO,Lannie
-1275,anomaly,Post GR,Keven
-1275,anomaly,Post IR,Roy
-1275,anomaly,Pay,Vickie
+1275,normal,Create PR,Keven
+1275,normal,Release PR,Donald
+1275,normal,Create PO,Alyce
+1275,normal,Release PO,Lannie
+1275,normal,Post GR,Keven
+1275,normal,Post IR,Roy
+1275,normal,Pay,Vickie
 1276,anomaly,Create PO,Josef
 1276,anomaly,Approve PO 1,Donald
 1276,anomaly,Create PR,Keven
@@ -10600,15 +10600,15 @@ traceid,label,activity,user
 1323,normal,Post GR,Keven
 1323,normal,Post IR,Roy
 1323,normal,Pay,Vickie
-1324,anomaly,Create SC,Alyce
-1324,anomaly,Purchase SC,Hassie
-1324,anomaly,Approve SC,Micheline
-1324,anomaly,Create PO,Sonia
-1324,anomaly,Approve PO 1,Donald
-1324,anomaly,Release PO,Della
-1324,anomaly,Post GR,James
-1324,anomaly,Post IR,Roy
-1324,anomaly,Pay,Vickie
+1324,normal,Create SC,Alyce
+1324,normal,Purchase SC,Hassie
+1324,normal,Approve SC,Micheline
+1324,normal,Create PO,Sonia
+1324,normal,Approve PO 1,Donald
+1324,normal,Release PO,Della
+1324,normal,Post GR,James
+1324,normal,Post IR,Roy
+1324,normal,Pay,Vickie
 1325,normal,Create PR,Keven
 1325,normal,Release PR,Donald
 1325,normal,Create PO,Donald
@@ -10668,16 +10668,16 @@ traceid,label,activity,user
 1331,normal,Post GR,Anna
 1331,normal,Post IR,Chan
 1331,normal,Pay,Josef
-1332,anomaly,Create PR,Keven
-1332,anomaly,Release PR,Donald
-1332,anomaly,Create PO,Josef
-1332,anomaly,Approve PO 1,Steve
-1332,anomaly,Approve PO 2,Roseanne
-1332,anomaly,Approve PO 3,Joe
-1332,anomaly,Release PO,Junior
-1332,anomaly,Post GR,Grayce
-1332,anomaly,Post IR,Chan
-1332,anomaly,Pay,Josef
+1332,normal,Create PR,Keven
+1332,normal,Release PR,Donald
+1332,normal,Create PO,Josef
+1332,normal,Approve PO 1,Steve
+1332,normal,Approve PO 2,Roseanne
+1332,normal,Approve PO 3,Joe
+1332,normal,Release PO,Junior
+1332,normal,Post GR,Grayce
+1332,normal,Post IR,Chan
+1332,normal,Pay,Josef
 1333,anomaly,Random activity 4,Random user 50
 1333,anomaly,Create PR,Keven
 1333,anomaly,Random activity 11,Random user 37
@@ -10841,14 +10841,14 @@ traceid,label,activity,user
 1352,normal,Post GR,Carmella
 1352,normal,Post IR,Chan
 1352,normal,Pay,Josef
-1353,anomaly,Create SC,Alyce
-1353,anomaly,Purchase SC,Paul
-1353,anomaly,Approve SC,Rossana
-1353,anomaly,Create PO,Josef
-1353,anomaly,Release PO,Marilyn
-1353,anomaly,Post GR,James
-1353,anomaly,Post IR,Chan
-1353,anomaly,Pay,Josef
+1353,normal,Create SC,Alyce
+1353,normal,Purchase SC,Paul
+1353,normal,Approve SC,Rossana
+1353,normal,Create PO,Josef
+1353,normal,Release PO,Marilyn
+1353,normal,Post GR,James
+1353,normal,Post IR,Chan
+1353,normal,Pay,Josef
 1354,anomaly,Create PR,Keven
 1354,anomaly,Release PR,Donald
 1354,anomaly,Create PO,Ling
@@ -10935,16 +10935,16 @@ traceid,label,activity,user
 1364,normal,Post GR,Lourdes
 1364,normal,Post IR,Roy
 1364,normal,Pay,Vickie
-1365,anomaly,Create PR,Johnny
-1365,anomaly,Release PR,Donald
-1365,anomaly,Create PO,Josef
-1365,anomaly,Approve PO 1,Ling
-1365,anomaly,Approve PO 2,Brant
-1365,anomaly,Approve PO 3,Carmella
-1365,anomaly,Release PO,Della
-1365,anomaly,Post GR,Marilyn
-1365,anomaly,Post IR,Chan
-1365,anomaly,Pay,Josef
+1365,normal,Create PR,Johnny
+1365,normal,Release PR,Donald
+1365,normal,Create PO,Josef
+1365,normal,Approve PO 1,Ling
+1365,normal,Approve PO 2,Brant
+1365,normal,Approve PO 3,Carmella
+1365,normal,Release PO,Della
+1365,normal,Post GR,Marilyn
+1365,normal,Post IR,Chan
+1365,normal,Pay,Josef
 1366,anomaly,Create PR,Keven
 1366,anomaly,Release PR,Donald
 1366,anomaly,Create PO,Alyce
@@ -11033,14 +11033,14 @@ traceid,label,activity,user
 1376,normal,Post GR,Keven
 1376,normal,Post IR,Roy
 1376,normal,Pay,Elisha
-1377,anomaly,Create PR,Keven
-1377,anomaly,Release PR,Donald
-1377,anomaly,Create PO,Josef
-1377,anomaly,Approve PO 1,Craig
-1377,anomaly,Release PO,Della
-1377,anomaly,Post GR,Josef
-1377,anomaly,Post IR,Roy
-1377,anomaly,Pay,Vickie
+1377,normal,Create PR,Keven
+1377,normal,Release PR,Donald
+1377,normal,Create PO,Josef
+1377,normal,Approve PO 1,Craig
+1377,normal,Release PO,Della
+1377,normal,Post GR,Josef
+1377,normal,Post IR,Roy
+1377,normal,Pay,Vickie
 1378,anomaly,Create SC,Alyce
 1378,anomaly,Purchase SC,Hassie
 1378,anomaly,Approve SC,Sandra
@@ -11305,13 +11305,13 @@ traceid,label,activity,user
 1411,anomaly,Release PO,Shandi
 1411,anomaly,Post GR,Lourdes
 1411,anomaly,Pay,Josef
-1412,anomaly,Create PR,Keven
-1412,anomaly,Release PR,Donald
-1412,anomaly,Create PO,Alyce
-1412,anomaly,Release PO,Hugo
-1412,anomaly,Post GR,Keven
-1412,anomaly,Post IR,Roy
-1412,anomaly,Pay,Elisha
+1412,normal,Create PR,Keven
+1412,normal,Release PR,Donald
+1412,normal,Create PO,Alyce
+1412,normal,Release PO,Hugo
+1412,normal,Post GR,Keven
+1412,normal,Post IR,Roy
+1412,normal,Pay,Elisha
 1413,normal,Create PR,Keven
 1413,normal,Release PR,Donald
 1413,normal,Create PO,Alyce
@@ -11350,15 +11350,15 @@ traceid,label,activity,user
 1417,normal,Post GR,James
 1417,normal,Post IR,Chan
 1417,normal,Pay,Josef
-1418,anomaly,Create PR,Lourdes
-1418,anomaly,Release PR,Donald
-1418,anomaly,Create PO,Ling
-1418,anomaly,Approve PO 1,Steve
-1418,anomaly,Approve PO 2,Roy
-1418,anomaly,Release PO,Craig
-1418,anomaly,Post GR,Lourdes
-1418,anomaly,Post IR,Roy
-1418,anomaly,Pay,Elisha
+1418,normal,Create PR,Lourdes
+1418,normal,Release PR,Donald
+1418,normal,Create PO,Ling
+1418,normal,Approve PO 1,Steve
+1418,normal,Approve PO 2,Roy
+1418,normal,Release PO,Craig
+1418,normal,Post GR,Lourdes
+1418,normal,Post IR,Roy
+1418,normal,Pay,Elisha
 1419,anomaly,Create PR,Keven
 1419,anomaly,Create PO,Lisa
 1419,anomaly,Approve PO 1,Donald
@@ -11493,14 +11493,14 @@ traceid,label,activity,user
 1435,normal,Post GR,Keven
 1435,normal,Post IR,Chan
 1435,normal,Pay,Josef
-1436,anomaly,Create SC,Alyce
-1436,anomaly,Purchase SC,Lucy
-1436,anomaly,Approve SC,Micheline
-1436,anomaly,Create PO,Josef
-1436,anomaly,Release PO,Paul
-1436,anomaly,Post GR,Anna
-1436,anomaly,Post IR,Roy
-1436,anomaly,Pay,Elisha
+1436,normal,Create SC,Alyce
+1436,normal,Purchase SC,Lucy
+1436,normal,Approve SC,Micheline
+1436,normal,Create PO,Josef
+1436,normal,Release PO,Paul
+1436,normal,Post GR,Anna
+1436,normal,Post IR,Roy
+1436,normal,Pay,Elisha
 1437,normal,Create SC,Seth
 1437,normal,Purchase SC,Lucy
 1437,normal,Approve SC,Sandra
@@ -11627,15 +11627,15 @@ traceid,label,activity,user
 1451,anomaly,Approve SC,Micheline
 1451,anomaly,Create PO,Josef
 1451,anomaly,Pay,Vickie
-1452,anomaly,Create PR,Keven
-1452,anomaly,Release PR,Donald
-1452,anomaly,Create PO,Ling
-1452,anomaly,Approve PO 1,Clayton
-1452,anomaly,Approve PO 2,Elisha
-1452,anomaly,Release PO,Della
-1452,anomaly,Post GR,James
-1452,anomaly,Post IR,Roy
-1452,anomaly,Pay,Elisha
+1452,normal,Create PR,Keven
+1452,normal,Release PR,Donald
+1452,normal,Create PO,Ling
+1452,normal,Approve PO 1,Clayton
+1452,normal,Approve PO 2,Elisha
+1452,normal,Release PO,Della
+1452,normal,Post GR,James
+1452,normal,Post IR,Roy
+1452,normal,Pay,Elisha
 1453,normal,Create PR,Keven
 1453,normal,Release PR,Donald
 1453,normal,Create PO,Ling
@@ -11767,13 +11767,13 @@ traceid,label,activity,user
 1468,normal,Post GR,Lourdes
 1468,normal,Post IR,Chan
 1468,normal,Pay,Josef
-1469,anomaly,Create PR,Keven
-1469,anomaly,Release PR,Donald
-1469,anomaly,Create PO,Donald
-1469,anomaly,Release PO,Grayce
-1469,anomaly,Post GR,Anna
-1469,anomaly,Post IR,Chan
-1469,anomaly,Pay,Josef
+1469,normal,Create PR,Keven
+1469,normal,Release PR,Donald
+1469,normal,Create PO,Donald
+1469,normal,Release PO,Grayce
+1469,normal,Post GR,Anna
+1469,normal,Post IR,Chan
+1469,normal,Pay,Josef
 1470,normal,Create PR,Keven
 1470,normal,Release PR,Donald
 1470,normal,Create PO,Lisa
@@ -12262,14 +12262,14 @@ traceid,label,activity,user
 1528,normal,Post GR,James
 1528,normal,Post IR,Chan
 1528,normal,Pay,Josef
-1529,anomaly,Create PR,Keven
-1529,anomaly,Release PR,Donald
-1529,anomaly,Create PO,Lisa
-1529,anomaly,Approve PO 1,Donald
-1529,anomaly,Release PO,Della
-1529,anomaly,Post GR,Jin
-1529,anomaly,Post IR,Roy
-1529,anomaly,Pay,Vickie
+1529,normal,Create PR,Keven
+1529,normal,Release PR,Donald
+1529,normal,Create PO,Lisa
+1529,normal,Approve PO 1,Donald
+1529,normal,Release PO,Della
+1529,normal,Post GR,Jin
+1529,normal,Post IR,Roy
+1529,normal,Pay,Vickie
 1530,anomaly,Create SC,Alyce
 1530,anomaly,Purchase SC,Paul
 1530,anomaly,Approve SC,Micheline
@@ -13061,14 +13061,14 @@ traceid,label,activity,user
 1628,anomaly,Post GR,Keven
 1628,anomaly,Post IR,Chan
 1628,anomaly,Pay,Josef
-1629,anomaly,Create SC,Alyce
-1629,anomaly,Purchase SC,Lucy
-1629,anomaly,Approve SC,Micheline
-1629,anomaly,Create PO,Josef
-1629,anomaly,Release PO,Keven
-1629,anomaly,Post GR,Lourdes
-1629,anomaly,Post IR,Junior
-1629,anomaly,Pay,Josef
+1629,normal,Create SC,Alyce
+1629,normal,Purchase SC,Lucy
+1629,normal,Approve SC,Micheline
+1629,normal,Create PO,Josef
+1629,normal,Release PO,Keven
+1629,normal,Post GR,Lourdes
+1629,normal,Post IR,Junior
+1629,normal,Pay,Josef
 1630,anomaly,Create PR,Keven
 1630,anomaly,Release PR,Donald
 1630,anomaly,Create PO,Ling
@@ -13274,13 +13274,13 @@ traceid,label,activity,user
 1654,normal,Post GR,James
 1654,normal,Post IR,Chan
 1654,normal,Pay,Josef
-1655,anomaly,Create PR,Keven
-1655,anomaly,Release PR,Donald
-1655,anomaly,Create PO,Donald
-1655,anomaly,Release PO,Elisha
-1655,anomaly,Post GR,Anna
-1655,anomaly,Post IR,Roy
-1655,anomaly,Pay,Rossie
+1655,normal,Create PR,Keven
+1655,normal,Release PR,Donald
+1655,normal,Create PO,Donald
+1655,normal,Release PO,Elisha
+1655,normal,Post GR,Anna
+1655,normal,Post IR,Roy
+1655,normal,Pay,Rossie
 1656,anomaly,Create SC,Alyce
 1656,anomaly,Purchase SC,Paul
 1656,anomaly,Approve SC,Micheline
@@ -13360,13 +13360,13 @@ traceid,label,activity,user
 1664,normal,Post GR,Lourdes
 1664,normal,Post IR,Roy
 1664,normal,Pay,Vickie
-1665,anomaly,Create PR,Keven
-1665,anomaly,Release PR,Donald
-1665,anomaly,Create PO,Alyce
-1665,anomaly,Release PO,Carmella
-1665,anomaly,Post GR,Keven
-1665,anomaly,Post IR,Chan
-1665,anomaly,Pay,Jamika
+1665,normal,Create PR,Keven
+1665,normal,Release PR,Donald
+1665,normal,Create PO,Alyce
+1665,normal,Release PO,Carmella
+1665,normal,Post GR,Keven
+1665,normal,Post IR,Chan
+1665,normal,Pay,Jamika
 1666,anomaly,Create PO,Ling
 1666,anomaly,Approve PO 1,Steve
 1666,anomaly,Approve PO 2,Paul
@@ -13377,14 +13377,14 @@ traceid,label,activity,user
 1666,anomaly,Post GR,Keven
 1666,anomaly,Post IR,Roy
 1666,anomaly,Pay,Elisha
-1667,anomaly,Create SC,Alyce
-1667,anomaly,Purchase SC,Lucy
-1667,anomaly,Approve SC,Hannah
-1667,anomaly,Create PO,Evelin
-1667,anomaly,Release PO,Hugo
-1667,anomaly,Post GR,James
-1667,anomaly,Post IR,Roy
-1667,anomaly,Pay,Elisha
+1667,normal,Create SC,Alyce
+1667,normal,Purchase SC,Lucy
+1667,normal,Approve SC,Hannah
+1667,normal,Create PO,Evelin
+1667,normal,Release PO,Hugo
+1667,normal,Post GR,James
+1667,normal,Post IR,Roy
+1667,normal,Pay,Elisha
 1668,normal,Create PR,Keven
 1668,normal,Release PR,Donald
 1668,normal,Create PO,Alyce
@@ -14058,13 +14058,13 @@ traceid,label,activity,user
 1752,normal,Post GR,Keven
 1752,normal,Post IR,Chan
 1752,normal,Pay,Josef
-1753,anomaly,Create PR,Keven
-1753,anomaly,Release PR,Frances
-1753,anomaly,Create PO,Alyce
-1753,anomaly,Release PO,Shandi
-1753,anomaly,Post GR,Lourdes
-1753,anomaly,Post IR,Roy
-1753,anomaly,Pay,Elisha
+1753,normal,Create PR,Keven
+1753,normal,Release PR,Frances
+1753,normal,Create PO,Alyce
+1753,normal,Release PO,Shandi
+1753,normal,Post GR,Lourdes
+1753,normal,Post IR,Roy
+1753,normal,Pay,Elisha
 1754,normal,Create PR,Keven
 1754,normal,Release PR,Donald
 1754,normal,Create PO,Alyce
@@ -14209,13 +14209,13 @@ traceid,label,activity,user
 1772,normal,Post GR,Keven
 1772,normal,Post IR,Roy
 1772,normal,Pay,Vickie
-1773,anomaly,Create PR,Keven
-1773,anomaly,Release PR,Sharee
-1773,anomaly,Create PO,Alyce
-1773,anomaly,Release PO,Craig
-1773,anomaly,Post GR,Tiffiny
-1773,anomaly,Post IR,Roy
-1773,anomaly,Pay,Vickie
+1773,normal,Create PR,Keven
+1773,normal,Release PR,Sharee
+1773,normal,Create PO,Alyce
+1773,normal,Release PO,Craig
+1773,normal,Post GR,Tiffiny
+1773,normal,Post IR,Roy
+1773,normal,Pay,Vickie
 1774,normal,Create PR,Keven
 1774,normal,Release PR,Donald
 1774,normal,Create PO,Ling
@@ -14676,13 +14676,13 @@ traceid,label,activity,user
 1830,normal,Post GR,Tiffiny
 1830,normal,Post IR,Roy
 1830,normal,Pay,Elisha
-1831,anomaly,Create PR,Keven
-1831,anomaly,Release PR,Donald
-1831,anomaly,Create PO,Vickie
-1831,anomaly,Release PO,Elisha
-1831,anomaly,Post GR,Anna
-1831,anomaly,Post IR,Sharee
-1831,anomaly,Pay,Elisha
+1831,normal,Create PR,Keven
+1831,normal,Release PR,Donald
+1831,normal,Create PO,Vickie
+1831,normal,Release PO,Elisha
+1831,normal,Post GR,Anna
+1831,normal,Post IR,Sharee
+1831,normal,Pay,Elisha
 1832,normal,Create PR,Keven
 1832,normal,Release PR,Donald
 1832,normal,Create PO,Donald
@@ -14820,15 +14820,15 @@ traceid,label,activity,user
 1848,anomaly,Create PR,Keven
 1848,anomaly,Post IR,Roy
 1848,anomaly,Pay,Vickie
-1849,anomaly,Create PR,Keven
-1849,anomaly,Release PR,Donald
-1849,anomaly,Create PO,Ling
-1849,anomaly,Approve PO 1,Ling
-1849,anomaly,Approve PO 2,Emily
-1849,anomaly,Release PO,Della
-1849,anomaly,Post GR,Carmella
-1849,anomaly,Post IR,Chan
-1849,anomaly,Pay,Wilton
+1849,normal,Create PR,Keven
+1849,normal,Release PR,Donald
+1849,normal,Create PO,Ling
+1849,normal,Approve PO 1,Ling
+1849,normal,Approve PO 2,Emily
+1849,normal,Release PO,Della
+1849,normal,Post GR,Carmella
+1849,normal,Post IR,Chan
+1849,normal,Pay,Wilton
 1850,normal,Create PR,Keven
 1850,normal,Release PR,Donald
 1850,normal,Create PO,Alyce
@@ -15085,13 +15085,13 @@ traceid,label,activity,user
 1883,normal,Post GR,Anna
 1883,normal,Post IR,Roy
 1883,normal,Pay,Elisha
-1884,anomaly,Create PR,Keven
-1884,anomaly,Release PR,Donald
-1884,anomaly,Create PO,Alyce
-1884,anomaly,Release PO,Carmella
-1884,anomaly,Post GR,Elisha
-1884,anomaly,Post IR,Chan
-1884,anomaly,Pay,Josef
+1884,normal,Create PR,Keven
+1884,normal,Release PR,Donald
+1884,normal,Create PO,Alyce
+1884,normal,Release PO,Carmella
+1884,normal,Post GR,Elisha
+1884,normal,Post IR,Chan
+1884,normal,Pay,Josef
 1885,normal,Create SC,Alyce
 1885,normal,Purchase SC,Hassie
 1885,normal,Approve SC,Micheline
@@ -15621,21 +15621,21 @@ traceid,label,activity,user
 1951,anomaly,Approve PO 1,Johnny
 1951,anomaly,Post IR,Roy
 1951,anomaly,Pay,Vickie
-1952,anomaly,Create PR,Keven
-1952,anomaly,Release PR,Donald
-1952,anomaly,Create PO,Alyce
-1952,anomaly,Release PO,Elisha
-1952,anomaly,Post GR,Anna
-1952,anomaly,Post IR,Roy
-1952,anomaly,Pay,Elisha
-1953,anomaly,Create SC,Alyce
-1953,anomaly,Purchase SC,Lucy
-1953,anomaly,Approve SC,Sandra
-1953,anomaly,Create PO,Wilton
-1953,anomaly,Release PO,Carmella
-1953,anomaly,Post GR,Carmella
-1953,anomaly,Post IR,Chan
-1953,anomaly,Pay,Josef
+1952,normal,Create PR,Keven
+1952,normal,Release PR,Donald
+1952,normal,Create PO,Alyce
+1952,normal,Release PO,Elisha
+1952,normal,Post GR,Anna
+1952,normal,Post IR,Roy
+1952,normal,Pay,Elisha
+1953,normal,Create SC,Alyce
+1953,normal,Purchase SC,Lucy
+1953,normal,Approve SC,Sandra
+1953,normal,Create PO,Wilton
+1953,normal,Release PO,Carmella
+1953,normal,Post GR,Carmella
+1953,normal,Post IR,Chan
+1953,normal,Pay,Josef
 1954,anomaly,Create SC,Alyce
 1954,anomaly,Purchase SC,Hassie
 1954,anomaly,Create PO,Josef
@@ -15737,15 +15737,15 @@ traceid,label,activity,user
 1965,anomaly,Create PO,Ling
 1965,anomaly,Post IR,Chan
 1965,anomaly,Pay,Josef
-1966,anomaly,Create PR,Keven
-1966,anomaly,Release PR,Donald
-1966,anomaly,Create PO,Lisa
-1966,anomaly,Approve PO 1,Clayton
-1966,anomaly,Approve PO 2,Paul
-1966,anomaly,Release PO,Della
-1966,anomaly,Post GR,Keven
-1966,anomaly,Post IR,Charles
-1966,anomaly,Pay,Elisha
+1966,normal,Create PR,Keven
+1966,normal,Release PR,Donald
+1966,normal,Create PO,Lisa
+1966,normal,Approve PO 1,Clayton
+1966,normal,Approve PO 2,Paul
+1966,normal,Release PO,Della
+1966,normal,Post GR,Keven
+1966,normal,Post IR,Charles
+1966,normal,Pay,Elisha
 1967,anomaly,Create PR,Keven
 1967,anomaly,Release PR,Donald
 1967,anomaly,Create PO,Lisa
@@ -15760,14 +15760,14 @@ traceid,label,activity,user
 1968,anomaly,Create PO,Alyce
 1968,anomaly,Release PO,Sandra
 1968,anomaly,Pay,Elisha
-1969,anomaly,Create SC,Alyce
-1969,anomaly,Purchase SC,Hassie
-1969,anomaly,Approve SC,Sandra
-1969,anomaly,Create PO,Josef
-1969,anomaly,Release PO,Doretta
-1969,anomaly,Post GR,Carmella
-1969,anomaly,Post IR,Roy
-1969,anomaly,Pay,Elisha
+1969,normal,Create SC,Alyce
+1969,normal,Purchase SC,Hassie
+1969,normal,Approve SC,Sandra
+1969,normal,Create PO,Josef
+1969,normal,Release PO,Doretta
+1969,normal,Post GR,Carmella
+1969,normal,Post IR,Roy
+1969,normal,Pay,Elisha
 1970,normal,Create PR,Keven
 1970,normal,Release PR,Donald
 1970,normal,Create PO,Alyce
@@ -15853,16 +15853,16 @@ traceid,label,activity,user
 1980,normal,Post GR,Tiffiny
 1980,normal,Post IR,Roy
 1980,normal,Pay,Elisha
-1981,anomaly,Create SC,Alyce
-1981,anomaly,Purchase SC,Jamika
-1981,anomaly,Approve SC,Micheline
-1981,anomaly,Create PO,Doretta
-1981,anomaly,Approve PO 1,Steve
-1981,anomaly,Approve PO 2,Roy
-1981,anomaly,Release PO,Sherell
-1981,anomaly,Post GR,Anna
-1981,anomaly,Post IR,Roy
-1981,anomaly,Pay,Vickie
+1981,normal,Create SC,Alyce
+1981,normal,Purchase SC,Jamika
+1981,normal,Approve SC,Micheline
+1981,normal,Create PO,Doretta
+1981,normal,Approve PO 1,Steve
+1981,normal,Approve PO 2,Roy
+1981,normal,Release PO,Sherell
+1981,normal,Post GR,Anna
+1981,normal,Post IR,Roy
+1981,normal,Pay,Vickie
 1982,anomaly,Create SC,Alyce
 1982,anomaly,Purchase SC,Paul
 1982,anomaly,Approve SC,Sandra
@@ -15942,14 +15942,14 @@ traceid,label,activity,user
 1991,normal,Post GR,Carmella
 1991,normal,Post IR,Roy
 1991,normal,Pay,Elisha
-1992,anomaly,Create PR,Keven
-1992,anomaly,Release PR,Donald
-1992,anomaly,Create PO,Lisa
-1992,anomaly,Approve PO 1,Donald
-1992,anomaly,Release PO,Della
-1992,anomaly,Post GR,Sharee
-1992,anomaly,Post IR,Chan
-1992,anomaly,Pay,Josef
+1992,normal,Create PR,Keven
+1992,normal,Release PR,Donald
+1992,normal,Create PO,Lisa
+1992,normal,Approve PO 1,Donald
+1992,normal,Release PO,Della
+1992,normal,Post GR,Sharee
+1992,normal,Post IR,Chan
+1992,normal,Pay,Josef
 1993,normal,Create PR,Keven
 1993,normal,Release PR,Donald
 1993,normal,Create PO,Ling
@@ -16098,14 +16098,14 @@ traceid,label,activity,user
 2011,anomaly,Approve PO 2,Emily
 2011,anomaly,Post IR,Roy
 2011,anomaly,Pay,Vickie
-2012,anomaly,Create SC,Ling
-2012,anomaly,Purchase SC,Grayce
-2012,anomaly,Approve SC,Micheline
-2012,anomaly,Create PO,Josef
-2012,anomaly,Release PO,Grayce
-2012,anomaly,Post GR,Anna
-2012,anomaly,Post IR,Roy
-2012,anomaly,Pay,Elisha
+2012,normal,Create SC,Ling
+2012,normal,Purchase SC,Grayce
+2012,normal,Approve SC,Micheline
+2012,normal,Create PO,Josef
+2012,normal,Release PO,Grayce
+2012,normal,Post GR,Anna
+2012,normal,Post IR,Roy
+2012,normal,Pay,Elisha
 2013,normal,Create PR,Keven
 2013,normal,Release PR,Donald
 2013,normal,Create PO,Alyce
@@ -16205,26 +16205,26 @@ traceid,label,activity,user
 2025,normal,Post GR,Anna
 2025,normal,Post IR,Chan
 2025,normal,Pay,Josef
-2026,anomaly,Create PR,Keven
-2026,anomaly,Release PR,Donald
-2026,anomaly,Create PO,Ling
-2026,anomaly,Approve PO 1,Steve
-2026,anomaly,Approve PO 2,Carmella
-2026,anomaly,Approve PO 3,Della
-2026,anomaly,Release PO,Junior
-2026,anomaly,Post GR,Jin
-2026,anomaly,Post IR,Roy
-2026,anomaly,Pay,Lourdes
-2027,anomaly,Create SC,Craig
-2027,anomaly,Purchase SC,Paul
-2027,anomaly,Approve SC,Micheline
-2027,anomaly,Create PO,Sonia
-2027,anomaly,Approve PO 1,Earl
-2027,anomaly,Approve PO 2,Elisha
-2027,anomaly,Release PO,Della
-2027,anomaly,Post GR,James
-2027,anomaly,Post IR,Roy
-2027,anomaly,Pay,Jack
+2026,normal,Create PR,Keven
+2026,normal,Release PR,Donald
+2026,normal,Create PO,Ling
+2026,normal,Approve PO 1,Steve
+2026,normal,Approve PO 2,Carmella
+2026,normal,Approve PO 3,Della
+2026,normal,Release PO,Junior
+2026,normal,Post GR,Jin
+2026,normal,Post IR,Roy
+2026,normal,Pay,Lourdes
+2027,normal,Create SC,Craig
+2027,normal,Purchase SC,Paul
+2027,normal,Approve SC,Micheline
+2027,normal,Create PO,Sonia
+2027,normal,Approve PO 1,Earl
+2027,normal,Approve PO 2,Elisha
+2027,normal,Release PO,Della
+2027,normal,Post GR,James
+2027,normal,Post IR,Roy
+2027,normal,Pay,Jack
 2028,anomaly,Create PR,Keven
 2028,anomaly,Release PR,Donald
 2028,anomaly,Post GR,James
@@ -16283,14 +16283,14 @@ traceid,label,activity,user
 2035,normal,Post GR,Lourdes
 2035,normal,Post IR,Roy
 2035,normal,Pay,Elisha
-2036,anomaly,Create SC,Alyce
-2036,anomaly,Purchase SC,Hassie
-2036,anomaly,Approve SC,Micheline
-2036,anomaly,Create PO,Elisha
-2036,anomaly,Release PO,Carmella
-2036,anomaly,Post GR,James
-2036,anomaly,Post IR,Roy
-2036,anomaly,Pay,Elisha
+2036,normal,Create SC,Alyce
+2036,normal,Purchase SC,Hassie
+2036,normal,Approve SC,Micheline
+2036,normal,Create PO,Elisha
+2036,normal,Release PO,Carmella
+2036,normal,Post GR,James
+2036,normal,Post IR,Roy
+2036,normal,Pay,Elisha
 2037,normal,Create SC,Alyce
 2037,normal,Purchase SC,Hassie
 2037,normal,Approve SC,Sandra
@@ -16715,14 +16715,14 @@ traceid,label,activity,user
 2088,normal,Post GR,Anna
 2088,normal,Post IR,Chan
 2088,normal,Pay,Josef
-2089,anomaly,Create PR,Keven
-2089,anomaly,Release PR,Roy
-2089,anomaly,Create PO,Ling
-2089,anomaly,Approve PO 1,Johnny
-2089,anomaly,Release PO,Della
-2089,anomaly,Post GR,Carmella
-2089,anomaly,Post IR,Roy
-2089,anomaly,Pay,Vickie
+2089,normal,Create PR,Keven
+2089,normal,Release PR,Roy
+2089,normal,Create PO,Ling
+2089,normal,Approve PO 1,Johnny
+2089,normal,Release PO,Della
+2089,normal,Post GR,Carmella
+2089,normal,Post IR,Roy
+2089,normal,Pay,Vickie
 2090,normal,Create SC,Alyce
 2090,normal,Purchase SC,Lucy
 2090,normal,Approve SC,Sandra
@@ -16731,13 +16731,13 @@ traceid,label,activity,user
 2090,normal,Post GR,Jin
 2090,normal,Post IR,Chan
 2090,normal,Pay,Josef
-2091,anomaly,Create PR,Hannah
-2091,anomaly,Release PR,Donald
-2091,anomaly,Create PO,Alyce
-2091,anomaly,Release PO,James
-2091,anomaly,Post GR,James
-2091,anomaly,Post IR,Chan
-2091,anomaly,Pay,Jin
+2091,normal,Create PR,Hannah
+2091,normal,Release PR,Donald
+2091,normal,Create PO,Alyce
+2091,normal,Release PO,James
+2091,normal,Post GR,James
+2091,normal,Post IR,Chan
+2091,normal,Pay,Jin
 2092,normal,Create PR,Keven
 2092,normal,Release PR,Donald
 2092,normal,Create PO,Alyce
@@ -16770,14 +16770,14 @@ traceid,label,activity,user
 2095,normal,Post GR,James
 2095,normal,Post IR,Chan
 2095,normal,Pay,Josef
-2096,anomaly,Create SC,Alyce
-2096,anomaly,Purchase SC,Lucy
-2096,anomaly,Approve SC,Frances
-2096,anomaly,Create PO,Josef
-2096,anomaly,Release PO,Shandi
-2096,anomaly,Post GR,Sherlene
-2096,anomaly,Post IR,Chan
-2096,anomaly,Pay,Josef
+2096,normal,Create SC,Alyce
+2096,normal,Purchase SC,Lucy
+2096,normal,Approve SC,Frances
+2096,normal,Create PO,Josef
+2096,normal,Release PO,Shandi
+2096,normal,Post GR,Sherlene
+2096,normal,Post IR,Chan
+2096,normal,Pay,Josef
 2097,normal,Create PR,Keven
 2097,normal,Release PR,Donald
 2097,normal,Create PO,Ling
@@ -16955,13 +16955,13 @@ traceid,label,activity,user
 2119,normal,Post GR,Keven
 2119,normal,Post IR,Roy
 2119,normal,Pay,Vickie
-2120,anomaly,Create PR,Keven
-2120,anomaly,Release PR,Donald
-2120,anomaly,Create PO,Alyce
-2120,anomaly,Release PO,Shandi
-2120,anomaly,Post GR,Anna
-2120,anomaly,Post IR,Velda
-2120,anomaly,Pay,Elisha
+2120,normal,Create PR,Keven
+2120,normal,Release PR,Donald
+2120,normal,Create PO,Alyce
+2120,normal,Release PO,Shandi
+2120,normal,Post GR,Anna
+2120,normal,Post IR,Velda
+2120,normal,Pay,Elisha
 2121,normal,Create PR,Keven
 2121,normal,Release PR,Donald
 2121,normal,Create PO,Josef
@@ -17185,13 +17185,13 @@ traceid,label,activity,user
 2148,normal,Post GR,Lourdes
 2148,normal,Post IR,Roy
 2148,normal,Pay,Elisha
-2149,anomaly,Create PR,Keven
-2149,anomaly,Release PR,Donald
-2149,anomaly,Create PO,Alyce
-2149,anomaly,Release PO,Craig
-2149,anomaly,Post GR,Keven
-2149,anomaly,Post IR,Chan
-2149,anomaly,Pay,Deloras
+2149,normal,Create PR,Keven
+2149,normal,Release PR,Donald
+2149,normal,Create PO,Alyce
+2149,normal,Release PO,Craig
+2149,normal,Post GR,Keven
+2149,normal,Post IR,Chan
+2149,normal,Pay,Deloras
 2150,normal,Create PR,Keven
 2150,normal,Release PR,Donald
 2150,normal,Create PO,Howard
@@ -17537,13 +17537,13 @@ traceid,label,activity,user
 2192,normal,Post GR,James
 2192,normal,Post IR,Roy
 2192,normal,Pay,Elisha
-2193,anomaly,Create PR,Sigrid
-2193,anomaly,Release PR,Donald
-2193,anomaly,Create PO,Howard
-2193,anomaly,Release PO,Hugo
-2193,anomaly,Post GR,Keven
-2193,anomaly,Post IR,Roy
-2193,anomaly,Pay,Donald
+2193,normal,Create PR,Sigrid
+2193,normal,Release PR,Donald
+2193,normal,Create PO,Howard
+2193,normal,Release PO,Hugo
+2193,normal,Post GR,Keven
+2193,normal,Post IR,Roy
+2193,normal,Pay,Donald
 2194,anomaly,Create PR,Keven
 2194,anomaly,Random activity 7,Random user 24
 2194,anomaly,Release PR,Donald
@@ -17856,15 +17856,15 @@ traceid,label,activity,user
 2234,normal,Post GR,Anna
 2234,normal,Post IR,Roy
 2234,normal,Pay,Vickie
-2235,anomaly,Create PR,Keven
-2235,anomaly,Release PR,Donald
-2235,anomaly,Create PO,Ling
-2235,anomaly,Approve PO 1,Evelin
-2235,anomaly,Approve PO 2,Elisha
-2235,anomaly,Release PO,Della
-2235,anomaly,Post GR,Jin
-2235,anomaly,Post IR,Chan
-2235,anomaly,Pay,Josef
+2235,normal,Create PR,Keven
+2235,normal,Release PR,Donald
+2235,normal,Create PO,Ling
+2235,normal,Approve PO 1,Evelin
+2235,normal,Approve PO 2,Elisha
+2235,normal,Release PO,Della
+2235,normal,Post GR,Jin
+2235,normal,Post IR,Chan
+2235,normal,Pay,Josef
 2236,normal,Create PR,Keven
 2236,normal,Release PR,Donald
 2236,normal,Create PO,Josef
@@ -17950,13 +17950,13 @@ traceid,label,activity,user
 2245,anomaly,Post GR,Anna
 2245,anomaly,Post IR,Roy
 2245,anomaly,Pay,Vickie
-2246,anomaly,Create PR,Keven
-2246,anomaly,Release PR,Donald
-2246,anomaly,Create PO,Howard
-2246,anomaly,Release PO,Lucy
-2246,anomaly,Post GR,Anna
-2246,anomaly,Post IR,Rossie
-2246,anomaly,Pay,Josef
+2246,normal,Create PR,Keven
+2246,normal,Release PR,Donald
+2246,normal,Create PO,Howard
+2246,normal,Release PO,Lucy
+2246,normal,Post GR,Anna
+2246,normal,Post IR,Rossie
+2246,normal,Pay,Josef
 2247,normal,Create SC,Alyce
 2247,normal,Purchase SC,Lucy
 2247,normal,Approve SC,Micheline
@@ -18892,21 +18892,21 @@ traceid,label,activity,user
 2362,anomaly,Post GR,Carmella
 2362,anomaly,Post IR,Roy
 2362,anomaly,Pay,Elisha
-2363,anomaly,Create SC,Alyce
-2363,anomaly,Purchase SC,Lucy
-2363,anomaly,Approve SC,Sandra
-2363,anomaly,Create PO,Josef
-2363,anomaly,Release PO,Elisha
-2363,anomaly,Post GR,Anna
-2363,anomaly,Post IR,Chan
-2363,anomaly,Pay,Josef
-2364,anomaly,Create PR,Keven
-2364,anomaly,Release PR,Donald
-2364,anomaly,Create PO,Howard
-2364,anomaly,Release PO,Elisha
-2364,anomaly,Post GR,Anna
-2364,anomaly,Post IR,Chan
-2364,anomaly,Pay,Josef
+2363,normal,Create SC,Alyce
+2363,normal,Purchase SC,Lucy
+2363,normal,Approve SC,Sandra
+2363,normal,Create PO,Josef
+2363,normal,Release PO,Elisha
+2363,normal,Post GR,Anna
+2363,normal,Post IR,Chan
+2363,normal,Pay,Josef
+2364,normal,Create PR,Keven
+2364,normal,Release PR,Donald
+2364,normal,Create PO,Howard
+2364,normal,Release PO,Elisha
+2364,normal,Post GR,Anna
+2364,normal,Post IR,Chan
+2364,normal,Pay,Josef
 2365,anomaly,Create PR,Keven
 2365,anomaly,Release PO,Elisha
 2365,anomaly,Post GR,Anna
@@ -18921,13 +18921,13 @@ traceid,label,activity,user
 2366,normal,Post GR,Tiffiny
 2366,normal,Post IR,Roy
 2366,normal,Pay,Vickie
-2367,anomaly,Create PR,Keven
-2367,anomaly,Release PR,Donald
-2367,anomaly,Create PO,Alyce
-2367,anomaly,Release PO,Carmella
-2367,anomaly,Post GR,Lisa
-2367,anomaly,Post IR,Roy
-2367,anomaly,Pay,Vickie
+2367,normal,Create PR,Keven
+2367,normal,Release PR,Donald
+2367,normal,Create PO,Alyce
+2367,normal,Release PO,Carmella
+2367,normal,Post GR,Lisa
+2367,normal,Post IR,Roy
+2367,normal,Pay,Vickie
 2368,normal,Create PR,Keven
 2368,normal,Release PR,Donald
 2368,normal,Create PO,Ling
@@ -19062,13 +19062,13 @@ traceid,label,activity,user
 2384,normal,Post GR,Anna
 2384,normal,Post IR,Roy
 2384,normal,Pay,Vickie
-2385,anomaly,Create PR,Keven
-2385,anomaly,Release PR,Donald
-2385,anomaly,Create PO,Alyce
-2385,anomaly,Release PO,Elisha
-2385,anomaly,Post GR,Anna
-2385,anomaly,Post IR,Chan
-2385,anomaly,Pay,Josef
+2385,normal,Create PR,Keven
+2385,normal,Release PR,Donald
+2385,normal,Create PO,Alyce
+2385,normal,Release PO,Elisha
+2385,normal,Post GR,Anna
+2385,normal,Post IR,Chan
+2385,normal,Pay,Josef
 2386,normal,Create PR,Keven
 2386,normal,Release PR,Donald
 2386,normal,Create PO,Alyce
@@ -19253,15 +19253,15 @@ traceid,label,activity,user
 2408,anomaly,Post IR,Roy
 2408,anomaly,Release PO,Carmella
 2408,anomaly,Pay,Elisha
-2409,anomaly,Create PR,Keven
-2409,anomaly,Release PR,Donald
-2409,anomaly,Create PO,Ling
-2409,anomaly,Approve PO 1,Evelin
-2409,anomaly,Approve PO 2,Paul
-2409,anomaly,Release PO,Jack
-2409,anomaly,Post GR,Jin
-2409,anomaly,Post IR,Keven
-2409,anomaly,Pay,Elisha
+2409,normal,Create PR,Keven
+2409,normal,Release PR,Donald
+2409,normal,Create PO,Ling
+2409,normal,Approve PO 1,Evelin
+2409,normal,Approve PO 2,Paul
+2409,normal,Release PO,Jack
+2409,normal,Post GR,Jin
+2409,normal,Post IR,Keven
+2409,normal,Pay,Elisha
 2410,anomaly,Create PR,Keven
 2410,anomaly,Release PR,Donald
 2410,anomaly,Release PO,Hugo
@@ -19341,14 +19341,14 @@ traceid,label,activity,user
 2419,anomaly,Release PO,Carmella
 2419,anomaly,Post IR,Roy
 2419,anomaly,Pay,Elisha
-2420,anomaly,Create PR,Keven
-2420,anomaly,Release PR,Donald
-2420,anomaly,Create PO,Josef
-2420,anomaly,Approve PO 1,Donald
-2420,anomaly,Release PO,Della
-2420,anomaly,Post GR,Keven
-2420,anomaly,Post IR,Roy
-2420,anomaly,Pay,Elisha
+2420,normal,Create PR,Keven
+2420,normal,Release PR,Donald
+2420,normal,Create PO,Josef
+2420,normal,Approve PO 1,Donald
+2420,normal,Release PO,Della
+2420,normal,Post GR,Keven
+2420,normal,Post IR,Roy
+2420,normal,Pay,Elisha
 2421,normal,Create PR,Keven
 2421,normal,Release PR,Donald
 2421,normal,Create PO,Alyce
@@ -19380,13 +19380,13 @@ traceid,label,activity,user
 2424,normal,Post GR,Jin
 2424,normal,Post IR,Chan
 2424,normal,Pay,Josef
-2425,anomaly,Create PR,Keven
-2425,anomaly,Release PR,Donald
-2425,anomaly,Create PO,Alyce
-2425,anomaly,Release PO,Ronald
-2425,anomaly,Post GR,Michaele
-2425,anomaly,Post IR,Roy
-2425,anomaly,Pay,Vickie
+2425,normal,Create PR,Keven
+2425,normal,Release PR,Donald
+2425,normal,Create PO,Alyce
+2425,normal,Release PO,Ronald
+2425,normal,Post GR,Michaele
+2425,normal,Post IR,Roy
+2425,normal,Pay,Vickie
 2426,anomaly,Release PR,Donald
 2426,anomaly,Create PO,Alyce
 2426,anomaly,Release PO,Elisha
@@ -19439,16 +19439,16 @@ traceid,label,activity,user
 2432,normal,Post GR,Tiffiny
 2432,normal,Post IR,Roy
 2432,normal,Pay,Elisha
-2433,anomaly,Create SC,Alyce
-2433,anomaly,Purchase SC,Hassie
-2433,anomaly,Approve SC,Micheline
-2433,anomaly,Create PO,Sonia
-2433,anomaly,Approve PO 1,Steve
-2433,anomaly,Approve PO 2,Iluminada
-2433,anomaly,Release PO,Elisha
-2433,anomaly,Post GR,Anna
-2433,anomaly,Post IR,Della
-2433,anomaly,Pay,Josef
+2433,normal,Create SC,Alyce
+2433,normal,Purchase SC,Hassie
+2433,normal,Approve SC,Micheline
+2433,normal,Create PO,Sonia
+2433,normal,Approve PO 1,Steve
+2433,normal,Approve PO 2,Iluminada
+2433,normal,Release PO,Elisha
+2433,normal,Post GR,Anna
+2433,normal,Post IR,Della
+2433,normal,Pay,Josef
 2434,normal,Create PR,Keven
 2434,normal,Release PR,Donald
 2434,normal,Create PO,Howard
@@ -19470,13 +19470,13 @@ traceid,label,activity,user
 2436,normal,Post GR,Anna
 2436,normal,Post IR,Chan
 2436,normal,Pay,Josef
-2437,anomaly,Create PR,Keven
-2437,anomaly,Release PR,Donald
-2437,anomaly,Create PO,Alyce
-2437,anomaly,Release PO,Craig
-2437,anomaly,Post GR,James
-2437,anomaly,Post IR,Chan
-2437,anomaly,Pay,Josef
+2437,normal,Create PR,Keven
+2437,normal,Release PR,Donald
+2437,normal,Create PO,Alyce
+2437,normal,Release PO,Craig
+2437,normal,Post GR,James
+2437,normal,Post IR,Chan
+2437,normal,Pay,Josef
 2438,normal,Create SC,Alyce
 2438,normal,Purchase SC,Lucy
 2438,normal,Approve SC,Sandra
@@ -19751,14 +19751,14 @@ traceid,label,activity,user
 2471,normal,Post GR,Anna
 2471,normal,Post IR,Chan
 2471,normal,Pay,Josef
-2472,anomaly,Create SC,Alyce
-2472,anomaly,Purchase SC,Lucy
-2472,anomaly,Approve SC,Micheline
-2472,anomaly,Create PO,Josef
-2472,anomaly,Release PO,Craig
-2472,anomaly,Post GR,Keven
-2472,anomaly,Post IR,Roy
-2472,anomaly,Pay,Vickie
+2472,normal,Create SC,Alyce
+2472,normal,Purchase SC,Lucy
+2472,normal,Approve SC,Micheline
+2472,normal,Create PO,Josef
+2472,normal,Release PO,Craig
+2472,normal,Post GR,Keven
+2472,normal,Post IR,Roy
+2472,normal,Pay,Vickie
 2473,anomaly,Create PR,Keven
 2473,anomaly,Release PR,Donald
 2473,anomaly,Create PO,Alyce
@@ -19838,13 +19838,13 @@ traceid,label,activity,user
 2481,normal,Post GR,Lourdes
 2481,normal,Post IR,Roy
 2481,normal,Pay,Elisha
-2482,anomaly,Create PR,Keven
-2482,anomaly,Release PR,Donald
-2482,anomaly,Create PO,Alyce
-2482,anomaly,Release PO,Craig
-2482,anomaly,Post GR,Evelin
-2482,anomaly,Post IR,Chan
-2482,anomaly,Pay,Josef
+2482,normal,Create PR,Keven
+2482,normal,Release PR,Donald
+2482,normal,Create PO,Alyce
+2482,normal,Release PO,Craig
+2482,normal,Post GR,Evelin
+2482,normal,Post IR,Chan
+2482,normal,Pay,Josef
 2483,normal,Create PR,Keven
 2483,normal,Release PR,Donald
 2483,normal,Create PO,Alyce
@@ -20072,13 +20072,13 @@ traceid,label,activity,user
 2510,normal,Post GR,Anna
 2510,normal,Post IR,Chan
 2510,normal,Pay,Josef
-2511,anomaly,Create PR,Keven
-2511,anomaly,Release PR,Donald
-2511,anomaly,Create PO,Donald
-2511,anomaly,Release PO,Hassie
-2511,anomaly,Post GR,Anna
-2511,anomaly,Post IR,Roy
-2511,anomaly,Pay,Elisha
+2511,normal,Create PR,Keven
+2511,normal,Release PR,Donald
+2511,normal,Create PO,Donald
+2511,normal,Release PO,Hassie
+2511,normal,Post GR,Anna
+2511,normal,Post IR,Roy
+2511,normal,Pay,Elisha
 2512,anomaly,Create SC,Alyce
 2512,anomaly,Purchase SC,Lucy
 2512,anomaly,Approve SC,Micheline
@@ -20267,13 +20267,13 @@ traceid,label,activity,user
 2535,normal,Post GR,James
 2535,normal,Post IR,Roy
 2535,normal,Pay,Vickie
-2536,anomaly,Create PR,Keven
-2536,anomaly,Release PR,Donald
-2536,anomaly,Create PO,Alyce
-2536,anomaly,Release PO,Roseanne
-2536,anomaly,Post GR,James
-2536,anomaly,Post IR,Chan
-2536,anomaly,Pay,Josef
+2536,normal,Create PR,Keven
+2536,normal,Release PR,Donald
+2536,normal,Create PO,Alyce
+2536,normal,Release PO,Roseanne
+2536,normal,Post GR,James
+2536,normal,Post IR,Chan
+2536,normal,Pay,Josef
 2537,normal,Create PR,Keven
 2537,normal,Release PR,Donald
 2537,normal,Create PO,Alyce
@@ -20390,13 +20390,13 @@ traceid,label,activity,user
 2551,anomaly,Post GR,Keven
 2551,anomaly,Post IR,Roy
 2551,anomaly,Pay,Vickie
-2552,anomaly,Create PR,Jin
-2552,anomaly,Release PR,Donald
-2552,anomaly,Create PO,Frances
-2552,anomaly,Release PO,Carmella
-2552,anomaly,Post GR,Jin
-2552,anomaly,Post IR,Roy
-2552,anomaly,Pay,Vickie
+2552,normal,Create PR,Jin
+2552,normal,Release PR,Donald
+2552,normal,Create PO,Frances
+2552,normal,Release PO,Carmella
+2552,normal,Post GR,Jin
+2552,normal,Post IR,Roy
+2552,normal,Pay,Vickie
 2553,normal,Create PR,Keven
 2553,normal,Release PR,Donald
 2553,normal,Create PO,Alyce
@@ -20537,15 +20537,15 @@ traceid,label,activity,user
 2569,normal,Post GR,Jin
 2569,normal,Post IR,Roy
 2569,normal,Pay,Elisha
-2570,anomaly,Create PR,Keven
-2570,anomaly,Release PR,Donald
-2570,anomaly,Create PO,Josef
-2570,anomaly,Approve PO 1,Evelin
-2570,anomaly,Approve PO 2,Elisha
-2570,anomaly,Release PO,Della
-2570,anomaly,Post GR,Keven
-2570,anomaly,Post IR,Sharee
-2570,anomaly,Pay,Vickie
+2570,normal,Create PR,Keven
+2570,normal,Release PR,Donald
+2570,normal,Create PO,Josef
+2570,normal,Approve PO 1,Evelin
+2570,normal,Approve PO 2,Elisha
+2570,normal,Release PO,Della
+2570,normal,Post GR,Keven
+2570,normal,Post IR,Sharee
+2570,normal,Pay,Vickie
 2571,normal,Create PR,Keven
 2571,normal,Release PR,Donald
 2571,normal,Create PO,Lisa
@@ -20676,22 +20676,22 @@ traceid,label,activity,user
 2586,normal,Post GR,James
 2586,normal,Post IR,Chan
 2586,normal,Pay,Josef
-2587,anomaly,Create SC,Alyce
-2587,anomaly,Purchase SC,Lucy
-2587,anomaly,Approve SC,Sandra
-2587,anomaly,Create PO,Josef
-2587,anomaly,Release PO,Carmella
-2587,anomaly,Post GR,Keven
-2587,anomaly,Post IR,Roy
-2587,anomaly,Pay,Vickie
-2588,anomaly,Create PR,Keven
-2588,anomaly,Release PR,Donald
-2588,anomaly,Create PO,Ling
-2588,anomaly,Approve PO 1,Donald
-2588,anomaly,Release PO,Della
-2588,anomaly,Post GR,Keven
-2588,anomaly,Post IR,Roy
-2588,anomaly,Pay,Elisha
+2587,normal,Create SC,Alyce
+2587,normal,Purchase SC,Lucy
+2587,normal,Approve SC,Sandra
+2587,normal,Create PO,Josef
+2587,normal,Release PO,Carmella
+2587,normal,Post GR,Keven
+2587,normal,Post IR,Roy
+2587,normal,Pay,Vickie
+2588,normal,Create PR,Keven
+2588,normal,Release PR,Donald
+2588,normal,Create PO,Ling
+2588,normal,Approve PO 1,Donald
+2588,normal,Release PO,Della
+2588,normal,Post GR,Keven
+2588,normal,Post IR,Roy
+2588,normal,Pay,Elisha
 2589,anomaly,Create PR,Keven
 2589,anomaly,Release PO,Della
 2589,anomaly,Post GR,Keven
@@ -21214,14 +21214,14 @@ traceid,label,activity,user
 2655,normal,Post GR,Anna
 2655,normal,Post IR,Roy
 2655,normal,Pay,Vickie
-2656,anomaly,Create SC,Alyce
-2656,anomaly,Purchase SC,Lucy
-2656,anomaly,Approve SC,Micheline
-2656,anomaly,Create PO,Josef
-2656,anomaly,Release PO,Carmella
-2656,anomaly,Post GR,James
-2656,anomaly,Post IR,Roy
-2656,anomaly,Pay,Elisha
+2656,normal,Create SC,Alyce
+2656,normal,Purchase SC,Lucy
+2656,normal,Approve SC,Micheline
+2656,normal,Create PO,Josef
+2656,normal,Release PO,Carmella
+2656,normal,Post GR,James
+2656,normal,Post IR,Roy
+2656,normal,Pay,Elisha
 2657,anomaly,Create PR,Keven
 2657,anomaly,Release PR,Donald
 2657,anomaly,Create PO,Alyce
@@ -21280,13 +21280,13 @@ traceid,label,activity,user
 2663,anomaly,Post GR,Keven
 2663,anomaly,Post IR,Chan
 2663,anomaly,Pay,Josef
-2664,anomaly,Create PR,Paul
-2664,anomaly,Release PR,Donald
-2664,anomaly,Create PO,Alyce
-2664,anomaly,Release PO,Carmella
-2664,anomaly,Post GR,James
-2664,anomaly,Post IR,Chan
-2664,anomaly,Pay,Josef
+2664,normal,Create PR,Paul
+2664,normal,Release PR,Donald
+2664,normal,Create PO,Alyce
+2664,normal,Release PO,Carmella
+2664,normal,Post GR,James
+2664,normal,Post IR,Chan
+2664,normal,Pay,Josef
 2665,normal,Create SC,Alyce
 2665,normal,Purchase SC,Lucy
 2665,normal,Approve SC,Micheline
@@ -21303,13 +21303,13 @@ traceid,label,activity,user
 2666,normal,Post GR,Lourdes
 2666,normal,Post IR,Chan
 2666,normal,Pay,Josef
-2667,anomaly,Create PR,Keven
-2667,anomaly,Release PR,Donald
-2667,anomaly,Create PO,Alyce
-2667,anomaly,Release PO,Craig
-2667,anomaly,Post GR,Keven
-2667,anomaly,Post IR,Roy
-2667,anomaly,Pay,Elisha
+2667,normal,Create PR,Keven
+2667,normal,Release PR,Donald
+2667,normal,Create PO,Alyce
+2667,normal,Release PO,Craig
+2667,normal,Post GR,Keven
+2667,normal,Post IR,Roy
+2667,normal,Pay,Elisha
 2668,normal,Create SC,Alyce
 2668,normal,Purchase SC,Hassie
 2668,normal,Approve SC,Sandra
@@ -21318,13 +21318,13 @@ traceid,label,activity,user
 2668,normal,Post GR,Anna
 2668,normal,Post IR,Roy
 2668,normal,Pay,Elisha
-2669,anomaly,Create PR,Keven
-2669,anomaly,Release PR,Donald
-2669,anomaly,Create PO,Alyce
-2669,anomaly,Release PO,Hugo
-2669,anomaly,Post GR,Brant
-2669,anomaly,Post IR,Roy
-2669,anomaly,Pay,Elisha
+2669,normal,Create PR,Keven
+2669,normal,Release PR,Donald
+2669,normal,Create PO,Alyce
+2669,normal,Release PO,Hugo
+2669,normal,Post GR,Brant
+2669,normal,Post IR,Roy
+2669,normal,Pay,Elisha
 2670,anomaly,Create SC,Alyce
 2670,anomaly,Purchase SC,Paul
 2670,anomaly,Approve SC,Micheline
@@ -21482,15 +21482,15 @@ traceid,label,activity,user
 2687,anomaly,Post GR,Keven
 2687,anomaly,Post IR,Roy
 2687,anomaly,Pay,Vickie
-2688,anomaly,Create PR,Keven
-2688,anomaly,Release PR,Sonia
-2688,anomaly,Create PO,Ling
-2688,anomaly,Approve PO 1,Clayton
-2688,anomaly,Approve PO 2,Elisha
-2688,anomaly,Release PO,Della
-2688,anomaly,Post GR,James
-2688,anomaly,Post IR,Roy
-2688,anomaly,Pay,Elisha
+2688,normal,Create PR,Keven
+2688,normal,Release PR,Sonia
+2688,normal,Create PO,Ling
+2688,normal,Approve PO 1,Clayton
+2688,normal,Approve PO 2,Elisha
+2688,normal,Release PO,Della
+2688,normal,Post GR,James
+2688,normal,Post IR,Roy
+2688,normal,Pay,Elisha
 2689,anomaly,Random activity 9,Random user 16
 2689,anomaly,Create PR,Keven
 2689,anomaly,Release PR,Donald
@@ -21980,14 +21980,14 @@ traceid,label,activity,user
 2750,normal,Post GR,Keven
 2750,normal,Post IR,Chan
 2750,normal,Pay,Josef
-2751,anomaly,Create SC,Alyce
-2751,anomaly,Purchase SC,Brian
-2751,anomaly,Approve SC,Micheline
-2751,anomaly,Create PO,Josef
-2751,anomaly,Release PO,Michaele
-2751,anomaly,Post GR,Anna
-2751,anomaly,Post IR,Roy
-2751,anomaly,Pay,Deloras
+2751,normal,Create SC,Alyce
+2751,normal,Purchase SC,Brian
+2751,normal,Approve SC,Micheline
+2751,normal,Create PO,Josef
+2751,normal,Release PO,Michaele
+2751,normal,Post GR,Anna
+2751,normal,Post IR,Roy
+2751,normal,Pay,Deloras
 2752,normal,Create PR,Keven
 2752,normal,Release PR,Donald
 2752,normal,Create PO,Alyce
@@ -22150,14 +22150,14 @@ traceid,label,activity,user
 2772,normal,Post GR,Lourdes
 2772,normal,Post IR,Roy
 2772,normal,Pay,Elisha
-2773,anomaly,Create SC,Seth
-2773,anomaly,Purchase SC,Lucy
-2773,anomaly,Approve SC,Sandra
-2773,anomaly,Create PO,Evelin
-2773,anomaly,Release PO,Carmella
-2773,anomaly,Post GR,James
-2773,anomaly,Post IR,Emily
-2773,anomaly,Pay,Vickie
+2773,normal,Create SC,Seth
+2773,normal,Purchase SC,Lucy
+2773,normal,Approve SC,Sandra
+2773,normal,Create PO,Evelin
+2773,normal,Release PO,Carmella
+2773,normal,Post GR,James
+2773,normal,Post IR,Emily
+2773,normal,Pay,Vickie
 2774,normal,Create PR,Keven
 2774,normal,Release PR,Donald
 2774,normal,Create PO,Alyce
@@ -22226,13 +22226,13 @@ traceid,label,activity,user
 2782,normal,Post GR,Anna
 2782,normal,Post IR,Roy
 2782,normal,Pay,Vickie
-2783,anomaly,Create PR,Keven
-2783,anomaly,Release PR,Donald
-2783,anomaly,Create PO,Alyce
-2783,anomaly,Release PO,Craig
-2783,anomaly,Post GR,James
-2783,anomaly,Post IR,Grayce
-2783,anomaly,Pay,Ryan
+2783,normal,Create PR,Keven
+2783,normal,Release PR,Donald
+2783,normal,Create PO,Alyce
+2783,normal,Release PO,Craig
+2783,normal,Post GR,James
+2783,normal,Post IR,Grayce
+2783,normal,Pay,Ryan
 2784,anomaly,Create PR,Keven
 2784,anomaly,Release PO,Elisha
 2784,anomaly,Post GR,Anna
@@ -22264,16 +22264,16 @@ traceid,label,activity,user
 2787,normal,Post GR,Lourdes
 2787,normal,Post IR,Chan
 2787,normal,Pay,Josef
-2788,anomaly,Create PR,Keven
-2788,anomaly,Release PR,Donald
-2788,anomaly,Create PO,Ling
-2788,anomaly,Approve PO 1,Steve
-2788,anomaly,Approve PO 2,Jamika
-2788,anomaly,Approve PO 3,Della
-2788,anomaly,Release PO,Junior
-2788,anomaly,Post GR,Carmella
-2788,anomaly,Post IR,Chan
-2788,anomaly,Pay,Josef
+2788,normal,Create PR,Keven
+2788,normal,Release PR,Donald
+2788,normal,Create PO,Ling
+2788,normal,Approve PO 1,Steve
+2788,normal,Approve PO 2,Jamika
+2788,normal,Approve PO 3,Della
+2788,normal,Release PO,Junior
+2788,normal,Post GR,Carmella
+2788,normal,Post IR,Chan
+2788,normal,Pay,Josef
 2789,normal,Create SC,Alyce
 2789,normal,Purchase SC,Paul
 2789,normal,Approve SC,Sandra
@@ -22365,15 +22365,15 @@ traceid,label,activity,user
 2799,anomaly,Random activity 9,Random user 1
 2799,anomaly,Post IR,Roy
 2799,anomaly,Pay,Vickie
-2800,anomaly,Create PR,Keven
-2800,anomaly,Release PR,Steve
-2800,anomaly,Create PO,Josef
-2800,anomaly,Approve PO 1,Clayton
-2800,anomaly,Approve PO 2,Elisha
-2800,anomaly,Release PO,Della
-2800,anomaly,Post GR,James
-2800,anomaly,Post IR,Chan
-2800,anomaly,Pay,Josef
+2800,normal,Create PR,Keven
+2800,normal,Release PR,Steve
+2800,normal,Create PO,Josef
+2800,normal,Approve PO 1,Clayton
+2800,normal,Approve PO 2,Elisha
+2800,normal,Release PO,Della
+2800,normal,Post GR,James
+2800,normal,Post IR,Chan
+2800,normal,Pay,Josef
 2801,normal,Create SC,Alyce
 2801,normal,Purchase SC,Paul
 2801,normal,Approve SC,Sandra
@@ -22454,14 +22454,14 @@ traceid,label,activity,user
 2810,normal,Post GR,Tiffiny
 2810,normal,Post IR,Chan
 2810,normal,Pay,Josef
-2811,anomaly,Create SC,Alyce
-2811,anomaly,Purchase SC,Paul
-2811,anomaly,Approve SC,Jimmy
-2811,anomaly,Create PO,Josef
-2811,anomaly,Release PO,Amanda
-2811,anomaly,Post GR,Keven
-2811,anomaly,Post IR,Roy
-2811,anomaly,Pay,Vickie
+2811,normal,Create SC,Alyce
+2811,normal,Purchase SC,Paul
+2811,normal,Approve SC,Jimmy
+2811,normal,Create PO,Josef
+2811,normal,Release PO,Amanda
+2811,normal,Post GR,Keven
+2811,normal,Post IR,Roy
+2811,normal,Pay,Vickie
 2812,normal,Create PR,Keven
 2812,normal,Release PR,Donald
 2812,normal,Create PO,Ling
@@ -22508,13 +22508,13 @@ traceid,label,activity,user
 2817,normal,Post GR,Anna
 2817,normal,Post IR,Chan
 2817,normal,Pay,Josef
-2818,anomaly,Create PR,Keven
-2818,anomaly,Release PR,Donald
-2818,anomaly,Create PO,Alyce
-2818,anomaly,Release PO,Shandi
-2818,anomaly,Post GR,Lourdes
-2818,anomaly,Post IR,Chan
-2818,anomaly,Pay,Grayce
+2818,normal,Create PR,Keven
+2818,normal,Release PR,Donald
+2818,normal,Create PO,Alyce
+2818,normal,Release PO,Shandi
+2818,normal,Post GR,Lourdes
+2818,normal,Post IR,Chan
+2818,normal,Pay,Grayce
 2819,normal,Create PR,Keven
 2819,normal,Release PR,Donald
 2819,normal,Create PO,Donald
@@ -22774,14 +22774,14 @@ traceid,label,activity,user
 2850,anomaly,Create PO,Ling
 2850,anomaly,Post IR,Chan
 2850,anomaly,Pay,Josef
-2851,anomaly,Create SC,Alyce
-2851,anomaly,Purchase SC,Hassie
-2851,anomaly,Approve SC,Micheline
-2851,anomaly,Create PO,Josef
-2851,anomaly,Release PO,Elisha
-2851,anomaly,Post GR,Anna
-2851,anomaly,Post IR,Roy
-2851,anomaly,Pay,Elisha
+2851,normal,Create SC,Alyce
+2851,normal,Purchase SC,Hassie
+2851,normal,Approve SC,Micheline
+2851,normal,Create PO,Josef
+2851,normal,Release PO,Elisha
+2851,normal,Post GR,Anna
+2851,normal,Post IR,Roy
+2851,normal,Pay,Elisha
 2852,normal,Create PR,Keven
 2852,normal,Release PR,Donald
 2852,normal,Create PO,Alyce
@@ -22805,14 +22805,14 @@ traceid,label,activity,user
 2854,normal,Post GR,Jin
 2854,normal,Post IR,Roy
 2854,normal,Pay,Elisha
-2855,anomaly,Create SC,Joe
-2855,anomaly,Purchase SC,Hassie
-2855,anomaly,Approve SC,Micheline
-2855,anomaly,Create PO,Alpha
-2855,anomaly,Release PO,Grayce
-2855,anomaly,Post GR,Sherlene
-2855,anomaly,Post IR,Chan
-2855,anomaly,Pay,Josef
+2855,normal,Create SC,Joe
+2855,normal,Purchase SC,Hassie
+2855,normal,Approve SC,Micheline
+2855,normal,Create PO,Alpha
+2855,normal,Release PO,Grayce
+2855,normal,Post GR,Sherlene
+2855,normal,Post IR,Chan
+2855,normal,Pay,Josef
 2856,normal,Create PR,Keven
 2856,normal,Release PR,Donald
 2856,normal,Create PO,Donald
@@ -22820,14 +22820,14 @@ traceid,label,activity,user
 2856,normal,Post GR,Keven
 2856,normal,Post IR,Roy
 2856,normal,Pay,Elisha
-2857,anomaly,Create SC,Vickie
-2857,anomaly,Purchase SC,Hassie
-2857,anomaly,Approve SC,Sandra
-2857,anomaly,Create PO,Evelin
-2857,anomaly,Release PO,Shandi
-2857,anomaly,Post GR,Lourdes
-2857,anomaly,Post IR,Chan
-2857,anomaly,Pay,Josef
+2857,normal,Create SC,Vickie
+2857,normal,Purchase SC,Hassie
+2857,normal,Approve SC,Sandra
+2857,normal,Create PO,Evelin
+2857,normal,Release PO,Shandi
+2857,normal,Post GR,Lourdes
+2857,normal,Post IR,Chan
+2857,normal,Pay,Josef
 2858,anomaly,Create SC,Alyce
 2858,anomaly,Purchase SC,Paul
 2858,anomaly,Approve SC,Micheline
@@ -22954,14 +22954,14 @@ traceid,label,activity,user
 2873,normal,Post GR,Carmella
 2873,normal,Post IR,Roy
 2873,normal,Pay,Vickie
-2874,anomaly,Create SC,Alyce
-2874,anomaly,Purchase SC,Paul
-2874,anomaly,Approve SC,Sandra
-2874,anomaly,Create PO,Josef
-2874,anomaly,Release PO,Shandi
-2874,anomaly,Post GR,Lourdes
-2874,anomaly,Post IR,Chan
-2874,anomaly,Pay,Josef
+2874,normal,Create SC,Alyce
+2874,normal,Purchase SC,Paul
+2874,normal,Approve SC,Sandra
+2874,normal,Create PO,Josef
+2874,normal,Release PO,Shandi
+2874,normal,Post GR,Lourdes
+2874,normal,Post IR,Chan
+2874,normal,Pay,Josef
 2875,normal,Create PR,Keven
 2875,normal,Release PR,Donald
 2875,normal,Create PO,Alyce
@@ -23183,14 +23183,14 @@ traceid,label,activity,user
 2902,normal,Post GR,Anna
 2902,normal,Post IR,Chan
 2902,normal,Pay,Josef
-2903,anomaly,Create SC,Alyce
-2903,anomaly,Purchase SC,Hassie
-2903,anomaly,Approve SC,Micheline
-2903,anomaly,Create PO,Evelin
-2903,anomaly,Release PO,Elisha
-2903,anomaly,Post GR,Anna
-2903,anomaly,Post IR,Roy
-2903,anomaly,Pay,Elisha
+2903,normal,Create SC,Alyce
+2903,normal,Purchase SC,Hassie
+2903,normal,Approve SC,Micheline
+2903,normal,Create PO,Evelin
+2903,normal,Release PO,Elisha
+2903,normal,Post GR,Anna
+2903,normal,Post IR,Roy
+2903,normal,Pay,Elisha
 2904,normal,Create PR,Keven
 2904,normal,Release PR,Donald
 2904,normal,Create PO,Donald
@@ -23415,13 +23415,13 @@ traceid,label,activity,user
 2931,anomaly,Post GR,Lourdes
 2931,anomaly,Post IR,Chan
 2931,anomaly,Pay,Josef
-2932,anomaly,Create PR,Keven
-2932,anomaly,Release PR,Donald
-2932,anomaly,Create PO,Alyce
-2932,anomaly,Release PO,Carmella
-2932,anomaly,Post GR,Tiffiny
-2932,anomaly,Post IR,Roy
-2932,anomaly,Pay,Vickie
+2932,normal,Create PR,Keven
+2932,normal,Release PR,Donald
+2932,normal,Create PO,Alyce
+2932,normal,Release PO,Carmella
+2932,normal,Post GR,Tiffiny
+2932,normal,Post IR,Roy
+2932,normal,Pay,Vickie
 2933,normal,Create PR,Keven
 2933,normal,Release PR,Donald
 2933,normal,Create PO,Alyce
@@ -23739,14 +23739,14 @@ traceid,label,activity,user
 2971,normal,Post GR,Keven
 2971,normal,Post IR,Roy
 2971,normal,Pay,Vickie
-2972,anomaly,Create PR,Keven
-2972,anomaly,Release PR,Della
-2972,anomaly,Create PO,Ling
-2972,anomaly,Approve PO 1,Donald
-2972,anomaly,Release PO,Howard
-2972,anomaly,Post GR,James
-2972,anomaly,Post IR,Chan
-2972,anomaly,Pay,Josef
+2972,normal,Create PR,Keven
+2972,normal,Release PR,Della
+2972,normal,Create PO,Ling
+2972,normal,Approve PO 1,Donald
+2972,normal,Release PO,Howard
+2972,normal,Post GR,James
+2972,normal,Post IR,Chan
+2972,normal,Pay,Josef
 2973,normal,Create SC,Seth
 2973,normal,Purchase SC,Lucy
 2973,normal,Approve SC,Micheline
@@ -23815,15 +23815,15 @@ traceid,label,activity,user
 2981,normal,Post GR,Anna
 2981,normal,Post IR,Roy
 2981,normal,Pay,Vickie
-2982,anomaly,Create PR,Keven
-2982,anomaly,Release PR,Donald
-2982,anomaly,Create PO,Ling
-2982,anomaly,Approve PO 1,Evelin
-2982,anomaly,Approve PO 2,Paul
-2982,anomaly,Release PO,Della
-2982,anomaly,Post GR,Jin
-2982,anomaly,Post IR,Chan
-2982,anomaly,Pay,Josef
+2982,normal,Create PR,Keven
+2982,normal,Release PR,Donald
+2982,normal,Create PO,Ling
+2982,normal,Approve PO 1,Evelin
+2982,normal,Approve PO 2,Paul
+2982,normal,Release PO,Della
+2982,normal,Post GR,Jin
+2982,normal,Post IR,Chan
+2982,normal,Pay,Josef
 2983,anomaly,Create PO,Alyce
 2983,anomaly,Release PO,Elisha
 2983,anomaly,Post GR,Anna
@@ -23887,14 +23887,14 @@ traceid,label,activity,user
 2990,normal,Post GR,James
 2990,normal,Post IR,Chan
 2990,normal,Pay,Josef
-2991,anomaly,Create PR,Keven
-2991,anomaly,Release PR,Donald
-2991,anomaly,Create PO,Ling
-2991,anomaly,Approve PO 1,Donald
-2991,anomaly,Release PO,Della
-2991,anomaly,Post GR,Keven
-2991,anomaly,Post IR,Chan
-2991,anomaly,Pay,Sherell
+2991,normal,Create PR,Keven
+2991,normal,Release PR,Donald
+2991,normal,Create PO,Ling
+2991,normal,Approve PO 1,Donald
+2991,normal,Release PO,Della
+2991,normal,Post GR,Keven
+2991,normal,Post IR,Chan
+2991,normal,Pay,Sherell
 2992,normal,Create PR,Keven
 2992,normal,Release PR,Donald
 2992,normal,Create PO,Lisa
@@ -24115,13 +24115,13 @@ traceid,label,activity,user
 3019,anomaly,Post IR,Roy
 3019,anomaly,Create PR,Keven
 3019,anomaly,Pay,Vickie
-3020,anomaly,Create PR,Keven
-3020,anomaly,Release PR,Chan
-3020,anomaly,Create PO,Alyce
-3020,anomaly,Release PO,Shandi
-3020,anomaly,Post GR,Lourdes
-3020,anomaly,Post IR,Chan
-3020,anomaly,Pay,Josef
+3020,normal,Create PR,Keven
+3020,normal,Release PR,Chan
+3020,normal,Create PO,Alyce
+3020,normal,Release PO,Shandi
+3020,normal,Post GR,Lourdes
+3020,normal,Post IR,Chan
+3020,normal,Pay,Josef
 3021,normal,Create PR,Keven
 3021,normal,Release PR,Donald
 3021,normal,Create PO,Josef
@@ -24302,13 +24302,13 @@ traceid,label,activity,user
 3042,normal,Post GR,Carmella
 3042,normal,Post IR,Chan
 3042,normal,Pay,Josef
-3043,anomaly,Create PR,Keven
-3043,anomaly,Release PR,Donald
-3043,anomaly,Create PO,Howard
-3043,anomaly,Release PO,Carmella
-3043,anomaly,Post GR,Tiffiny
-3043,anomaly,Post IR,Deloras
-3043,anomaly,Pay,Josef
+3043,normal,Create PR,Keven
+3043,normal,Release PR,Donald
+3043,normal,Create PO,Howard
+3043,normal,Release PO,Carmella
+3043,normal,Post GR,Tiffiny
+3043,normal,Post IR,Deloras
+3043,normal,Pay,Josef
 3044,normal,Create PR,Keven
 3044,normal,Release PR,Donald
 3044,normal,Create PO,Howard
@@ -24323,16 +24323,16 @@ traceid,label,activity,user
 3045,normal,Post GR,James
 3045,normal,Post IR,Roy
 3045,normal,Pay,Elisha
-3046,anomaly,Create SC,Josef
-3046,anomaly,Purchase SC,Hassie
-3046,anomaly,Approve SC,Pam
-3046,anomaly,Create PO,Sonia
-3046,anomaly,Approve PO 1,Ling
-3046,anomaly,Approve PO 2,Elisha
-3046,anomaly,Release PO,Della
-3046,anomaly,Post GR,Keven
-3046,anomaly,Post IR,Chan
-3046,anomaly,Pay,Josef
+3046,normal,Create SC,Josef
+3046,normal,Purchase SC,Hassie
+3046,normal,Approve SC,Pam
+3046,normal,Create PO,Sonia
+3046,normal,Approve PO 1,Ling
+3046,normal,Approve PO 2,Elisha
+3046,normal,Release PO,Della
+3046,normal,Post GR,Keven
+3046,normal,Post IR,Chan
+3046,normal,Pay,Josef
 3047,normal,Create PR,Keven
 3047,normal,Release PR,Donald
 3047,normal,Create PO,Alyce
@@ -24393,14 +24393,14 @@ traceid,label,activity,user
 3054,anomaly,Post GR,Keven
 3054,anomaly,Post IR,Roy
 3054,anomaly,Pay,Vickie
-3055,anomaly,Create SC,Alyce
-3055,anomaly,Purchase SC,Hassie
-3055,anomaly,Approve SC,Micheline
-3055,anomaly,Create PO,Evelin
-3055,anomaly,Release PO,Brant
-3055,anomaly,Post GR,Carmella
-3055,anomaly,Post IR,Roy
-3055,anomaly,Pay,Vickie
+3055,normal,Create SC,Alyce
+3055,normal,Purchase SC,Hassie
+3055,normal,Approve SC,Micheline
+3055,normal,Create PO,Evelin
+3055,normal,Release PO,Brant
+3055,normal,Post GR,Carmella
+3055,normal,Post IR,Roy
+3055,normal,Pay,Vickie
 3056,normal,Create PR,Keven
 3056,normal,Release PR,Donald
 3056,normal,Create PO,Alyce
@@ -24430,13 +24430,13 @@ traceid,label,activity,user
 3059,normal,Post GR,James
 3059,normal,Post IR,Roy
 3059,normal,Pay,Elisha
-3060,anomaly,Create PR,Keven
-3060,anomaly,Release PR,Donald
-3060,anomaly,Create PO,Alyce
-3060,anomaly,Release PO,Craig
-3060,anomaly,Post GR,Lourdes
-3060,anomaly,Post IR,Roy
-3060,anomaly,Pay,Vickie
+3060,normal,Create PR,Keven
+3060,normal,Release PR,Donald
+3060,normal,Create PO,Alyce
+3060,normal,Release PO,Craig
+3060,normal,Post GR,Lourdes
+3060,normal,Post IR,Roy
+3060,normal,Pay,Vickie
 3061,normal,Create PR,Keven
 3061,normal,Release PR,Donald
 3061,normal,Create PO,Lisa
@@ -24468,13 +24468,13 @@ traceid,label,activity,user
 3064,normal,Post GR,Keven
 3064,normal,Post IR,Chan
 3064,normal,Pay,Josef
-3065,anomaly,Create PR,Keven
-3065,anomaly,Release PR,Donald
-3065,anomaly,Create PO,Seth
-3065,anomaly,Release PO,Elisha
-3065,anomaly,Post GR,Anna
-3065,anomaly,Post IR,Roy
-3065,anomaly,Pay,Marilyn
+3065,normal,Create PR,Keven
+3065,normal,Release PR,Donald
+3065,normal,Create PO,Seth
+3065,normal,Release PO,Elisha
+3065,normal,Post GR,Anna
+3065,normal,Post IR,Roy
+3065,normal,Pay,Marilyn
 3066,normal,Create SC,Alyce
 3066,normal,Purchase SC,Lucy
 3066,normal,Approve SC,Micheline
@@ -24758,13 +24758,13 @@ traceid,label,activity,user
 3101,normal,Post GR,Keven
 3101,normal,Post IR,Chan
 3101,normal,Pay,Josef
-3102,anomaly,Create PR,Keven
-3102,anomaly,Release PR,Donald
-3102,anomaly,Create PO,Alyce
-3102,anomaly,Release PO,Lannie
-3102,anomaly,Post GR,Gema
-3102,anomaly,Post IR,Chan
-3102,anomaly,Pay,Josef
+3102,normal,Create PR,Keven
+3102,normal,Release PR,Donald
+3102,normal,Create PO,Alyce
+3102,normal,Release PO,Lannie
+3102,normal,Post GR,Gema
+3102,normal,Post IR,Chan
+3102,normal,Pay,Josef
 3103,normal,Create PR,Keven
 3103,normal,Release PR,Donald
 3103,normal,Create PO,Alyce
@@ -24875,14 +24875,14 @@ traceid,label,activity,user
 3116,anomaly,Post GR,Lourdes
 3116,anomaly,Post IR,Roy
 3116,anomaly,Pay,Vickie
-3117,anomaly,Create SC,Alyce
-3117,anomaly,Purchase SC,Lucy
-3117,anomaly,Approve SC,Sandra
-3117,anomaly,Create PO,Josef
-3117,anomaly,Release PO,Elisha
-3117,anomaly,Post GR,Anna
-3117,anomaly,Post IR,Roy
-3117,anomaly,Pay,Jin
+3117,normal,Create SC,Alyce
+3117,normal,Purchase SC,Lucy
+3117,normal,Approve SC,Sandra
+3117,normal,Create PO,Josef
+3117,normal,Release PO,Elisha
+3117,normal,Post GR,Anna
+3117,normal,Post IR,Roy
+3117,normal,Pay,Jin
 3118,anomaly,Create PR,Keven
 3118,anomaly,Release PR,Donald
 3118,anomaly,Create PO,Josef
@@ -25199,14 +25199,14 @@ traceid,label,activity,user
 3157,normal,Post GR,Tiffiny
 3157,normal,Post IR,Roy
 3157,normal,Pay,Elisha
-3158,anomaly,Create SC,Alyce
-3158,anomaly,Purchase SC,Paul
-3158,anomaly,Approve SC,Micheline
-3158,anomaly,Create PO,Evelin
-3158,anomaly,Release PO,Lannie
-3158,anomaly,Post GR,Keven
-3158,anomaly,Post IR,Roy
-3158,anomaly,Pay,Elisha
+3158,normal,Create SC,Alyce
+3158,normal,Purchase SC,Paul
+3158,normal,Approve SC,Micheline
+3158,normal,Create PO,Evelin
+3158,normal,Release PO,Lannie
+3158,normal,Post GR,Keven
+3158,normal,Post IR,Roy
+3158,normal,Pay,Elisha
 3159,normal,Create PR,Keven
 3159,normal,Release PR,Donald
 3159,normal,Create PO,Lisa
@@ -25323,14 +25323,14 @@ traceid,label,activity,user
 3173,normal,Post GR,Lourdes
 3173,normal,Post IR,Roy
 3173,normal,Pay,Elisha
-3174,anomaly,Create SC,Seth
-3174,anomaly,Purchase SC,Lucy
-3174,anomaly,Approve SC,Sandra
-3174,anomaly,Create PO,Grayce
-3174,anomaly,Release PO,Elisha
-3174,anomaly,Post GR,Anna
-3174,anomaly,Post IR,Roy
-3174,anomaly,Pay,Vickie
+3174,normal,Create SC,Seth
+3174,normal,Purchase SC,Lucy
+3174,normal,Approve SC,Sandra
+3174,normal,Create PO,Grayce
+3174,normal,Release PO,Elisha
+3174,normal,Post GR,Anna
+3174,normal,Post IR,Roy
+3174,normal,Pay,Vickie
 3175,normal,Create PR,Keven
 3175,normal,Release PR,Donald
 3175,normal,Create PO,Ling
@@ -25380,16 +25380,16 @@ traceid,label,activity,user
 3180,anomaly,Release PO,Della
 3180,anomaly,Post IR,Roy
 3180,anomaly,Pay,Elisha
-3181,anomaly,Create PR,Keven
-3181,anomaly,Release PR,Donald
-3181,anomaly,Create PO,Ling
-3181,anomaly,Approve PO 1,Clayton
-3181,anomaly,Approve PO 2,Brant
-3181,anomaly,Approve PO 3,Amanda
-3181,anomaly,Release PO,Della
-3181,anomaly,Post GR,Tiffiny
-3181,anomaly,Post IR,Doretta
-3181,anomaly,Pay,Elisha
+3181,normal,Create PR,Keven
+3181,normal,Release PR,Donald
+3181,normal,Create PO,Ling
+3181,normal,Approve PO 1,Clayton
+3181,normal,Approve PO 2,Brant
+3181,normal,Approve PO 3,Amanda
+3181,normal,Release PO,Della
+3181,normal,Post GR,Tiffiny
+3181,normal,Post IR,Doretta
+3181,normal,Pay,Elisha
 3182,normal,Create SC,Alyce
 3182,normal,Purchase SC,Paul
 3182,normal,Approve SC,Micheline
@@ -25460,14 +25460,14 @@ traceid,label,activity,user
 3190,anomaly,Release PO,Elisha
 3190,anomaly,Post IR,Roy
 3190,anomaly,Pay,Elisha
-3191,anomaly,Create SC,Seth
-3191,anomaly,Purchase SC,Lucy
-3191,anomaly,Approve SC,Micheline
-3191,anomaly,Create PO,Josef
-3191,anomaly,Release PO,Hugo
-3191,anomaly,Post GR,Keven
-3191,anomaly,Post IR,Roy
-3191,anomaly,Pay,Tiffiny
+3191,normal,Create SC,Seth
+3191,normal,Purchase SC,Lucy
+3191,normal,Approve SC,Micheline
+3191,normal,Create PO,Josef
+3191,normal,Release PO,Hugo
+3191,normal,Post GR,Keven
+3191,normal,Post IR,Roy
+3191,normal,Pay,Tiffiny
 3192,anomaly,Create PO,Alyce
 3192,anomaly,Release PO,Carmella
 3192,anomaly,Post GR,James
@@ -25692,24 +25692,24 @@ traceid,label,activity,user
 3219,anomaly,Random activity 10,Random user 8
 3219,anomaly,Post IR,Chan
 3219,anomaly,Pay,Josef
-3220,anomaly,Create SC,Alyce
-3220,anomaly,Purchase SC,Paul
-3220,anomaly,Approve SC,Sandra
-3220,anomaly,Create PO,Hassie
-3220,anomaly,Release PO,Craig
-3220,anomaly,Post GR,James
-3220,anomaly,Post IR,Chan
-3220,anomaly,Pay,Josef
-3221,anomaly,Create PR,Keven
-3221,anomaly,Release PR,Donald
-3221,anomaly,Create PO,Ling
-3221,anomaly,Approve PO 1,Evelin
-3221,anomaly,Approve PO 2,Brant
-3221,anomaly,Approve PO 3,Amanda
-3221,anomaly,Release PO,Della
-3221,anomaly,Post GR,Keven
-3221,anomaly,Post IR,Chan
-3221,anomaly,Pay,Josef
+3220,normal,Create SC,Alyce
+3220,normal,Purchase SC,Paul
+3220,normal,Approve SC,Sandra
+3220,normal,Create PO,Hassie
+3220,normal,Release PO,Craig
+3220,normal,Post GR,James
+3220,normal,Post IR,Chan
+3220,normal,Pay,Josef
+3221,normal,Create PR,Keven
+3221,normal,Release PR,Donald
+3221,normal,Create PO,Ling
+3221,normal,Approve PO 1,Evelin
+3221,normal,Approve PO 2,Brant
+3221,normal,Approve PO 3,Amanda
+3221,normal,Release PO,Della
+3221,normal,Post GR,Keven
+3221,normal,Post IR,Chan
+3221,normal,Pay,Josef
 3222,normal,Create SC,Alyce
 3222,normal,Purchase SC,Lucy
 3222,normal,Approve SC,Sandra
@@ -25917,15 +25917,15 @@ traceid,label,activity,user
 3247,normal,Post GR,Anna
 3247,normal,Post IR,Roy
 3247,normal,Pay,Vickie
-3248,anomaly,Create SC,Alyce
-3248,anomaly,Purchase SC,Hassie
-3248,anomaly,Approve SC,Micheline
-3248,anomaly,Create PO,Sonia
-3248,anomaly,Approve PO 1,Donald
-3248,anomaly,Release PO,Shandi
-3248,anomaly,Post GR,James
-3248,anomaly,Post IR,Roy
-3248,anomaly,Pay,Wilton
+3248,normal,Create SC,Alyce
+3248,normal,Purchase SC,Hassie
+3248,normal,Approve SC,Micheline
+3248,normal,Create PO,Sonia
+3248,normal,Approve PO 1,Donald
+3248,normal,Release PO,Shandi
+3248,normal,Post GR,James
+3248,normal,Post IR,Roy
+3248,normal,Pay,Wilton
 3249,normal,Create PR,Keven
 3249,normal,Release PR,Donald
 3249,normal,Create PO,Alyce
@@ -26244,16 +26244,16 @@ traceid,label,activity,user
 3287,normal,Post GR,Carmella
 3287,normal,Post IR,Chan
 3287,normal,Pay,Josef
-3288,anomaly,Create PR,Keven
-3288,anomaly,Release PR,Donald
-3288,anomaly,Create PO,Josef
-3288,anomaly,Approve PO 1,Clayton
-3288,anomaly,Approve PO 2,Brant
-3288,anomaly,Approve PO 3,Velda
-3288,anomaly,Release PO,Della
-3288,anomaly,Post GR,Carmella
-3288,anomaly,Post IR,Paul
-3288,anomaly,Pay,Elisha
+3288,normal,Create PR,Keven
+3288,normal,Release PR,Donald
+3288,normal,Create PO,Josef
+3288,normal,Approve PO 1,Clayton
+3288,normal,Approve PO 2,Brant
+3288,normal,Approve PO 3,Velda
+3288,normal,Release PO,Della
+3288,normal,Post GR,Carmella
+3288,normal,Post IR,Paul
+3288,normal,Pay,Elisha
 3289,normal,Create PR,Keven
 3289,normal,Release PR,Donald
 3289,normal,Create PO,Alyce
@@ -26278,14 +26278,14 @@ traceid,label,activity,user
 3291,normal,Post GR,Jin
 3291,normal,Post IR,Chan
 3291,normal,Pay,Josef
-3292,anomaly,Create SC,Alyce
-3292,anomaly,Purchase SC,Hassie
-3292,anomaly,Approve SC,Sandra
-3292,anomaly,Create PO,Josef
-3292,anomaly,Release PO,Clayton
-3292,anomaly,Post GR,Keven
-3292,anomaly,Post IR,Chan
-3292,anomaly,Pay,Josef
+3292,normal,Create SC,Alyce
+3292,normal,Purchase SC,Hassie
+3292,normal,Approve SC,Sandra
+3292,normal,Create PO,Josef
+3292,normal,Release PO,Clayton
+3292,normal,Post GR,Keven
+3292,normal,Post IR,Chan
+3292,normal,Pay,Josef
 3293,normal,Create PR,Keven
 3293,normal,Release PR,Donald
 3293,normal,Create PO,Josef
@@ -26618,13 +26618,13 @@ traceid,label,activity,user
 3331,anomaly,Post GR,Anna
 3331,anomaly,Post IR,Roy
 3331,anomaly,Pay,Elisha
-3332,anomaly,Create PR,Keven
-3332,anomaly,Release PR,Donald
-3332,anomaly,Create PO,Rossana
-3332,anomaly,Release PO,Hugo
-3332,anomaly,Post GR,James
-3332,anomaly,Post IR,Roy
-3332,anomaly,Pay,Elisha
+3332,normal,Create PR,Keven
+3332,normal,Release PR,Donald
+3332,normal,Create PO,Rossana
+3332,normal,Release PO,Hugo
+3332,normal,Post GR,James
+3332,normal,Post IR,Roy
+3332,normal,Pay,Elisha
 3333,anomaly,Create PR,Keven
 3333,anomaly,Release PR,Donald
 3333,anomaly,Create PO,Alyce
@@ -26661,14 +26661,14 @@ traceid,label,activity,user
 3336,normal,Post GR,Lourdes
 3336,normal,Post IR,Roy
 3336,normal,Pay,Vickie
-3337,anomaly,Create SC,Alyce
-3337,anomaly,Purchase SC,Lucy
-3337,anomaly,Approve SC,Micheline
-3337,anomaly,Create PO,Evelin
-3337,anomaly,Release PO,Craig
-3337,anomaly,Post GR,Lourdes
-3337,anomaly,Post IR,Roy
-3337,anomaly,Pay,Elisha
+3337,normal,Create SC,Alyce
+3337,normal,Purchase SC,Lucy
+3337,normal,Approve SC,Micheline
+3337,normal,Create PO,Evelin
+3337,normal,Release PO,Craig
+3337,normal,Post GR,Lourdes
+3337,normal,Post IR,Roy
+3337,normal,Pay,Elisha
 3338,normal,Create PR,Keven
 3338,normal,Release PR,Donald
 3338,normal,Create PO,Alyce
@@ -27183,13 +27183,13 @@ traceid,label,activity,user
 3403,normal,Post GR,James
 3403,normal,Post IR,Roy
 3403,normal,Pay,Elisha
-3404,anomaly,Create PR,Keven
-3404,anomaly,Release PR,Donald
-3404,anomaly,Create PO,Alyce
-3404,anomaly,Release PO,Craig
-3404,anomaly,Post GR,James
-3404,anomaly,Post IR,Chan
-3404,anomaly,Pay,Josef
+3404,normal,Create PR,Keven
+3404,normal,Release PR,Donald
+3404,normal,Create PO,Alyce
+3404,normal,Release PO,Craig
+3404,normal,Post GR,James
+3404,normal,Post IR,Chan
+3404,normal,Pay,Josef
 3405,anomaly,Create SC,Alyce
 3405,anomaly,Approve SC,Micheline
 3405,anomaly,Create PO,Josef
@@ -27281,15 +27281,15 @@ traceid,label,activity,user
 3415,anomaly,Random activity 10,Random user 47
 3415,anomaly,Post IR,Roy
 3415,anomaly,Pay,Vickie
-3416,anomaly,Create PR,Keven
-3416,anomaly,Release PR,Donald
-3416,anomaly,Create PO,Lisa
-3416,anomaly,Approve PO 1,Ling
-3416,anomaly,Approve PO 2,Elisha
-3416,anomaly,Release PO,Della
-3416,anomaly,Post GR,Jin
-3416,anomaly,Post IR,Chan
-3416,anomaly,Pay,Josef
+3416,normal,Create PR,Keven
+3416,normal,Release PR,Donald
+3416,normal,Create PO,Lisa
+3416,normal,Approve PO 1,Ling
+3416,normal,Approve PO 2,Elisha
+3416,normal,Release PO,Della
+3416,normal,Post GR,Jin
+3416,normal,Post IR,Chan
+3416,normal,Pay,Josef
 3417,normal,Create SC,Alyce
 3417,normal,Purchase SC,Hassie
 3417,normal,Approve SC,Micheline
@@ -27474,13 +27474,13 @@ traceid,label,activity,user
 3439,normal,Post GR,James
 3439,normal,Post IR,Chan
 3439,normal,Pay,Josef
-3440,anomaly,Create PR,Keven
-3440,anomaly,Release PR,Donald
-3440,anomaly,Create PO,Alyce
-3440,anomaly,Release PO,Hugo
-3440,anomaly,Post GR,Tiffiny
-3440,anomaly,Post IR,Roy
-3440,anomaly,Pay,Vickie
+3440,normal,Create PR,Keven
+3440,normal,Release PR,Donald
+3440,normal,Create PO,Alyce
+3440,normal,Release PO,Hugo
+3440,normal,Post GR,Tiffiny
+3440,normal,Post IR,Roy
+3440,normal,Pay,Vickie
 3441,anomaly,Create PR,Keven
 3441,anomaly,Release PR,Donald
 3441,anomaly,Post GR,Lourdes
@@ -27557,13 +27557,13 @@ traceid,label,activity,user
 3449,normal,Post GR,Lourdes
 3449,normal,Post IR,Roy
 3449,normal,Pay,Vickie
-3450,anomaly,Create PR,Keven
-3450,anomaly,Release PR,Hoyt
-3450,anomaly,Create PO,Howard
-3450,anomaly,Release PO,Elisha
-3450,anomaly,Post GR,Anna
-3450,anomaly,Post IR,Chan
-3450,anomaly,Pay,Josef
+3450,normal,Create PR,Keven
+3450,normal,Release PR,Hoyt
+3450,normal,Create PO,Howard
+3450,normal,Release PO,Elisha
+3450,normal,Post GR,Anna
+3450,normal,Post IR,Chan
+3450,normal,Pay,Josef
 3451,normal,Create PR,Keven
 3451,normal,Release PR,Donald
 3451,normal,Create PO,Alyce
@@ -27571,14 +27571,14 @@ traceid,label,activity,user
 3451,normal,Post GR,Anna
 3451,normal,Post IR,Roy
 3451,normal,Pay,Elisha
-3452,anomaly,Create SC,Alyce
-3452,anomaly,Purchase SC,Lucy
-3452,anomaly,Approve SC,Micheline
-3452,anomaly,Create PO,Evelin
-3452,anomaly,Release PO,Hugo
-3452,anomaly,Post GR,Jin
-3452,anomaly,Post IR,Roy
-3452,anomaly,Pay,Vickie
+3452,normal,Create SC,Alyce
+3452,normal,Purchase SC,Lucy
+3452,normal,Approve SC,Micheline
+3452,normal,Create PO,Evelin
+3452,normal,Release PO,Hugo
+3452,normal,Post GR,Jin
+3452,normal,Post IR,Roy
+3452,normal,Pay,Vickie
 3453,normal,Create SC,Alyce
 3453,normal,Purchase SC,Paul
 3453,normal,Approve SC,Micheline
@@ -27587,13 +27587,13 @@ traceid,label,activity,user
 3453,normal,Post GR,Tiffiny
 3453,normal,Post IR,Roy
 3453,normal,Pay,Elisha
-3454,anomaly,Create PR,Keven
-3454,anomaly,Release PR,Donald
-3454,anomaly,Create PO,Alyce
-3454,anomaly,Release PO,Hugo
-3454,anomaly,Post GR,Keven
-3454,anomaly,Post IR,Roy
-3454,anomaly,Pay,Elisha
+3454,normal,Create PR,Keven
+3454,normal,Release PR,Donald
+3454,normal,Create PO,Alyce
+3454,normal,Release PO,Hugo
+3454,normal,Post GR,Keven
+3454,normal,Post IR,Roy
+3454,normal,Pay,Elisha
 3455,normal,Create PR,Keven
 3455,normal,Release PR,Donald
 3455,normal,Create PO,Ling
@@ -27614,13 +27614,13 @@ traceid,label,activity,user
 3456,normal,Post GR,James
 3456,normal,Post IR,Roy
 3456,normal,Pay,Elisha
-3457,anomaly,Create PR,Keven
-3457,anomaly,Release PR,Donald
-3457,anomaly,Create PO,Alyce
-3457,anomaly,Release PO,Carmella
-3457,anomaly,Post GR,James
-3457,anomaly,Post IR,Roy
-3457,anomaly,Pay,Vickie
+3457,normal,Create PR,Keven
+3457,normal,Release PR,Donald
+3457,normal,Create PO,Alyce
+3457,normal,Release PO,Carmella
+3457,normal,Post GR,James
+3457,normal,Post IR,Roy
+3457,normal,Pay,Vickie
 3458,normal,Create PR,Keven
 3458,normal,Release PR,Donald
 3458,normal,Create PO,Alyce
@@ -27686,14 +27686,14 @@ traceid,label,activity,user
 3465,normal,Post GR,Keven
 3465,normal,Post IR,Roy
 3465,normal,Pay,Elisha
-3466,anomaly,Create SC,Alyce
-3466,anomaly,Purchase SC,Lucy
-3466,anomaly,Approve SC,Micheline
-3466,anomaly,Create PO,Josef
-3466,anomaly,Release PO,Emily
-3466,anomaly,Post GR,Hoyt
-3466,anomaly,Post IR,Roy
-3466,anomaly,Pay,Elisha
+3466,normal,Create SC,Alyce
+3466,normal,Purchase SC,Lucy
+3466,normal,Approve SC,Micheline
+3466,normal,Create PO,Josef
+3466,normal,Release PO,Emily
+3466,normal,Post GR,Hoyt
+3466,normal,Post IR,Roy
+3466,normal,Pay,Elisha
 3467,normal,Create PR,Keven
 3467,normal,Release PR,Donald
 3467,normal,Create PO,Alyce
@@ -27748,13 +27748,13 @@ traceid,label,activity,user
 3473,anomaly,Post IR,Chan
 3473,anomaly,Release PO,Hugo
 3473,anomaly,Pay,Josef
-3474,anomaly,Create PR,Keven
-3474,anomaly,Release PR,Donald
-3474,anomaly,Create PO,Alyce
-3474,anomaly,Release PO,Hugo
-3474,anomaly,Post GR,James
-3474,anomaly,Post IR,Chan
-3474,anomaly,Pay,Josef
+3474,normal,Create PR,Keven
+3474,normal,Release PR,Donald
+3474,normal,Create PO,Alyce
+3474,normal,Release PO,Hugo
+3474,normal,Post GR,James
+3474,normal,Post IR,Chan
+3474,normal,Pay,Josef
 3475,normal,Create PR,Keven
 3475,normal,Release PR,Donald
 3475,normal,Create PO,Howard
@@ -27957,14 +27957,14 @@ traceid,label,activity,user
 3500,normal,Post GR,Jin
 3500,normal,Post IR,Roy
 3500,normal,Pay,Elisha
-3501,anomaly,Create SC,Seth
-3501,anomaly,Purchase SC,Lucy
-3501,anomaly,Approve SC,Sandra
-3501,anomaly,Create PO,Earl
-3501,anomaly,Release PO,Elisha
-3501,anomaly,Post GR,Anna
-3501,anomaly,Post IR,Roy
-3501,anomaly,Pay,Hannah
+3501,normal,Create SC,Seth
+3501,normal,Purchase SC,Lucy
+3501,normal,Approve SC,Sandra
+3501,normal,Create PO,Earl
+3501,normal,Release PO,Elisha
+3501,normal,Post GR,Anna
+3501,normal,Post IR,Roy
+3501,normal,Pay,Hannah
 3502,normal,Create PR,Keven
 3502,normal,Release PR,Donald
 3502,normal,Create PO,Alyce
@@ -28037,14 +28037,14 @@ traceid,label,activity,user
 3510,normal,Post GR,Tiffiny
 3510,normal,Post IR,Roy
 3510,normal,Pay,Vickie
-3511,anomaly,Create SC,Alyce
-3511,anomaly,Purchase SC,Lucy
-3511,anomaly,Approve SC,Sandra
-3511,anomaly,Create PO,Josef
-3511,anomaly,Release PO,Elisha
-3511,anomaly,Post GR,Anna
-3511,anomaly,Post IR,Roy
-3511,anomaly,Pay,Elisha
+3511,normal,Create SC,Alyce
+3511,normal,Purchase SC,Lucy
+3511,normal,Approve SC,Sandra
+3511,normal,Create PO,Josef
+3511,normal,Release PO,Elisha
+3511,normal,Post GR,Anna
+3511,normal,Post IR,Roy
+3511,normal,Pay,Elisha
 3512,normal,Create PR,Keven
 3512,normal,Release PR,Donald
 3512,normal,Create PO,Alyce
@@ -28319,14 +28319,14 @@ traceid,label,activity,user
 3545,normal,Post GR,Lourdes
 3545,normal,Post IR,Roy
 3545,normal,Pay,Vickie
-3546,anomaly,Create SC,Alyce
-3546,anomaly,Purchase SC,Lucy
-3546,anomaly,Approve SC,Sandra
-3546,anomaly,Create PO,Josef
-3546,anomaly,Release PO,Hugo
-3546,anomaly,Post GR,Johnny
-3546,anomaly,Post IR,Chan
-3546,anomaly,Pay,Josef
+3546,normal,Create SC,Alyce
+3546,normal,Purchase SC,Lucy
+3546,normal,Approve SC,Sandra
+3546,normal,Create PO,Josef
+3546,normal,Release PO,Hugo
+3546,normal,Post GR,Johnny
+3546,normal,Post IR,Chan
+3546,normal,Pay,Josef
 3547,normal,Create SC,Alyce
 3547,normal,Purchase SC,Lucy
 3547,normal,Approve SC,Sandra
@@ -28485,13 +28485,13 @@ traceid,label,activity,user
 3565,normal,Post GR,James
 3565,normal,Post IR,Roy
 3565,normal,Pay,Vickie
-3566,anomaly,Create PR,Keven
-3566,anomaly,Release PR,Donald
-3566,anomaly,Create PO,Alyce
-3566,anomaly,Release PO,Carmella
-3566,anomaly,Post GR,Jin
-3566,anomaly,Post IR,Roy
-3566,anomaly,Pay,Elisha
+3566,normal,Create PR,Keven
+3566,normal,Release PR,Donald
+3566,normal,Create PO,Alyce
+3566,normal,Release PO,Carmella
+3566,normal,Post GR,Jin
+3566,normal,Post IR,Roy
+3566,normal,Pay,Elisha
 3567,anomaly,Create PR,Keven
 3567,anomaly,Release PR,Donald
 3567,anomaly,Create PO,Alyce
@@ -28624,14 +28624,14 @@ traceid,label,activity,user
 3582,normal,Post GR,Jin
 3582,normal,Post IR,Roy
 3582,normal,Pay,Elisha
-3583,anomaly,Create SC,Alyce
-3583,anomaly,Purchase SC,Hassie
-3583,anomaly,Approve SC,Micheline
-3583,anomaly,Create PO,Josef
-3583,anomaly,Release PO,Elisha
-3583,anomaly,Post GR,Jamika
-3583,anomaly,Post IR,Roy
-3583,anomaly,Pay,Vickie
+3583,normal,Create SC,Alyce
+3583,normal,Purchase SC,Hassie
+3583,normal,Approve SC,Micheline
+3583,normal,Create PO,Josef
+3583,normal,Release PO,Elisha
+3583,normal,Post GR,Jamika
+3583,normal,Post IR,Roy
+3583,normal,Pay,Vickie
 3584,normal,Create PR,Keven
 3584,normal,Release PR,Donald
 3584,normal,Create PO,Alyce
@@ -28716,14 +28716,14 @@ traceid,label,activity,user
 3594,anomaly,Post GR,Anna
 3594,anomaly,Post IR,Roy
 3594,anomaly,Pay,Elisha
-3595,anomaly,Create PR,Keven
-3595,anomaly,Release PR,Donald
-3595,anomaly,Create PO,Ling
-3595,anomaly,Approve PO 1,Johnny
-3595,anomaly,Release PO,Della
-3595,anomaly,Post GR,Jin
-3595,anomaly,Post IR,Roy
-3595,anomaly,Pay,Elisha
+3595,normal,Create PR,Keven
+3595,normal,Release PR,Donald
+3595,normal,Create PO,Ling
+3595,normal,Approve PO 1,Johnny
+3595,normal,Release PO,Della
+3595,normal,Post GR,Jin
+3595,normal,Post IR,Roy
+3595,normal,Pay,Elisha
 3596,normal,Create PR,Keven
 3596,normal,Release PR,Donald
 3596,normal,Create PO,Ling
@@ -28733,13 +28733,13 @@ traceid,label,activity,user
 3596,normal,Post GR,James
 3596,normal,Post IR,Roy
 3596,normal,Pay,Elisha
-3597,anomaly,Create PR,Keven
-3597,anomaly,Release PR,Lucy
-3597,anomaly,Create PO,Alyce
-3597,anomaly,Release PO,Sandra
-3597,anomaly,Post GR,Lourdes
-3597,anomaly,Post IR,Roy
-3597,anomaly,Pay,Elisha
+3597,normal,Create PR,Keven
+3597,normal,Release PR,Lucy
+3597,normal,Create PO,Alyce
+3597,normal,Release PO,Sandra
+3597,normal,Post GR,Lourdes
+3597,normal,Post IR,Roy
+3597,normal,Pay,Elisha
 3598,normal,Create SC,Alyce
 3598,normal,Purchase SC,Paul
 3598,normal,Approve SC,Sandra
@@ -28988,14 +28988,14 @@ traceid,label,activity,user
 3629,normal,Post GR,Lourdes
 3629,normal,Post IR,Roy
 3629,normal,Pay,Elisha
-3630,anomaly,Create PR,Issac
-3630,anomaly,Release PR,Donald
-3630,anomaly,Create PO,Ling
-3630,anomaly,Approve PO 1,Donald
-3630,anomaly,Release PO,Della
-3630,anomaly,Post GR,Junior
-3630,anomaly,Post IR,Roy
-3630,anomaly,Pay,Tiffiny
+3630,normal,Create PR,Issac
+3630,normal,Release PR,Donald
+3630,normal,Create PO,Ling
+3630,normal,Approve PO 1,Donald
+3630,normal,Release PO,Della
+3630,normal,Post GR,Junior
+3630,normal,Post IR,Roy
+3630,normal,Pay,Tiffiny
 3631,normal,Create SC,Alyce
 3631,normal,Purchase SC,Hassie
 3631,normal,Approve SC,Sandra
@@ -29096,13 +29096,13 @@ traceid,label,activity,user
 3642,anomaly,Post GR,James
 3642,anomaly,Post IR,Chan
 3642,anomaly,Pay,Josef
-3643,anomaly,Create PR,Keven
-3643,anomaly,Release PR,Donald
-3643,anomaly,Create PO,Alyce
-3643,anomaly,Release PO,Velda
-3643,anomaly,Post GR,Lucy
-3643,anomaly,Post IR,Chan
-3643,anomaly,Pay,Josef
+3643,normal,Create PR,Keven
+3643,normal,Release PR,Donald
+3643,normal,Create PO,Alyce
+3643,normal,Release PO,Velda
+3643,normal,Post GR,Lucy
+3643,normal,Post IR,Chan
+3643,normal,Pay,Josef
 3644,normal,Create SC,Alyce
 3644,normal,Purchase SC,Hassie
 3644,normal,Approve SC,Micheline
@@ -29304,14 +29304,14 @@ traceid,label,activity,user
 3667,normal,Post GR,Carmella
 3667,normal,Post IR,Roy
 3667,normal,Pay,Elisha
-3668,anomaly,Create SC,Alyce
-3668,anomaly,Purchase SC,Lucy
-3668,anomaly,Approve SC,Micheline
-3668,anomaly,Create PO,Josef
-3668,anomaly,Release PO,Ronald
-3668,anomaly,Post GR,Anna
-3668,anomaly,Post IR,Chan
-3668,anomaly,Pay,Josef
+3668,normal,Create SC,Alyce
+3668,normal,Purchase SC,Lucy
+3668,normal,Approve SC,Micheline
+3668,normal,Create PO,Josef
+3668,normal,Release PO,Ronald
+3668,normal,Post GR,Anna
+3668,normal,Post IR,Chan
+3668,normal,Pay,Josef
 3669,anomaly,Create SC,Alyce
 3669,anomaly,Purchase SC,Lucy
 3669,anomaly,Approve SC,Sandra
@@ -29566,13 +29566,13 @@ traceid,label,activity,user
 3700,anomaly,Post GR,James
 3700,anomaly,Post IR,Roy
 3700,anomaly,Pay,Elisha
-3701,anomaly,Create PR,Keven
-3701,anomaly,Release PR,Donald
-3701,anomaly,Create PO,Howard
-3701,anomaly,Release PO,Elisha
-3701,anomaly,Post GR,Anna
-3701,anomaly,Post IR,Chan
-3701,anomaly,Pay,Josef
+3701,normal,Create PR,Keven
+3701,normal,Release PR,Donald
+3701,normal,Create PO,Howard
+3701,normal,Release PO,Elisha
+3701,normal,Post GR,Anna
+3701,normal,Post IR,Chan
+3701,normal,Pay,Josef
 3702,normal,Create SC,Alyce
 3702,normal,Purchase SC,Lucy
 3702,normal,Approve SC,Micheline
@@ -29632,14 +29632,14 @@ traceid,label,activity,user
 3709,normal,Post GR,Jin
 3709,normal,Post IR,Chan
 3709,normal,Pay,Josef
-3710,anomaly,Create SC,Seth
-3710,anomaly,Purchase SC,Hassie
-3710,anomaly,Approve SC,Micheline
-3710,anomaly,Create PO,Josef
-3710,anomaly,Release PO,Craig
-3710,anomaly,Post GR,James
-3710,anomaly,Post IR,Chan
-3710,anomaly,Pay,Josef
+3710,normal,Create SC,Seth
+3710,normal,Purchase SC,Hassie
+3710,normal,Approve SC,Micheline
+3710,normal,Create PO,Josef
+3710,normal,Release PO,Craig
+3710,normal,Post GR,James
+3710,normal,Post IR,Chan
+3710,normal,Pay,Josef
 3711,normal,Create SC,Seth
 3711,normal,Purchase SC,Lucy
 3711,normal,Approve SC,Micheline
@@ -29741,14 +29741,14 @@ traceid,label,activity,user
 3722,anomaly,Release PR,Donald
 3722,anomaly,Create PO,Alyce
 3722,anomaly,Pay,Vickie
-3723,anomaly,Create PR,Keven
-3723,anomaly,Release PR,Donald
-3723,anomaly,Create PO,Ling
-3723,anomaly,Approve PO 1,Johnny
-3723,anomaly,Release PO,Tiffiny
-3723,anomaly,Post GR,Lourdes
-3723,anomaly,Post IR,Roy
-3723,anomaly,Pay,Elisha
+3723,normal,Create PR,Keven
+3723,normal,Release PR,Donald
+3723,normal,Create PO,Ling
+3723,normal,Approve PO 1,Johnny
+3723,normal,Release PO,Tiffiny
+3723,normal,Post GR,Lourdes
+3723,normal,Post IR,Roy
+3723,normal,Pay,Elisha
 3724,anomaly,Create PR,Keven
 3724,anomaly,Release PR,Donald
 3724,anomaly,Create PO,Alyce
@@ -29900,14 +29900,14 @@ traceid,label,activity,user
 3741,normal,Post GR,Lourdes
 3741,normal,Post IR,Chan
 3741,normal,Pay,Josef
-3742,anomaly,Create PR,Keven
-3742,anomaly,Release PR,Donald
-3742,anomaly,Create PO,Ling
-3742,anomaly,Approve PO 1,Donald
-3742,anomaly,Release PO,Della
-3742,anomaly,Post GR,Carmella
-3742,anomaly,Post IR,Roy
-3742,anomaly,Pay,Elisha
+3742,normal,Create PR,Keven
+3742,normal,Release PR,Donald
+3742,normal,Create PO,Ling
+3742,normal,Approve PO 1,Donald
+3742,normal,Release PO,Della
+3742,normal,Post GR,Carmella
+3742,normal,Post IR,Roy
+3742,normal,Pay,Elisha
 3743,normal,Create PR,Keven
 3743,normal,Release PR,Donald
 3743,normal,Create PO,Donald
@@ -29938,13 +29938,13 @@ traceid,label,activity,user
 3746,normal,Post GR,Jin
 3746,normal,Post IR,Roy
 3746,normal,Pay,Elisha
-3747,anomaly,Create PR,Keven
-3747,anomaly,Release PR,Donald
-3747,anomaly,Create PO,Alyce
-3747,anomaly,Release PO,Craig
-3747,anomaly,Post GR,Jin
-3747,anomaly,Post IR,Chan
-3747,anomaly,Pay,Josef
+3747,normal,Create PR,Keven
+3747,normal,Release PR,Donald
+3747,normal,Create PO,Alyce
+3747,normal,Release PO,Craig
+3747,normal,Post GR,Jin
+3747,normal,Post IR,Chan
+3747,normal,Pay,Josef
 3748,normal,Create PR,Keven
 3748,normal,Release PR,Donald
 3748,normal,Create PO,Alyce
@@ -30136,14 +30136,14 @@ traceid,label,activity,user
 3771,normal,Post GR,Carmella
 3771,normal,Post IR,Chan
 3771,normal,Pay,Josef
-3772,anomaly,Create SC,Alyce
-3772,anomaly,Purchase SC,Hassie
-3772,anomaly,Approve SC,Micheline
-3772,anomaly,Create PO,Gema
-3772,anomaly,Release PO,Hugo
-3772,anomaly,Post GR,Keven
-3772,anomaly,Post IR,Roy
-3772,anomaly,Pay,Elisha
+3772,normal,Create SC,Alyce
+3772,normal,Purchase SC,Hassie
+3772,normal,Approve SC,Micheline
+3772,normal,Create PO,Gema
+3772,normal,Release PO,Hugo
+3772,normal,Post GR,Keven
+3772,normal,Post IR,Roy
+3772,normal,Pay,Elisha
 3773,normal,Create PR,Keven
 3773,normal,Release PR,Donald
 3773,normal,Create PO,Ling
@@ -30254,13 +30254,13 @@ traceid,label,activity,user
 3785,normal,Post GR,James
 3785,normal,Post IR,Roy
 3785,normal,Pay,Elisha
-3786,anomaly,Create PR,Keven
-3786,anomaly,Release PR,Donald
-3786,anomaly,Create PO,Alyce
-3786,anomaly,Release PO,Elisha
-3786,anomaly,Post GR,Anna
-3786,anomaly,Post IR,Roy
-3786,anomaly,Pay,Gema
+3786,normal,Create PR,Keven
+3786,normal,Release PR,Donald
+3786,normal,Create PO,Alyce
+3786,normal,Release PO,Elisha
+3786,normal,Post GR,Anna
+3786,normal,Post IR,Roy
+3786,normal,Pay,Gema
 3787,normal,Create PR,Keven
 3787,normal,Release PR,Donald
 3787,normal,Create PO,Josef
@@ -30285,13 +30285,13 @@ traceid,label,activity,user
 3789,normal,Post GR,Lourdes
 3789,normal,Post IR,Chan
 3789,normal,Pay,Josef
-3790,anomaly,Create PR,Keven
-3790,anomaly,Release PR,Donald
-3790,anomaly,Create PO,Alyce
-3790,anomaly,Release PO,Elisha
-3790,anomaly,Post GR,Anna
-3790,anomaly,Post IR,Chan
-3790,anomaly,Pay,Josef
+3790,normal,Create PR,Keven
+3790,normal,Release PR,Donald
+3790,normal,Create PO,Alyce
+3790,normal,Release PO,Elisha
+3790,normal,Post GR,Anna
+3790,normal,Post IR,Chan
+3790,normal,Pay,Josef
 3791,anomaly,Create SC,Alyce
 3791,anomaly,Purchase SC,Lucy
 3791,anomaly,Approve SC,Micheline
@@ -30538,13 +30538,13 @@ traceid,label,activity,user
 3820,anomaly,Post GR,James
 3820,anomaly,Post IR,Roy
 3820,anomaly,Pay,Vickie
-3821,anomaly,Create PR,Keven
-3821,anomaly,Release PR,Donald
-3821,anomaly,Create PO,Alyce
-3821,anomaly,Release PO,Elisha
-3821,anomaly,Post GR,Brant
-3821,anomaly,Post IR,Chan
-3821,anomaly,Pay,Josef
+3821,normal,Create PR,Keven
+3821,normal,Release PR,Donald
+3821,normal,Create PO,Alyce
+3821,normal,Release PO,Elisha
+3821,normal,Post GR,Brant
+3821,normal,Post IR,Chan
+3821,normal,Pay,Josef
 3822,anomaly,Create SC,Alyce
 3822,anomaly,Purchase SC,Hassie
 3822,anomaly,Approve SC,Sandra
@@ -30673,13 +30673,13 @@ traceid,label,activity,user
 3838,normal,Post GR,Lourdes
 3838,normal,Post IR,Roy
 3838,normal,Pay,Vickie
-3839,anomaly,Create PR,Keven
-3839,anomaly,Release PR,Donald
-3839,anomaly,Create PO,Hannah
-3839,anomaly,Release PO,Craig
-3839,anomaly,Post GR,James
-3839,anomaly,Post IR,Roy
-3839,anomaly,Pay,Vickie
+3839,normal,Create PR,Keven
+3839,normal,Release PR,Donald
+3839,normal,Create PO,Hannah
+3839,normal,Release PO,Craig
+3839,normal,Post GR,James
+3839,normal,Post IR,Roy
+3839,normal,Pay,Vickie
 3840,normal,Create PR,Keven
 3840,normal,Release PR,Donald
 3840,normal,Create PO,Alyce
@@ -30783,14 +30783,14 @@ traceid,label,activity,user
 3852,normal,Post GR,Jin
 3852,normal,Post IR,Chan
 3852,normal,Pay,Josef
-3853,anomaly,Create SC,Micheline
-3853,anomaly,Purchase SC,Elisha
-3853,anomaly,Approve SC,Ronald
-3853,anomaly,Create PO,Josef
-3853,anomaly,Release PO,Elisha
-3853,anomaly,Post GR,Anna
-3853,anomaly,Post IR,Roy
-3853,anomaly,Pay,Vickie
+3853,normal,Create SC,Micheline
+3853,normal,Purchase SC,Elisha
+3853,normal,Approve SC,Ronald
+3853,normal,Create PO,Josef
+3853,normal,Release PO,Elisha
+3853,normal,Post GR,Anna
+3853,normal,Post IR,Roy
+3853,normal,Pay,Vickie
 3854,normal,Create PR,Keven
 3854,normal,Release PR,Donald
 3854,normal,Create PO,Lisa
@@ -30865,14 +30865,14 @@ traceid,label,activity,user
 3862,normal,Post GR,Anna
 3862,normal,Post IR,Roy
 3862,normal,Pay,Elisha
-3863,anomaly,Create SC,Alyce
-3863,anomaly,Purchase SC,Earl
-3863,anomaly,Approve SC,Chan
-3863,anomaly,Create PO,Josef
-3863,anomaly,Release PO,Craig
-3863,anomaly,Post GR,Keven
-3863,anomaly,Post IR,Roy
-3863,anomaly,Pay,Elisha
+3863,normal,Create SC,Alyce
+3863,normal,Purchase SC,Earl
+3863,normal,Approve SC,Chan
+3863,normal,Create PO,Josef
+3863,normal,Release PO,Craig
+3863,normal,Post GR,Keven
+3863,normal,Post IR,Roy
+3863,normal,Pay,Elisha
 3864,normal,Create PR,Keven
 3864,normal,Release PR,Donald
 3864,normal,Create PO,Alyce
@@ -31054,16 +31054,16 @@ traceid,label,activity,user
 3885,normal,Post GR,Keven
 3885,normal,Post IR,Roy
 3885,normal,Pay,Elisha
-3886,anomaly,Create PR,Howard
-3886,anomaly,Release PR,Donald
-3886,anomaly,Create PO,Josef
-3886,anomaly,Approve PO 1,Steve
-3886,anomaly,Approve PO 2,Brian
-3886,anomaly,Approve PO 3,Della
-3886,anomaly,Release PO,Junior
-3886,anomaly,Post GR,James
-3886,anomaly,Post IR,Chan
-3886,anomaly,Pay,Josef
+3886,normal,Create PR,Howard
+3886,normal,Release PR,Donald
+3886,normal,Create PO,Josef
+3886,normal,Approve PO 1,Steve
+3886,normal,Approve PO 2,Brian
+3886,normal,Approve PO 3,Della
+3886,normal,Release PO,Junior
+3886,normal,Post GR,James
+3886,normal,Post IR,Chan
+3886,normal,Pay,Josef
 3887,anomaly,Create PR,Keven
 3887,anomaly,Release PR,Donald
 3887,anomaly,Create PO,Alyce
@@ -31152,14 +31152,14 @@ traceid,label,activity,user
 3897,normal,Post GR,Anna
 3897,normal,Post IR,Roy
 3897,normal,Pay,Vickie
-3898,anomaly,Create PR,Keven
-3898,anomaly,Release PR,Donald
-3898,anomaly,Create PO,Ling
-3898,anomaly,Approve PO 1,Donald
-3898,anomaly,Release PO,Della
-3898,anomaly,Post GR,James
-3898,anomaly,Post IR,Roy
-3898,anomaly,Pay,Howard
+3898,normal,Create PR,Keven
+3898,normal,Release PR,Donald
+3898,normal,Create PO,Ling
+3898,normal,Approve PO 1,Donald
+3898,normal,Release PO,Della
+3898,normal,Post GR,James
+3898,normal,Post IR,Roy
+3898,normal,Pay,Howard
 3899,normal,Create SC,Alyce
 3899,normal,Purchase SC,Hassie
 3899,normal,Approve SC,Micheline
@@ -31638,14 +31638,14 @@ traceid,label,activity,user
 3957,anomaly,Post GR,Keven
 3957,anomaly,Post IR,Roy
 3957,anomaly,Pay,Elisha
-3958,anomaly,Create SC,Alyce
-3958,anomaly,Purchase SC,Paul
-3958,anomaly,Approve SC,Chan
-3958,anomaly,Create PO,Josef
-3958,anomaly,Release PO,Elisha
-3958,anomaly,Post GR,Anna
-3958,anomaly,Post IR,Roy
-3958,anomaly,Pay,Elisha
+3958,normal,Create SC,Alyce
+3958,normal,Purchase SC,Paul
+3958,normal,Approve SC,Chan
+3958,normal,Create PO,Josef
+3958,normal,Release PO,Elisha
+3958,normal,Post GR,Anna
+3958,normal,Post IR,Roy
+3958,normal,Pay,Elisha
 3959,normal,Create SC,Alyce
 3959,normal,Purchase SC,Paul
 3959,normal,Approve SC,Micheline
@@ -31802,13 +31802,13 @@ traceid,label,activity,user
 3978,normal,Post GR,Lourdes
 3978,normal,Post IR,Chan
 3978,normal,Pay,Josef
-3979,anomaly,Create PR,Keven
-3979,anomaly,Release PR,Donald
-3979,anomaly,Create PO,Alyce
-3979,anomaly,Release PO,Hoyt
-3979,anomaly,Post GR,James
-3979,anomaly,Post IR,Michaele
-3979,anomaly,Pay,Josef
+3979,normal,Create PR,Keven
+3979,normal,Release PR,Donald
+3979,normal,Create PO,Alyce
+3979,normal,Release PO,Hoyt
+3979,normal,Post GR,James
+3979,normal,Post IR,Michaele
+3979,normal,Pay,Josef
 3980,normal,Create SC,Alyce
 3980,normal,Purchase SC,Paul
 3980,normal,Approve SC,Micheline
@@ -31855,14 +31855,14 @@ traceid,label,activity,user
 3985,anomaly,Post GR,Anna
 3985,anomaly,Post IR,Chan
 3985,anomaly,Pay,Josef
-3986,anomaly,Create SC,Alyce
-3986,anomaly,Purchase SC,Marilyn
-3986,anomaly,Approve SC,Micheline
-3986,anomaly,Create PO,Josef
-3986,anomaly,Release PO,Carmella
-3986,anomaly,Post GR,James
-3986,anomaly,Post IR,Roy
-3986,anomaly,Pay,Vickie
+3986,normal,Create SC,Alyce
+3986,normal,Purchase SC,Marilyn
+3986,normal,Approve SC,Micheline
+3986,normal,Create PO,Josef
+3986,normal,Release PO,Carmella
+3986,normal,Post GR,James
+3986,normal,Post IR,Roy
+3986,normal,Pay,Vickie
 3987,normal,Create SC,Alyce
 3987,normal,Purchase SC,Paul
 3987,normal,Approve SC,Micheline
@@ -31965,14 +31965,14 @@ traceid,label,activity,user
 3999,normal,Post GR,Lourdes
 3999,normal,Post IR,Chan
 3999,normal,Pay,Josef
-4000,anomaly,Create SC,Alyce
-4000,anomaly,Purchase SC,Lucy
-4000,anomaly,Approve SC,Sandra
-4000,anomaly,Create PO,Josef
-4000,anomaly,Release PO,Carmella
-4000,anomaly,Post GR,Keven
-4000,anomaly,Post IR,Chan
-4000,anomaly,Pay,Josef
+4000,normal,Create SC,Alyce
+4000,normal,Purchase SC,Lucy
+4000,normal,Approve SC,Sandra
+4000,normal,Create PO,Josef
+4000,normal,Release PO,Carmella
+4000,normal,Post GR,Keven
+4000,normal,Post IR,Chan
+4000,normal,Pay,Josef
 4001,normal,Create PR,Keven
 4001,normal,Release PR,Donald
 4001,normal,Create PO,Alyce
@@ -32103,14 +32103,14 @@ traceid,label,activity,user
 4016,anomaly,Post GR,Jin
 4016,anomaly,Post IR,Chan
 4016,anomaly,Pay,Josef
-4017,anomaly,Create SC,Alyce
-4017,anomaly,Purchase SC,Lucy
-4017,anomaly,Approve SC,Sandra
-4017,anomaly,Create PO,Lannie
-4017,anomaly,Release PO,Elisha
-4017,anomaly,Post GR,Anna
-4017,anomaly,Post IR,Chan
-4017,anomaly,Pay,Josef
+4017,normal,Create SC,Alyce
+4017,normal,Purchase SC,Lucy
+4017,normal,Approve SC,Sandra
+4017,normal,Create PO,Lannie
+4017,normal,Release PO,Elisha
+4017,normal,Post GR,Anna
+4017,normal,Post IR,Chan
+4017,normal,Pay,Josef
 4018,normal,Create SC,Alyce
 4018,normal,Purchase SC,Lucy
 4018,normal,Approve SC,Micheline
@@ -32768,13 +32768,13 @@ traceid,label,activity,user
 4100,anomaly,Post GR,Tiffiny
 4100,anomaly,Post IR,Chan
 4100,anomaly,Pay,Josef
-4101,anomaly,Create PR,Keven
-4101,anomaly,Release PR,Donald
-4101,anomaly,Create PO,Alyce
-4101,anomaly,Release PO,Earl
-4101,anomaly,Post GR,Anna
-4101,anomaly,Post IR,Roy
-4101,anomaly,Pay,Elisha
+4101,normal,Create PR,Keven
+4101,normal,Release PR,Donald
+4101,normal,Create PO,Alyce
+4101,normal,Release PO,Earl
+4101,normal,Post GR,Anna
+4101,normal,Post IR,Roy
+4101,normal,Pay,Elisha
 4102,anomaly,Create PR,Keven
 4102,anomaly,Release PR,Donald
 4102,anomaly,Create PO,Donald
@@ -32897,14 +32897,14 @@ traceid,label,activity,user
 4116,normal,Post GR,Lourdes
 4116,normal,Post IR,Chan
 4116,normal,Pay,Josef
-4117,anomaly,Create PR,Keven
-4117,anomaly,Release PR,Donald
-4117,anomaly,Create PO,Ling
-4117,anomaly,Approve PO 1,Donald
-4117,anomaly,Release PO,Della
-4117,anomaly,Post GR,Keven
-4117,anomaly,Post IR,Roy
-4117,anomaly,Pay,Vickie
+4117,normal,Create PR,Keven
+4117,normal,Release PR,Donald
+4117,normal,Create PO,Ling
+4117,normal,Approve PO 1,Donald
+4117,normal,Release PO,Della
+4117,normal,Post GR,Keven
+4117,normal,Post IR,Roy
+4117,normal,Pay,Vickie
 4118,normal,Create PR,Keven
 4118,normal,Release PR,Donald
 4118,normal,Create PO,Ling
@@ -33248,14 +33248,14 @@ traceid,label,activity,user
 4160,anomaly,Post GR,James
 4160,anomaly,Post IR,Roy
 4160,anomaly,Pay,Vickie
-4161,anomaly,Create SC,Seth
-4161,anomaly,Purchase SC,Lucy
-4161,anomaly,Approve SC,Micheline
-4161,anomaly,Create PO,Josef
-4161,anomaly,Release PO,Craig
-4161,anomaly,Post GR,Keven
-4161,anomaly,Post IR,Sandra
-4161,anomaly,Pay,Josef
+4161,normal,Create SC,Seth
+4161,normal,Purchase SC,Lucy
+4161,normal,Approve SC,Micheline
+4161,normal,Create PO,Josef
+4161,normal,Release PO,Craig
+4161,normal,Post GR,Keven
+4161,normal,Post IR,Sandra
+4161,normal,Pay,Josef
 4162,normal,Create PR,Keven
 4162,normal,Release PR,Donald
 4162,normal,Create PO,Alyce
@@ -33485,14 +33485,14 @@ traceid,label,activity,user
 4189,anomaly,Post GR,Tiffiny
 4189,anomaly,Post IR,Roy
 4189,anomaly,Pay,Vickie
-4190,anomaly,Create SC,Alyce
-4190,anomaly,Purchase SC,Seth
-4190,anomaly,Approve SC,Micheline
-4190,anomaly,Create PO,Josef
-4190,anomaly,Release PO,Carmella
-4190,anomaly,Post GR,Keven
-4190,anomaly,Post IR,Roseanne
-4190,anomaly,Pay,Josef
+4190,normal,Create SC,Alyce
+4190,normal,Purchase SC,Seth
+4190,normal,Approve SC,Micheline
+4190,normal,Create PO,Josef
+4190,normal,Release PO,Carmella
+4190,normal,Post GR,Keven
+4190,normal,Post IR,Roseanne
+4190,normal,Pay,Josef
 4191,normal,Create PR,Keven
 4191,normal,Release PR,Donald
 4191,normal,Create PO,Ling
@@ -33509,13 +33509,13 @@ traceid,label,activity,user
 4192,normal,Post GR,Anna
 4192,normal,Post IR,Chan
 4192,normal,Pay,Josef
-4193,anomaly,Create PR,Ling
-4193,anomaly,Release PR,Donald
-4193,anomaly,Create PO,Alyce
-4193,anomaly,Release PO,Shandi
-4193,anomaly,Post GR,Lourdes
-4193,anomaly,Post IR,Roy
-4193,anomaly,Pay,Elisha
+4193,normal,Create PR,Ling
+4193,normal,Release PR,Donald
+4193,normal,Create PO,Alyce
+4193,normal,Release PO,Shandi
+4193,normal,Post GR,Lourdes
+4193,normal,Post IR,Roy
+4193,normal,Pay,Elisha
 4194,normal,Create PR,Keven
 4194,normal,Release PR,Donald
 4194,normal,Create PO,Alyce
@@ -33523,14 +33523,14 @@ traceid,label,activity,user
 4194,normal,Post GR,Carmella
 4194,normal,Post IR,Roy
 4194,normal,Pay,Vickie
-4195,anomaly,Create SC,Alyce
-4195,anomaly,Purchase SC,Paul
-4195,anomaly,Approve SC,Sandra
-4195,anomaly,Create PO,Josef
-4195,anomaly,Release PO,Craig
-4195,anomaly,Post GR,Keven
-4195,anomaly,Post IR,Roy
-4195,anomaly,Pay,Vickie
+4195,normal,Create SC,Alyce
+4195,normal,Purchase SC,Paul
+4195,normal,Approve SC,Sandra
+4195,normal,Create PO,Josef
+4195,normal,Release PO,Craig
+4195,normal,Post GR,Keven
+4195,normal,Post IR,Roy
+4195,normal,Pay,Vickie
 4196,normal,Create PR,Keven
 4196,normal,Release PR,Donald
 4196,normal,Create PO,Josef
@@ -33570,13 +33570,13 @@ traceid,label,activity,user
 4200,anomaly,Post GR,James
 4200,anomaly,Post IR,Roy
 4200,anomaly,Pay,Elisha
-4201,anomaly,Create PR,Keven
-4201,anomaly,Release PR,Donald
-4201,anomaly,Create PO,Alyce
-4201,anomaly,Release PO,Elisha
-4201,anomaly,Post GR,Anna
-4201,anomaly,Post IR,Sandra
-4201,anomaly,Pay,Josef
+4201,normal,Create PR,Keven
+4201,normal,Release PR,Donald
+4201,normal,Create PO,Alyce
+4201,normal,Release PO,Elisha
+4201,normal,Post GR,Anna
+4201,normal,Post IR,Sandra
+4201,normal,Pay,Josef
 4202,normal,Create PR,Keven
 4202,normal,Release PR,Donald
 4202,normal,Create PO,Alyce
@@ -33671,13 +33671,13 @@ traceid,label,activity,user
 4212,normal,Post GR,Keven
 4212,normal,Post IR,Roy
 4212,normal,Pay,Elisha
-4213,anomaly,Create PR,Keven
-4213,anomaly,Release PR,Lannie
-4213,anomaly,Create PO,Howard
-4213,anomaly,Release PO,Elisha
-4213,anomaly,Post GR,Wilton
-4213,anomaly,Post IR,Roy
-4213,anomaly,Pay,Elisha
+4213,normal,Create PR,Keven
+4213,normal,Release PR,Lannie
+4213,normal,Create PO,Howard
+4213,normal,Release PO,Elisha
+4213,normal,Post GR,Wilton
+4213,normal,Post IR,Roy
+4213,normal,Pay,Elisha
 4214,normal,Create PR,Keven
 4214,normal,Release PR,Donald
 4214,normal,Create PO,Donald
@@ -34092,14 +34092,14 @@ traceid,label,activity,user
 4264,normal,Post GR,Keven
 4264,normal,Post IR,Roy
 4264,normal,Pay,Vickie
-4265,anomaly,Create SC,Alyce
-4265,anomaly,Purchase SC,Lucy
-4265,anomaly,Approve SC,Sandra
-4265,anomaly,Create PO,Josef
-4265,anomaly,Release PO,Shandi
-4265,anomaly,Post GR,Lourdes
-4265,anomaly,Post IR,Roy
-4265,anomaly,Pay,Vickie
+4265,normal,Create SC,Alyce
+4265,normal,Purchase SC,Lucy
+4265,normal,Approve SC,Sandra
+4265,normal,Create PO,Josef
+4265,normal,Release PO,Shandi
+4265,normal,Post GR,Lourdes
+4265,normal,Post IR,Roy
+4265,normal,Pay,Vickie
 4266,normal,Create PR,Keven
 4266,normal,Release PR,Donald
 4266,normal,Create PO,Josef
@@ -34151,13 +34151,13 @@ traceid,label,activity,user
 4271,anomaly,Pay,Josef
 4271,anomaly,Release PO,Elisha
 4271,anomaly,Post GR,Anna
-4272,anomaly,Create PR,Keven
-4272,anomaly,Release PR,Donald
-4272,anomaly,Create PO,Alyce
-4272,anomaly,Release PO,Elisha
-4272,anomaly,Post GR,Anna
-4272,anomaly,Post IR,Roy
-4272,anomaly,Pay,Vickie
+4272,normal,Create PR,Keven
+4272,normal,Release PR,Donald
+4272,normal,Create PO,Alyce
+4272,normal,Release PO,Elisha
+4272,normal,Post GR,Anna
+4272,normal,Post IR,Roy
+4272,normal,Pay,Vickie
 4273,normal,Create PR,Keven
 4273,normal,Release PR,Donald
 4273,normal,Create PO,Josef
@@ -34248,17 +34248,17 @@ traceid,label,activity,user
 4283,anomaly,Post GR,Anna
 4283,anomaly,Post IR,Chan
 4283,anomaly,Pay,Josef
-4284,anomaly,Create SC,Seth
-4284,anomaly,Purchase SC,Hassie
-4284,anomaly,Approve SC,Sandra
-4284,anomaly,Create PO,Sonia
-4284,anomaly,Approve PO 1,Ling
-4284,anomaly,Approve PO 2,Brant
-4284,anomaly,Approve PO 3,Carmella
-4284,anomaly,Release PO,Della
-4284,anomaly,Post GR,Steve
-4284,anomaly,Post IR,Roy
-4284,anomaly,Pay,Elisha
+4284,normal,Create SC,Seth
+4284,normal,Purchase SC,Hassie
+4284,normal,Approve SC,Sandra
+4284,normal,Create PO,Sonia
+4284,normal,Approve PO 1,Ling
+4284,normal,Approve PO 2,Brant
+4284,normal,Approve PO 3,Carmella
+4284,normal,Release PO,Della
+4284,normal,Post GR,Steve
+4284,normal,Post IR,Roy
+4284,normal,Pay,Elisha
 4285,anomaly,Create SC,Alyce
 4285,anomaly,Post GR,Lourdes
 4285,anomaly,Purchase SC,Paul
@@ -34429,15 +34429,15 @@ traceid,label,activity,user
 4306,normal,Post GR,Anna
 4306,normal,Post IR,Roy
 4306,normal,Pay,Vickie
-4307,anomaly,Create SC,Grayce
-4307,anomaly,Purchase SC,Lucy
-4307,anomaly,Approve SC,Micheline
-4307,anomaly,Create PO,Roy
-4307,anomaly,Approve PO 1,Donald
-4307,anomaly,Release PO,Della
-4307,anomaly,Post GR,Carmella
-4307,anomaly,Post IR,Roy
-4307,anomaly,Pay,Vickie
+4307,normal,Create SC,Grayce
+4307,normal,Purchase SC,Lucy
+4307,normal,Approve SC,Micheline
+4307,normal,Create PO,Roy
+4307,normal,Approve PO 1,Donald
+4307,normal,Release PO,Della
+4307,normal,Post GR,Carmella
+4307,normal,Post IR,Roy
+4307,normal,Pay,Vickie
 4308,normal,Create SC,Alyce
 4308,normal,Purchase SC,Lucy
 4308,normal,Approve SC,Sandra
@@ -34484,14 +34484,14 @@ traceid,label,activity,user
 4313,normal,Post GR,Lourdes
 4313,normal,Post IR,Roy
 4313,normal,Pay,Vickie
-4314,anomaly,Create SC,Alyce
-4314,anomaly,Purchase SC,Rossie
-4314,anomaly,Approve SC,Sandra
-4314,anomaly,Create PO,Josef
-4314,anomaly,Release PO,Elisha
-4314,anomaly,Post GR,Anna
-4314,anomaly,Post IR,Roy
-4314,anomaly,Pay,Elisha
+4314,normal,Create SC,Alyce
+4314,normal,Purchase SC,Rossie
+4314,normal,Approve SC,Sandra
+4314,normal,Create PO,Josef
+4314,normal,Release PO,Elisha
+4314,normal,Post GR,Anna
+4314,normal,Post IR,Roy
+4314,normal,Pay,Elisha
 4315,normal,Create PR,Keven
 4315,normal,Release PR,Donald
 4315,normal,Create PO,Josef
@@ -34680,14 +34680,14 @@ traceid,label,activity,user
 4338,normal,Post GR,James
 4338,normal,Post IR,Roy
 4338,normal,Pay,Vickie
-4339,anomaly,Create SC,Alyce
-4339,anomaly,Purchase SC,Lucy
-4339,anomaly,Approve SC,Micheline
-4339,anomaly,Create PO,Josef
-4339,anomaly,Release PO,Elisha
-4339,anomaly,Post GR,Anna
-4339,anomaly,Post IR,Roy
-4339,anomaly,Pay,Joe
+4339,normal,Create SC,Alyce
+4339,normal,Purchase SC,Lucy
+4339,normal,Approve SC,Micheline
+4339,normal,Create PO,Josef
+4339,normal,Release PO,Elisha
+4339,normal,Post GR,Anna
+4339,normal,Post IR,Roy
+4339,normal,Pay,Joe
 4340,normal,Create SC,Alyce
 4340,normal,Purchase SC,Paul
 4340,normal,Approve SC,Micheline
@@ -34837,13 +34837,13 @@ traceid,label,activity,user
 4357,normal,Post GR,Lourdes
 4357,normal,Post IR,Roy
 4357,normal,Pay,Vickie
-4358,anomaly,Create PR,Keven
-4358,anomaly,Release PR,Donald
-4358,anomaly,Create PO,Lannie
-4358,anomaly,Release PO,Lannie
-4358,anomaly,Post GR,Carmella
-4358,anomaly,Post IR,Roy
-4358,anomaly,Pay,Elisha
+4358,normal,Create PR,Keven
+4358,normal,Release PR,Donald
+4358,normal,Create PO,Lannie
+4358,normal,Release PO,Lannie
+4358,normal,Post GR,Carmella
+4358,normal,Post IR,Roy
+4358,normal,Pay,Elisha
 4359,normal,Create PR,Keven
 4359,normal,Release PR,Donald
 4359,normal,Create PO,Lisa
@@ -34853,14 +34853,14 @@ traceid,label,activity,user
 4359,normal,Post GR,Jin
 4359,normal,Post IR,Roy
 4359,normal,Pay,Vickie
-4360,anomaly,Create PR,Keven
-4360,anomaly,Release PR,Roy
-4360,anomaly,Create PO,Ling
-4360,anomaly,Approve PO 1,Vickie
-4360,anomaly,Release PO,Della
-4360,anomaly,Post GR,Jin
-4360,anomaly,Post IR,Chan
-4360,anomaly,Pay,Josef
+4360,normal,Create PR,Keven
+4360,normal,Release PR,Roy
+4360,normal,Create PO,Ling
+4360,normal,Approve PO 1,Vickie
+4360,normal,Release PO,Della
+4360,normal,Post GR,Jin
+4360,normal,Post IR,Chan
+4360,normal,Pay,Josef
 4361,normal,Create PR,Keven
 4361,normal,Release PR,Donald
 4361,normal,Create PO,Alyce
@@ -34892,14 +34892,14 @@ traceid,label,activity,user
 4364,normal,Post GR,Keven
 4364,normal,Post IR,Roy
 4364,normal,Pay,Elisha
-4365,anomaly,Create SC,Seth
-4365,anomaly,Purchase SC,Hassie
-4365,anomaly,Approve SC,Sandra
-4365,anomaly,Create PO,Josef
-4365,anomaly,Release PO,Shandi
-4365,anomaly,Post GR,Lourdes
-4365,anomaly,Post IR,Roy
-4365,anomaly,Pay,Elisha
+4365,normal,Create SC,Seth
+4365,normal,Purchase SC,Hassie
+4365,normal,Approve SC,Sandra
+4365,normal,Create PO,Josef
+4365,normal,Release PO,Shandi
+4365,normal,Post GR,Lourdes
+4365,normal,Post IR,Roy
+4365,normal,Pay,Elisha
 4366,normal,Create SC,Alyce
 4366,normal,Purchase SC,Hassie
 4366,normal,Approve SC,Micheline
@@ -35270,13 +35270,13 @@ traceid,label,activity,user
 4413,anomaly,Post GR,Carmella
 4413,anomaly,Post IR,Roy
 4413,anomaly,Pay,Vickie
-4414,anomaly,Create PR,Keven
-4414,anomaly,Release PR,Donald
-4414,anomaly,Create PO,Alyce
-4414,anomaly,Release PO,Elisha
-4414,anomaly,Post GR,Anna
-4414,anomaly,Post IR,Hannah
-4414,anomaly,Pay,Ryan
+4414,normal,Create PR,Keven
+4414,normal,Release PR,Donald
+4414,normal,Create PO,Alyce
+4414,normal,Release PO,Elisha
+4414,normal,Post GR,Anna
+4414,normal,Post IR,Hannah
+4414,normal,Pay,Ryan
 4415,anomaly,Create PR,Keven
 4415,anomaly,Create PO,Alyce
 4415,anomaly,Release PO,Shandi
@@ -35391,13 +35391,13 @@ traceid,label,activity,user
 4428,normal,Post GR,Carmella
 4428,normal,Post IR,Roy
 4428,normal,Pay,Vickie
-4429,anomaly,Create PR,Keven
-4429,anomaly,Release PR,Donald
-4429,anomaly,Create PO,Donald
-4429,anomaly,Release PO,Lannie
-4429,anomaly,Post GR,Keven
-4429,anomaly,Post IR,Roy
-4429,anomaly,Pay,Elisha
+4429,normal,Create PR,Keven
+4429,normal,Release PR,Donald
+4429,normal,Create PO,Donald
+4429,normal,Release PO,Lannie
+4429,normal,Post GR,Keven
+4429,normal,Post IR,Roy
+4429,normal,Pay,Elisha
 4430,normal,Create SC,Alyce
 4430,normal,Purchase SC,Hassie
 4430,normal,Approve SC,Sandra
@@ -35434,14 +35434,14 @@ traceid,label,activity,user
 4433,anomaly,Post GR,James
 4433,anomaly,Post IR,Chan
 4433,anomaly,Pay,Josef
-4434,anomaly,Create SC,Alyce
-4434,anomaly,Purchase SC,Paul
-4434,anomaly,Approve SC,Micheline
-4434,anomaly,Create PO,Della
-4434,anomaly,Release PO,Marilyn
-4434,anomaly,Post GR,James
-4434,anomaly,Post IR,Issac
-4434,anomaly,Pay,Josef
+4434,normal,Create SC,Alyce
+4434,normal,Purchase SC,Paul
+4434,normal,Approve SC,Micheline
+4434,normal,Create PO,Della
+4434,normal,Release PO,Marilyn
+4434,normal,Post GR,James
+4434,normal,Post IR,Issac
+4434,normal,Pay,Josef
 4435,normal,Create SC,Alyce
 4435,normal,Purchase SC,Lucy
 4435,normal,Approve SC,Micheline
@@ -35537,21 +35537,21 @@ traceid,label,activity,user
 4445,anomaly,Post GR,Anna
 4445,anomaly,Post IR,Roy
 4445,anomaly,Pay,Vickie
-4446,anomaly,Create PR,Keven
-4446,anomaly,Release PR,Vickie
-4446,anomaly,Create PO,Ling
-4446,anomaly,Approve PO 1,Johnny
-4446,anomaly,Release PO,Della
-4446,anomaly,Post GR,Carmella
-4446,anomaly,Post IR,Roy
-4446,anomaly,Pay,Elisha
-4447,anomaly,Create PR,Keven
-4447,anomaly,Release PR,Donald
-4447,anomaly,Create PO,Alyce
-4447,anomaly,Release PO,Shandi
-4447,anomaly,Post GR,Lourdes
-4447,anomaly,Post IR,Chan
-4447,anomaly,Pay,Josef
+4446,normal,Create PR,Keven
+4446,normal,Release PR,Vickie
+4446,normal,Create PO,Ling
+4446,normal,Approve PO 1,Johnny
+4446,normal,Release PO,Della
+4446,normal,Post GR,Carmella
+4446,normal,Post IR,Roy
+4446,normal,Pay,Elisha
+4447,normal,Create PR,Keven
+4447,normal,Release PR,Donald
+4447,normal,Create PO,Alyce
+4447,normal,Release PO,Shandi
+4447,normal,Post GR,Lourdes
+4447,normal,Post IR,Chan
+4447,normal,Pay,Josef
 4448,anomaly,Create PO,Alyce
 4448,anomaly,Create PR,Keven
 4448,anomaly,Release PR,Donald
@@ -35859,13 +35859,13 @@ traceid,label,activity,user
 4486,anomaly,Random activity 10,Random user 55
 4486,anomaly,Post IR,Roy
 4486,anomaly,Pay,Vickie
-4487,anomaly,Create PR,Keven
-4487,anomaly,Release PR,Donald
-4487,anomaly,Create PO,Alyce
-4487,anomaly,Release PO,Della
-4487,anomaly,Post GR,Anna
-4487,anomaly,Post IR,Chan
-4487,anomaly,Pay,Josef
+4487,normal,Create PR,Keven
+4487,normal,Release PR,Donald
+4487,normal,Create PO,Alyce
+4487,normal,Release PO,Della
+4487,normal,Post GR,Anna
+4487,normal,Post IR,Chan
+4487,normal,Pay,Josef
 4488,normal,Create PR,Keven
 4488,normal,Release PR,Donald
 4488,normal,Create PO,Alyce
@@ -36499,14 +36499,14 @@ traceid,label,activity,user
 4566,normal,Post GR,Tiffiny
 4566,normal,Post IR,Roy
 4566,normal,Pay,Vickie
-4567,anomaly,Create SC,Alyce
-4567,anomaly,Purchase SC,Hassie
-4567,anomaly,Approve SC,Sandra
-4567,anomaly,Create PO,Josef
-4567,anomaly,Release PO,Carmella
-4567,anomaly,Post GR,Jin
-4567,anomaly,Post IR,Roy
-4567,anomaly,Pay,Vickie
+4567,normal,Create SC,Alyce
+4567,normal,Purchase SC,Hassie
+4567,normal,Approve SC,Sandra
+4567,normal,Create PO,Josef
+4567,normal,Release PO,Carmella
+4567,normal,Post GR,Jin
+4567,normal,Post IR,Roy
+4567,normal,Pay,Vickie
 4568,normal,Create PR,Keven
 4568,normal,Release PR,Donald
 4568,normal,Create PO,Lisa
@@ -36605,13 +36605,13 @@ traceid,label,activity,user
 4579,normal,Post GR,Lourdes
 4579,normal,Post IR,Chan
 4579,normal,Pay,Josef
-4580,anomaly,Create PR,Keven
-4580,anomaly,Release PR,Donald
-4580,anomaly,Create PO,Donald
-4580,anomaly,Release PO,Elisha
-4580,anomaly,Post GR,Anna
-4580,anomaly,Post IR,Chan
-4580,anomaly,Pay,Marilyn
+4580,normal,Create PR,Keven
+4580,normal,Release PR,Donald
+4580,normal,Create PO,Donald
+4580,normal,Release PO,Elisha
+4580,normal,Post GR,Anna
+4580,normal,Post IR,Chan
+4580,normal,Pay,Marilyn
 4581,anomaly,Create PR,Keven
 4581,anomaly,Create PO,Alyce
 4581,anomaly,Release PO,Shandi
@@ -36740,13 +36740,13 @@ traceid,label,activity,user
 4596,normal,Post GR,Carmella
 4596,normal,Post IR,Roy
 4596,normal,Pay,Elisha
-4597,anomaly,Create PR,Keven
-4597,anomaly,Release PR,Donald
-4597,anomaly,Create PO,Alyce
-4597,anomaly,Release PO,Shandi
-4597,anomaly,Post GR,Lourdes
-4597,anomaly,Post IR,Roy
-4597,anomaly,Pay,Emily
+4597,normal,Create PR,Keven
+4597,normal,Release PR,Donald
+4597,normal,Create PO,Alyce
+4597,normal,Release PO,Shandi
+4597,normal,Post GR,Lourdes
+4597,normal,Post IR,Roy
+4597,normal,Pay,Emily
 4598,anomaly,Create PR,Keven
 4598,anomaly,Release PR,Donald
 4598,anomaly,Approve PO 3,Jin
@@ -36971,13 +36971,13 @@ traceid,label,activity,user
 4624,normal,Post GR,Keven
 4624,normal,Post IR,Chan
 4624,normal,Pay,Josef
-4625,anomaly,Create PR,Keven
-4625,anomaly,Release PR,Donald
-4625,anomaly,Create PO,Alyce
-4625,anomaly,Release PO,Elisha
-4625,anomaly,Post GR,Anna
-4625,anomaly,Post IR,Roy
-4625,anomaly,Pay,Elisha
+4625,normal,Create PR,Keven
+4625,normal,Release PR,Donald
+4625,normal,Create PO,Alyce
+4625,normal,Release PO,Elisha
+4625,normal,Post GR,Anna
+4625,normal,Post IR,Roy
+4625,normal,Pay,Elisha
 4626,normal,Create PR,Keven
 4626,normal,Release PR,Donald
 4626,normal,Create PO,Josef
@@ -37022,13 +37022,13 @@ traceid,label,activity,user
 4630,anomaly,Approve PO 3,Jin
 4630,anomaly,Post IR,Roy
 4630,anomaly,Pay,Elisha
-4631,anomaly,Create PR,Keven
-4631,anomaly,Release PR,Donald
-4631,anomaly,Create PO,Alyce
-4631,anomaly,Release PO,Lannie
-4631,anomaly,Post GR,Rossie
-4631,anomaly,Post IR,Roy
-4631,anomaly,Pay,Vickie
+4631,normal,Create PR,Keven
+4631,normal,Release PR,Donald
+4631,normal,Create PO,Alyce
+4631,normal,Release PO,Lannie
+4631,normal,Post GR,Rossie
+4631,normal,Post IR,Roy
+4631,normal,Pay,Vickie
 4632,normal,Create PR,Keven
 4632,normal,Release PR,Donald
 4632,normal,Create PO,Lisa
@@ -37095,13 +37095,13 @@ traceid,label,activity,user
 4639,normal,Post GR,Jin
 4639,normal,Post IR,Roy
 4639,normal,Pay,Elisha
-4640,anomaly,Create PR,Keven
-4640,anomaly,Release PR,Donald
-4640,anomaly,Create PO,Alyce
-4640,anomaly,Release PO,Hugo
-4640,anomaly,Post GR,Jin
-4640,anomaly,Post IR,Chan
-4640,anomaly,Pay,Josef
+4640,normal,Create PR,Keven
+4640,normal,Release PR,Donald
+4640,normal,Create PO,Alyce
+4640,normal,Release PO,Hugo
+4640,normal,Post GR,Jin
+4640,normal,Post IR,Chan
+4640,normal,Pay,Josef
 4641,normal,Create SC,Alyce
 4641,normal,Purchase SC,Lucy
 4641,normal,Approve SC,Micheline
@@ -37317,14 +37317,14 @@ traceid,label,activity,user
 4666,normal,Post GR,James
 4666,normal,Post IR,Chan
 4666,normal,Pay,Josef
-4667,anomaly,Create SC,Alyce
-4667,anomaly,Purchase SC,Lucy
-4667,anomaly,Approve SC,Sandra
-4667,anomaly,Create PO,Josef
-4667,anomaly,Release PO,Lannie
-4667,anomaly,Post GR,Jin
-4667,anomaly,Post IR,Anna
-4667,anomaly,Pay,Sherell
+4667,normal,Create SC,Alyce
+4667,normal,Purchase SC,Lucy
+4667,normal,Approve SC,Sandra
+4667,normal,Create PO,Josef
+4667,normal,Release PO,Lannie
+4667,normal,Post GR,Jin
+4667,normal,Post IR,Anna
+4667,normal,Pay,Sherell
 4668,anomaly,Create PR,Keven
 4668,anomaly,Release PO,Lannie
 4668,anomaly,Release PR,Donald
@@ -37550,15 +37550,15 @@ traceid,label,activity,user
 4696,normal,Post GR,Anna
 4696,normal,Post IR,Roy
 4696,normal,Pay,Vickie
-4697,anomaly,Create PR,Keven
-4697,anomaly,Release PR,Donald
-4697,anomaly,Create PO,Ling
-4697,anomaly,Approve PO 1,Sigrid
-4697,anomaly,Approve PO 2,Paul
-4697,anomaly,Release PO,Della
-4697,anomaly,Post GR,Keven
-4697,anomaly,Post IR,Roy
-4697,anomaly,Pay,Vickie
+4697,normal,Create PR,Keven
+4697,normal,Release PR,Donald
+4697,normal,Create PO,Ling
+4697,normal,Approve PO 1,Sigrid
+4697,normal,Approve PO 2,Paul
+4697,normal,Release PO,Della
+4697,normal,Post GR,Keven
+4697,normal,Post IR,Roy
+4697,normal,Pay,Vickie
 4698,anomaly,Create PR,Keven
 4698,anomaly,Release PR,Donald
 4698,anomaly,Release PO,Elisha
@@ -37714,14 +37714,14 @@ traceid,label,activity,user
 4717,normal,Post GR,Keven
 4717,normal,Post IR,Roy
 4717,normal,Pay,Vickie
-4718,anomaly,Create SC,Alyce
-4718,anomaly,Purchase SC,Lucy
-4718,anomaly,Approve SC,Micheline
-4718,anomaly,Create PO,Josef
-4718,anomaly,Release PO,Elisha
-4718,anomaly,Post GR,Anna
-4718,anomaly,Post IR,Velda
-4718,anomaly,Pay,Josef
+4718,normal,Create SC,Alyce
+4718,normal,Purchase SC,Lucy
+4718,normal,Approve SC,Micheline
+4718,normal,Create PO,Josef
+4718,normal,Release PO,Elisha
+4718,normal,Post GR,Anna
+4718,normal,Post IR,Velda
+4718,normal,Pay,Josef
 4719,anomaly,Create PR,Keven
 4719,anomaly,Release PR,Donald
 4719,anomaly,Create PO,Ling
@@ -37773,13 +37773,13 @@ traceid,label,activity,user
 4724,normal,Post GR,Jin
 4724,normal,Post IR,Chan
 4724,normal,Pay,Josef
-4725,anomaly,Create PR,Keven
-4725,anomaly,Release PR,Donald
-4725,anomaly,Create PO,Alyce
-4725,anomaly,Release PO,Lannie
-4725,anomaly,Post GR,Keven
-4725,anomaly,Post IR,Chan
-4725,anomaly,Pay,Josef
+4725,normal,Create PR,Keven
+4725,normal,Release PR,Donald
+4725,normal,Create PO,Alyce
+4725,normal,Release PO,Lannie
+4725,normal,Post GR,Keven
+4725,normal,Post IR,Chan
+4725,normal,Pay,Josef
 4726,normal,Create SC,Alyce
 4726,normal,Purchase SC,Lucy
 4726,normal,Approve SC,Micheline
@@ -37964,14 +37964,14 @@ traceid,label,activity,user
 4748,anomaly,Post GR,Carmella
 4748,anomaly,Post IR,Chan
 4748,anomaly,Pay,Josef
-4749,anomaly,Create SC,Alyce
-4749,anomaly,Purchase SC,Junior
-4749,anomaly,Approve SC,Micheline
-4749,anomaly,Create PO,Josef
-4749,anomaly,Release PO,Craig
-4749,anomaly,Post GR,Carmella
-4749,anomaly,Post IR,Steve
-4749,anomaly,Pay,Elisha
+4749,normal,Create SC,Alyce
+4749,normal,Purchase SC,Junior
+4749,normal,Approve SC,Micheline
+4749,normal,Create PO,Josef
+4749,normal,Release PO,Craig
+4749,normal,Post GR,Carmella
+4749,normal,Post IR,Steve
+4749,normal,Pay,Elisha
 4750,normal,Create SC,Alyce
 4750,normal,Purchase SC,Lucy
 4750,normal,Approve SC,Micheline
@@ -38254,21 +38254,21 @@ traceid,label,activity,user
 4786,normal,Post GR,James
 4786,normal,Post IR,Roy
 4786,normal,Pay,Elisha
-4787,anomaly,Create PR,Keven
-4787,anomaly,Release PR,Donald
-4787,anomaly,Create PO,Rossana
-4787,anomaly,Approve PO 1,Alpha
-4787,anomaly,Release PO,Hugo
-4787,anomaly,Post GR,Keven
-4787,anomaly,Post IR,Chan
-4787,anomaly,Pay,Josef
-4788,anomaly,Create PR,Keven
-4788,anomaly,Release PR,Donald
-4788,anomaly,Create PO,Alyce
-4788,anomaly,Release PO,Shandi
-4788,anomaly,Post GR,Lourdes
-4788,anomaly,Post IR,Chan
-4788,anomaly,Pay,Shandi
+4787,normal,Create PR,Keven
+4787,normal,Release PR,Donald
+4787,normal,Create PO,Rossana
+4787,normal,Approve PO 1,Alpha
+4787,normal,Release PO,Hugo
+4787,normal,Post GR,Keven
+4787,normal,Post IR,Chan
+4787,normal,Pay,Josef
+4788,normal,Create PR,Keven
+4788,normal,Release PR,Donald
+4788,normal,Create PO,Alyce
+4788,normal,Release PO,Shandi
+4788,normal,Post GR,Lourdes
+4788,normal,Post IR,Chan
+4788,normal,Pay,Shandi
 4789,anomaly,Create PR,Keven
 4789,anomaly,Release PR,Donald
 4789,anomaly,Create PO,Ling
@@ -38388,15 +38388,15 @@ traceid,label,activity,user
 4802,anomaly,Post GR,Anna
 4802,anomaly,Post IR,Roy
 4802,anomaly,Pay,Elisha
-4803,anomaly,Create PR,Anna
-4803,anomaly,Release PR,Donald
-4803,anomaly,Create PO,Josef
-4803,anomaly,Approve PO 1,Vickie
-4803,anomaly,Approve PO 2,Elisha
-4803,anomaly,Release PO,Della
-4803,anomaly,Post GR,James
-4803,anomaly,Post IR,Chan
-4803,anomaly,Pay,Josef
+4803,normal,Create PR,Anna
+4803,normal,Release PR,Donald
+4803,normal,Create PO,Josef
+4803,normal,Approve PO 1,Vickie
+4803,normal,Approve PO 2,Elisha
+4803,normal,Release PO,Della
+4803,normal,Post GR,James
+4803,normal,Post IR,Chan
+4803,normal,Pay,Josef
 4804,normal,Create SC,Alyce
 4804,normal,Purchase SC,Lucy
 4804,normal,Approve SC,Sandra
@@ -38554,14 +38554,14 @@ traceid,label,activity,user
 4823,normal,Post GR,Anna
 4823,normal,Post IR,Roy
 4823,normal,Pay,Elisha
-4824,anomaly,Create SC,Della
-4824,anomaly,Purchase SC,Hassie
-4824,anomaly,Approve SC,Micheline
-4824,anomaly,Create PO,Josef
-4824,anomaly,Release PO,Shandi
-4824,anomaly,Post GR,Lourdes
-4824,anomaly,Post IR,Roy
-4824,anomaly,Pay,Shandi
+4824,normal,Create SC,Della
+4824,normal,Purchase SC,Hassie
+4824,normal,Approve SC,Micheline
+4824,normal,Create PO,Josef
+4824,normal,Release PO,Shandi
+4824,normal,Post GR,Lourdes
+4824,normal,Post IR,Roy
+4824,normal,Pay,Shandi
 4825,normal,Create PR,Keven
 4825,normal,Release PR,Donald
 4825,normal,Create PO,Ling
@@ -38578,14 +38578,14 @@ traceid,label,activity,user
 4826,normal,Post GR,Anna
 4826,normal,Post IR,Chan
 4826,normal,Pay,Josef
-4827,anomaly,Create PR,Keven
-4827,anomaly,Release PR,Donald
-4827,anomaly,Create PO,Ling
-4827,anomaly,Approve PO 1,Donald
-4827,anomaly,Release PO,Della
-4827,anomaly,Post GR,Keven
-4827,anomaly,Post IR,Chan
-4827,anomaly,Pay,Ryan
+4827,normal,Create PR,Keven
+4827,normal,Release PR,Donald
+4827,normal,Create PO,Ling
+4827,normal,Approve PO 1,Donald
+4827,normal,Release PO,Della
+4827,normal,Post GR,Keven
+4827,normal,Post IR,Chan
+4827,normal,Pay,Ryan
 4828,normal,Create PR,Keven
 4828,normal,Release PR,Donald
 4828,normal,Create PO,Alyce
@@ -38675,13 +38675,13 @@ traceid,label,activity,user
 4839,normal,Post GR,Keven
 4839,normal,Post IR,Roy
 4839,normal,Pay,Elisha
-4840,anomaly,Create PR,Marilyn
-4840,anomaly,Release PR,Donald
-4840,anomaly,Create PO,Alyce
-4840,anomaly,Release PO,Craig
-4840,anomaly,Post GR,Keven
-4840,anomaly,Post IR,Chan
-4840,anomaly,Pay,Josef
+4840,normal,Create PR,Marilyn
+4840,normal,Release PR,Donald
+4840,normal,Create PO,Alyce
+4840,normal,Release PO,Craig
+4840,normal,Post GR,Keven
+4840,normal,Post IR,Chan
+4840,normal,Pay,Josef
 4841,normal,Create PR,Keven
 4841,normal,Release PR,Donald
 4841,normal,Create PO,Howard
@@ -38732,14 +38732,14 @@ traceid,label,activity,user
 4846,normal,Post GR,Keven
 4846,normal,Post IR,Roy
 4846,normal,Pay,Vickie
-4847,anomaly,Create SC,Alyce
-4847,anomaly,Purchase SC,Hassie
-4847,anomaly,Approve SC,Sandra
-4847,anomaly,Create PO,Josef
-4847,anomaly,Release PO,Carmella
-4847,anomaly,Post GR,Grayce
-4847,anomaly,Post IR,Roy
-4847,anomaly,Pay,Elisha
+4847,normal,Create SC,Alyce
+4847,normal,Purchase SC,Hassie
+4847,normal,Approve SC,Sandra
+4847,normal,Create PO,Josef
+4847,normal,Release PO,Carmella
+4847,normal,Post GR,Grayce
+4847,normal,Post IR,Roy
+4847,normal,Pay,Elisha
 4848,anomaly,Purchase SC,Paul
 4848,anomaly,Approve SC,Micheline
 4848,anomaly,Create PO,Josef
@@ -38995,14 +38995,14 @@ traceid,label,activity,user
 4879,normal,Post GR,Lourdes
 4879,normal,Post IR,Chan
 4879,normal,Pay,Josef
-4880,anomaly,Create SC,Seth
-4880,anomaly,Purchase SC,Paul
-4880,anomaly,Approve SC,Micheline
-4880,anomaly,Create PO,Evelin
-4880,anomaly,Release PO,Elisha
-4880,anomaly,Post GR,Anna
-4880,anomaly,Post IR,Roy
-4880,anomaly,Pay,Vickie
+4880,normal,Create SC,Seth
+4880,normal,Purchase SC,Paul
+4880,normal,Approve SC,Micheline
+4880,normal,Create PO,Evelin
+4880,normal,Release PO,Elisha
+4880,normal,Post GR,Anna
+4880,normal,Post IR,Roy
+4880,normal,Pay,Vickie
 4881,normal,Create PR,Keven
 4881,normal,Release PR,Donald
 4881,normal,Create PO,Howard
@@ -39440,14 +39440,14 @@ traceid,label,activity,user
 4936,normal,Post GR,Lourdes
 4936,normal,Post IR,Chan
 4936,normal,Pay,Josef
-4937,anomaly,Create PR,Keven
-4937,anomaly,Release PR,Donald
-4937,anomaly,Create PO,Ling
-4937,anomaly,Approve PO 1,Donald
-4937,anomaly,Release PO,Sonia
-4937,anomaly,Post GR,James
-4937,anomaly,Post IR,Chan
-4937,anomaly,Pay,Josef
+4937,normal,Create PR,Keven
+4937,normal,Release PR,Donald
+4937,normal,Create PO,Ling
+4937,normal,Approve PO 1,Donald
+4937,normal,Release PO,Sonia
+4937,normal,Post GR,James
+4937,normal,Post IR,Chan
+4937,normal,Pay,Josef
 4938,anomaly,Create SC,Alyce
 4938,anomaly,Purchase SC,Hassie
 4938,anomaly,Approve SC,Sandra
@@ -39681,13 +39681,13 @@ traceid,label,activity,user
 4965,normal,Post GR,Keven
 4965,normal,Post IR,Roy
 4965,normal,Pay,Elisha
-4966,anomaly,Create PR,Keven
-4966,anomaly,Release PR,Donald
-4966,anomaly,Create PO,Alyce
-4966,anomaly,Release PO,Lannie
-4966,anomaly,Post GR,Keven
-4966,anomaly,Post IR,Roy
-4966,anomaly,Pay,Vickie
+4966,normal,Create PR,Keven
+4966,normal,Release PR,Donald
+4966,normal,Create PO,Alyce
+4966,normal,Release PO,Lannie
+4966,normal,Post GR,Keven
+4966,normal,Post IR,Roy
+4966,normal,Pay,Vickie
 4967,normal,Create PR,Keven
 4967,normal,Release PR,Donald
 4967,normal,Create PO,Donald
@@ -39718,13 +39718,13 @@ traceid,label,activity,user
 4970,normal,Post GR,Tiffiny
 4970,normal,Post IR,Roy
 4970,normal,Pay,Vickie
-4971,anomaly,Create PR,Jamika
-4971,anomaly,Release PR,Donald
-4971,anomaly,Create PO,Alyce
-4971,anomaly,Release PO,Craig
-4971,anomaly,Post GR,Marilyn
-4971,anomaly,Post IR,Roy
-4971,anomaly,Pay,Elisha
+4971,normal,Create PR,Jamika
+4971,normal,Release PR,Donald
+4971,normal,Create PO,Alyce
+4971,normal,Release PO,Craig
+4971,normal,Post GR,Marilyn
+4971,normal,Post IR,Roy
+4971,normal,Pay,Elisha
 4972,normal,Create SC,Seth
 4972,normal,Purchase SC,Hassie
 4972,normal,Approve SC,Micheline
