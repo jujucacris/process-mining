@@ -109,9 +109,9 @@ def converte(file, a, u): # recebe o nome do arquivo de entrada e o dicionário 
 			p.append(atividade) # adiciona a atividade binária ao vetor do trace
 			p.append(usuario) # adiciona o usuário binário ao vetor do trace
 		else: # caso o identificador do trace mude
-			p.append(tipo[0]) # adiciona o tipo de trace ao final do vetor
 			if len(p) > max_size: # se o comprimento do trace for maior do que o valor maior armazenado
 				max_size = len(p) # subistitui o maior valor pelo comprimento do trace atual
+			p.append(tipo[0]) # adiciona o tipo de trace ao final do vetor
 			rows.append(p) # adiciona o trace à matriz final
 			p = [] # zera o vetor do trace
 			i = i + 1 # passa para o próximo identificador de trace

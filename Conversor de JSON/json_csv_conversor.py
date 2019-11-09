@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import json
-import json_handler
 import sys
 from tabela_atividades_nolle import binarize
 
