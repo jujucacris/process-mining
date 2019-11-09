@@ -1,0 +1,8 @@
+traceid,label,activity,user,
+1,normal,Create SC,Ana,
+1,normal,Purchase SC,Paul,
+2,normal,Create SC,Karen,
+2,normal,Pay,Lannie,
+3,normal,Create SC,Karen,
+3,normal,Purchase SC,Shandi,
+3,normal,Approve SC,Hugo,
