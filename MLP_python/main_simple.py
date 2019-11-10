@@ -1,15 +1,16 @@
 import numpy as np
+from clase_MLP import cMLP as cMLP
 #Simple use of cMLP class
 funcao_f='tan'
 funcao_g='sig'
 
 #Funcao AND
-#Xtr=np.array([[1,0],[1,1],[0,0],[0,1]])
-#Ytr=np.array([[0],[1],[0],[0]])
+Xtr=np.array([[1,0],[1,1],[0,0],[0,1]])
+Ytr=np.array([[0],[1],[0],[0]])
 
 #Funcao XOR
-Xtr=np.array([[1,0],[1,1],[0,0], [0,1]])
-Ytr=np.array([[1],[0],[0],[1]])
+#Xtr=np.array([[1,0],[1,1],[0,0], [0,1]])
+#Ytr=np.array([[1],[0],[0],[1]])
 
 Xtest=Xtr
 Ytest=Ytr
