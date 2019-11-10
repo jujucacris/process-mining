@@ -6,7 +6,7 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
 # leer arquivo do log
-data_act = pd.read_csv("p2p-0.3-4.csv")
+data_act = pd.read_csv("Conversor de JSON/p2p-0.3-1.csv")
 
 # leer arquivo do log com representacao
 #data_nolle = pd.read_csv("p2p-0.3-4-nolle.csv")
@@ -17,6 +17,7 @@ data_act = pd.read_csv("p2p-0.3-4.csv")
 
 # Visualizar os primeiros registros do log
 data_act.head()
+data_act.describe()
 
 # Total de eventos no log
 data_act.count()
@@ -29,8 +30,8 @@ data_act['traceid'].max()
 data_act.isnull().any()
 
 # Total ocorrencias por atividade
-data_act['activity'].value_counts()
-data_act['activity'].value_counts(normalize=True) # frequencia relativa (porcentagem)
+data_describe_activities = pd.DataFrame(data_act['activity'].value_counts())
+data_describe_activities['porcentagem'] = pd.DataFrame(data_act['activity'].value_counts(normalize=True))
 
 # Total ocorrencias por tipo de case
 data_act['label'].value_counts()
@@ -38,7 +39,8 @@ data_act['label'].value_counts(normalize=True) # frequencia relativa (porcentage
 
 # Total ocorrencias por usuario
 data_act['user'].value_counts()
-data_act['user'].value_counts(normalize=True) # frequencia relativa (porcentagem)
+data_describe_usuarios = pd.DataFrame(data_act['user'].value_counts())
+data_describe_usuarios['porcentagem'] = pd.DataFrame(data_act['user'].value_counts(normalize=True))
 
 # Visualizar os eventos no case
 data_trace = log_to_traces(data_act)

@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov  9 14:42:06 2019
+
+@author: ubuntu
+"""
+
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+
+# Declaração das funcoes de ativação de arquitetura da rede
+funcao_f='tan' # funcao de ativacao da camada de entrada
+funcao_g='sig' # funcao de ativacao
+nitmax=10000 # numero de iterações maximo
+alfa=0.8 # taxa de aprendizado
+no=1148 # numero de nos da camada oculta
+
+# Ler o dataset
+dataset_log = pd.read_csv("Conversor de JSON/p2p-0.3-1-usuarios-nolle.csv")
+
+# Separar os conjuntos em Training e Test
+dataset_log = dataset_log.iloc[:,:-1] # elimina ultima fila de "nan"
+dataset_X = dataset_log.iloc[:,:-1] # copia todas as colunas menos o rótulo
+dataset_Y = dataset_log['n'] # rótulos do dataset
+dataset_Y = pd.get_dummies(dataset_Y).loc[:,'a'] # convertir a binaria, classe possitiva = "anomaly"
+
+# usar cross_validation para treinar o modelo
+#oMLP = cMLP(funcao_f,funcao_g,no)
+#scores = cross_val_score(oMLP, dataset_X, dataset_Y, cv=10)
+
+Xtrain, Xtest, Ytrain, Ytest = train_test_split(dataset_X, dataset_Y, stratify=dataset_Y, test_size=0.25) # 75% para treino e 25% para teste
+
+# Convertir os dataframes em arrays
+Xtrain = Xtrain.to_numpy()
+Xtest = Xtest.to_numpy()
+Ytrain = np.matrix(Ytrain.to_numpy(), dtype=np.int64).transpose()
+Ytest =  np.matrix(Ytest.to_numpy(), dtype=np.int64).transpose()
+
+# Treinar o modelo
+oMLP = cMLP(funcao_f,funcao_g,no)
+[Yout_tr,vet_erro_tr,vet_erro_val,nit_parou]=oMLP.treinar_MLP(Xtrain, Ytrain, Xtest, Ytest, nitmax, alfa)
+
+#Xtrain.shape
+#Ytrain.shape
+#Xtest.shape
+#Ytest.shape
+
+[Yout_test,EQM_test]=oMLP.testar_MLP(Xtest, Ytest)
+
