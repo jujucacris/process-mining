@@ -1,5 +1,4 @@
 ﻿import numpy as np
-import math
 
 class cMLP(object):
     def __init__(self,funcao_f,funcao_g,no):
@@ -9,35 +8,45 @@ class cMLP(object):
         self.WA = [] # pesos da conexao de neuronios da camada de entrada e  camada oculta
         self.WB = [] # pesos da conexao da neuronios da camada oculta e camada de saida
 
-    def treinar_MLP(self,Xtr, Ytr,XVal, YVal,nitmax, alfa): # TODO add accuracy
-        # parametros de entrada:
-        # nitmax: Numero de iteracoes maximas( epocas)
+    def treinar_MLP(self,Xtr, Ytr,XVal, YVal,nitmax, alfa):
+        # Parametros de entrada
+        # Xtr: conjunto de treinamento
+        # Ytr: labels do conjunto de treinamento
+        # XVal: conjunto de validacao
+        # YVal: labels do conjunto de validacao
+        # nitmax: numero de iterações maximo (epocas)
+        # alfa: taxa de aprendizado
 
         ne = Xtr.shape[1] # ne: numero de entradas
-        [N,ns] = Ytr.shape # N: numero de instancias de treinamento #  ns: Numero de saidas
-        N_val=YVal.shape[0] #
-        Xtr=np.concatenate((np.ones((N,1),float),Xtr),axis=1)
-        XVal=np.concatenate((np.ones((N_val,1),float),XVal),axis=1)
+        [N,ns] = Ytr.shape # N: numero de instancias de treinamento, ns: Numero de saidas
+        N_val = YVal.shape[0] # N_val: numero de instancias no conjunto de validacao
+        Xtr = np.concatenate((np.ones((N,1),float),Xtr),axis=1) # agrega o bias ao conjunto treinamento
+        XVal = np.concatenate((np.ones((N_val,1),float),XVal),axis=1) # agrega o bias ao conjunto de validacao
 
-        #self.WA= np.ones((self.no,ne+1),float) 
-        self.WA= np.random.randn(self.no,ne+1)/10 # matrix pesos no x ne
-        #self.WB= np.ones((ns,self.no+1),float) 
-        self.WB= np.random.randn(ns,self.no+1)/10 # pesos
+        # inicializa a matriz de pesos aleatoriamente
+        self.WA= np.random.randn(self.no,ne+1)/10 # matrix de pesos camada de entrada
+        self.WB= np.random.randn(ns,self.no+1)/10 # matriz de pesos camada oculta
 
-        [Y,Z]=self.calc_saida(Xtr,self.WA,self.WB,N,self.funcao_f,self.funcao_g)
-        erro=Y-Ytr #ekn
+        # calculo da saída para a primeira camada da rede
+        [Y,Z]=self.calc_saida(Xtr,self.WA,self.WB,N,self.funcao_f,self.funcao_g) # Y: vetor saida da rede, Z: vetor saida da primeira camada
+        erro=Y-Ytr #ekn = Yk(n) - Ydk(n)
 
-        EQM=sum(sum(erro*erro))/N # sumatorio de erro quadratico medio
+        # calculo do erro quadratico medio
+        #EQM=sum(sum(erro*erro))/N
+        m = np.multiply(erro,erro)
+        sum_m = np.sum(m)
+        EQM = sum_m/N
+
         nit=1 # nro de epocas
 
-        # Achar EQM em dados de validacao
+        # calculo erro quadratico medio para os dados de validacao
         if(not(np.all(XVal==0))):
             [YVal_out, ZVal_out]=self.calc_saida(XVal,self.WA,self.WB,N_val,self.funcao_f,self.funcao_g)
             erro_val=YVal_out-YVal
             EQM_val=sum(sum(erro_val*erro_val))/N_val
-            EQM_val_melhor=EQM_val  # a variable vai guardar o melhor EQM achado no conjunto de validacao
-            WA_melhor=self.WA #  WA_melhor vai guardar os melhores WA
-            WB_melhor=self.WB #  WA_melhor vai guardar os melhores WB
+            EQM_val_melhor=EQM_val  # guardar o melhor EQM achado no conjunto de validacao
+            WA_melhor=self.WA # guardar os melhores pesos para a camada de entrada
+            WB_melhor=self.WB # guardar os melhores pesos para a camada de saida
 
         vet_erro=EQM
         vet_erro_val=EQM_val
@@ -48,9 +57,11 @@ class cMLP(object):
             #dirA=-gradA
             #dirB=-gradB
 
+            # atualizar os pesos
             self.WB=self.WB-alfa*gradB
             self.WA=self.WA-alfa*gradA
 
+            # calculo do erro na epoca
             [Y,Z]=self.calc_saida(Xtr,self.WA,self.WB,N,self.funcao_f,self.funcao_g)
             erro = Y-Ytr
 
@@ -65,25 +76,23 @@ class cMLP(object):
                 vet_erro_val=np.array([vet_erro_val, EQM_val])
                 if( EQM_val < EQM_val_melhor):
                     nit_val=0
-                    EQM_val_melhor=EQM_val  # a variable vai guardar o melhor EQM achado no conjunto de validacao
-                    WA_melhor=self.WA #  WA_melhor vai guardar os melhores WA
-                    WB_melhor=self.WB #  WA_melhor vai guardar os melhores WB
+                    EQM_val_melhor=EQM_val  # guardar o melhor EQM achado no conjunto de validacao
+                    WA_melhor=self.WA # guardar os melhores pesos para a camada de entrada
+                    WB_melhor=self.WB # guardar os melhores pesos para a camada de saida
                     nit_melhor=nit
                 else:
-                    nit_val=nit_val+1 # nit_val é o numero de iteracoes nas quais o EQM_val vai aumentando
+                    nit_val=nit_val+1 # guardar o numero de iteracoes nas quais o EQM_val vai aumentando
             if(not(np.all(XVal==0))):
-                self.WA=WA_melhor  # o objeto vai ficar com o melhor WA
-                self.WB=WB_melhor  # o objeto vai ficar com o melhor WB
+                self.WA=WA_melhor  # manter sempre o melhor WA
+                self.WB=WB_melhor  # manter sempre o melhor WB
         return [Y,vet_erro,vet_erro_val,nit_melhor]
 
     def testar_MLP(self,Xtest, Ytest):
         ne=Xtest.shape[1]
         [N,ns]=Ytest.shape
-        # Xtest=[ones(N,1),Xtest];
         Xtest=np.concatenate((np.ones((N,1),float),Xtest),axis=1)
         [Y,Z]=self.calc_saida(Xtest,self.WA,self.WB,N,self.funcao_f,self.funcao_g)
         erro = Y-Ytest
-        #EQM = sum(sum(erro.*erro))/N;
         EQM = sum(sum(erro*erro))/N
         return [Y,EQM]
 
@@ -107,10 +116,10 @@ class cMLP(object):
         return d
 
     def calc_saida(self,X,WA,WB,N,funcao_f,funcao_g):
-        Zin=X@(WA.T) 
-        Z=self.ativacao(funcao_f,Zin)
+        Zin=X@(WA.T)
+        Z=self.ativacao(funcao_f,Zin) # funcao para a primeira camada
         Yin=np.concatenate((np.ones((N,1),float),Z),axis=1)@(WB.T)
-        Y=self.ativacao(funcao_g,Yin)
+        Y=self.ativacao(funcao_g,Yin) # funcao de ativacao para a saida
         return [Y,Z]
 
     def calc_grad(self,Xtr,Z,Y,erro,WB,N,funcao_f,funcao_g):
