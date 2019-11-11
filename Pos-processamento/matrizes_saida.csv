@@ -1,0 +1,2 @@
+log,limiar,TP,FP,TN,FN,F1-score,recall,precision
+'p2p-0.3-1.csv', 0.01, 675, 59, 202, 62, 0.918, 0.916, 0.92
