@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 from clase_MLP import cMLP as cMLP
 # leer arquivo do log
-dataset = pd.read_csv("datasets/p2p-0.3-1-nolle.csv")
+dataset = pd.read_csv("Conversor de JSON/p2p-0.3-1-nolle.csv")
 Xtest_labels=dataset.iloc[4001:4999,:]
 dataset=dataset.iloc[:,0:350]
 
