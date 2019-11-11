@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 from clase_MLP import cMLP as cMLP
