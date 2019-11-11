@@ -1,4 +1,9 @@
-﻿import numpy as np
+﻿#*******************************************
+# REDE NEURAL AUTOENCODER
+# v1.0
+#*******************************************
+
+import numpy as np
 
 class cMLP(object):
     def __init__(self,funcao_f,funcao_g,no):
@@ -24,7 +29,7 @@ class cMLP(object):
         XVal = np.concatenate((np.ones((N_val,1),float),XVal),axis=1) # agrega o bias ao conjunto de validacao
 
         # inicializa a matriz de pesos aleatoriamente
-        self.WA= np.random.randn(self.no,ne+1)/10 # matrix de pesos camada de entrada
+        self.WA= np.random.randn(self.no,ne+1)/10 # matriz de pesos camada de entrada
         self.WB= np.random.randn(ns,self.no+1)/10 # matriz de pesos camada oculta
 
         # calculo da saída para a primeira camada da rede
@@ -32,12 +37,10 @@ class cMLP(object):
         erro=Y-Ytr #ekn = Yk(n) - Ydk(n)
 
         # calculo do erro quadratico medio
-        #EQM=sum(sum(erro*erro))/N
-        m = np.multiply(erro,erro)
-        sum_m = np.sum(m)
-        EQM = sum_m/N
+        EQM=sum(sum(erro*erro))/N
 
-        nit=1 # nro de epocas
+        # inicializacao do nro de epocas
+        nit=1
 
         # calculo erro quadratico medio para os dados de validacao
         if(not(np.all(XVal==0))):
@@ -111,7 +114,7 @@ class cMLP(object):
             d=input*(1-input)
         elif funcao == 'tan':
             d=(1-(input*input))
-        elif funcao == 'linear': #não devería ser "AND output >= 0"??
+        elif funcao == 'linear':
             d=1
         return d
 
@@ -129,5 +132,4 @@ class cMLP(object):
         dJdZ = (erro*dg)@WB[:,1:]
         grad_WA = 1/N*((dJdZ*df).T)@Xtr
         return grad_WA,grad_WB
-
 

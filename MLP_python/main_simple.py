@@ -1,5 +1,6 @@
 import numpy as np
 from clase_MLP import cMLP as cMLP
+
 #Simple use of cMLP class
 funcao_f='tan'
 funcao_g='sig'
