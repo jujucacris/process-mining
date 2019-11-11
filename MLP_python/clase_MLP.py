@@ -22,6 +22,8 @@ class cMLP(object):
         # nitmax: numero de iterações maximo (epocas)
         # alfa: taxa de aprendizado
 
+        vet_erro=[] #inicializamos o vetor de erros de treinamento
+        vet_erro_val=[] #inicializamos o vetor de erros de validacao
         ne = Xtr.shape[1] # ne: numero de entradas
         [N,ns] = Ytr.shape # N: numero de instancias de treinamento, ns: Numero de saidas
         N_val = YVal.shape[0] # N_val: numero de instancias no conjunto de validacao
@@ -51,8 +53,8 @@ class cMLP(object):
             WA_melhor=self.WA # guardar os melhores pesos para a camada de entrada
             WB_melhor=self.WB # guardar os melhores pesos para a camada de saida
 
-        vet_erro=EQM
-        vet_erro_val=EQM_val
+        vet_erro.append(EQM)
+        vet_erro_val.append(EQM_val)
         nit_val=0
         while(EQM>=1e-6 and nit<nitmax and nit_val<10000):
             nit = nit+1
@@ -69,14 +71,14 @@ class cMLP(object):
             erro = Y-Ytr
 
             EQM = sum(sum(erro*erro))/N
-            vet_erro=np.array([vet_erro,EQM])
+            vet_erro.append(EQM)
 
             # validacao
             if(not(np.all(XVal==0))): # si el conj val no es vacio
                 [YVal_out,ZVal_out]=self.calc_saida(XVal,self.WA,self.WB,N_val,self.funcao_f,self.funcao_g)
                 erro_val=YVal_out-YVal
                 EQM_val=sum(sum(erro_val*erro_val))/N_val
-                vet_erro_val=np.array([vet_erro_val, EQM_val])
+                vet_erro_val.append(EQM_val)
                 if( EQM_val < EQM_val_melhor):
                     nit_val=0
                     EQM_val_melhor=EQM_val  # guardar o melhor EQM achado no conjunto de validacao
@@ -88,6 +90,9 @@ class cMLP(object):
             if(not(np.all(XVal==0))):
                 self.WA=WA_melhor  # manter sempre o melhor WA
                 self.WB=WB_melhor  # manter sempre o melhor WB
+        
+        vet_erro=np.asarray(vet_erro)
+        vet_erro_val=np.asarray(vet_erro_val)
         return [Y,vet_erro,vet_erro_val,nit_melhor]
 
     def testar_MLP(self,Xtest, Ytest):
