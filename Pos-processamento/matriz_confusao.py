@@ -15,7 +15,7 @@ def transpose(m):
     return s
 
 # função principal para gerar as matrizes de confusão
-def tabela(ver, pred, limiar, nome):
+def tabela(ver, pred, limiar, log, nome):
 
     y_ver = open("./entradas/"+ver, "r")
     y_pred = open("./entradas/"+pred, "r")
@@ -32,11 +32,11 @@ def tabela(ver, pred, limiar, nome):
     precision = round((tp/(tp+fp)),3)
     fscore = round(((2*(recall*precision))/(recall+precision)),3)
 
-    return nome, float(limiar), tp, fp, tn, fn, fscore, recall, precision
+    return log, nome, float(limiar), tp, fp, tn, fn, fscore, recall, precision
 
 def imprime(matrizes):
     m = open("matrizes_saida.csv", "w+")
-    m.write("log,limiar,TP,FP,TN,FN,F1-score,recall,precision\n")
+    m.write("log,nome,limiar,TP,FP,TN,FN,F1-score,recall,precision\n")
     for item in matrizes:
         m.write(str(item).replace("(","").replace(")","")+"\n")
 
@@ -46,7 +46,7 @@ def gera_matrizes():
     arquivos = csv.reader(arquivos)
     matrizes = []
     for line in arquivos:
-        matrizes.append(tabela(line[0], line[1], line[2], line[3]))
+        matrizes.append(tabela(line[0], line[1], line[2], line[3], line[4]))
     imprime(matrizes)
 
 

@@ -1,1 +1,7 @@
-Yd.csv,Y.csv,0.01,p2p-0.3-1.csv
+Y_iter1_limiar0.01.csv,Yd_iter1_limiar0.01.csv,0.01,p2p-0.3-1.csv,experimento_1
+Y_iter1_limiar0.0001.csv,Yd_iter1_limiar0.01.csv,0.0001,p2p-0.3-1.csv,experimento_2
+Y_iter1_limiar0.02.csv,Yd_iter1_limiar0.01.csv,0.02,p2p-0.3-1.csv,experimento_3
+Y_iter1_limiar0.03.csv,Yd_iter1_limiar0.01.csv,0.03,p2p-0.3-1.csv,experimento_4
+Y_iter1_limiar0.005.csv,Yd_iter1_limiar0.01.csv,0.005,p2p-0.3-1.csv,experimento_5
+Y_iter1_limiar0.008.csv,Yd_iter1_limiar0.01.csv,0.008,p2p-0.3-1.csv,experimento_6
+Y_iter1_limiar0.009.csv,Yd_iter1_limiar0.01.csv,0.009,p2p-0.3-1.csv,experimento_7
