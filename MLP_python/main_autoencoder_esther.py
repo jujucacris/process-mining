@@ -17,7 +17,7 @@ Ytr=Xtr;
 #test
 Xtest=np.array(dataset.iloc[4001:4999,0:350]);
 Ytest=Xtest;
-nitmax=10;
+nitmax=100;
 alfa=1;
 no=40;
 
@@ -27,16 +27,46 @@ oMLP = cMLP(funcao_f,funcao_g,no)
 [Yout_test,EQM_test]=oMLP.testar_MLP(Xtest, Ytest)
 grafica_evolucao_EQM(vet_erro_tr,vet_erro_val)
 
-erro = Yout_test-Ytest
-N=len(Yout_test)
-EQMs = np.sum(erro*erro,axis=1)/350
-
-
 Yd=Xtest_with_labels.iloc[:,350]
-Y=pd.Series(EQMs>0.01)
-Y[EQMs>0.01]='a'
-Y[EQMs<=0.01]='n'
+limiar1=0.5
 
+if (limiar1 is not None) :# Se limiar do neuronio foi configurado
+    #Calculando a saida da rede com limiar
+    Yout_test_binario=Yout_test
+    Yout_test_binario[Yout_test>limiar1]=1
+    Yout_test_binario[Yout_test<=limiar1]=0
+    
+    #Calculando a classe: primeira forma
+    Yout_test_binario==Ytest
+    n_neuronios_saida=Xtr.shape[1]
+    estado_reproducao=((Yout_test_binario==Ytest).sum(axis=1)==n_neuronios_saida) #True: reproduzido exatamente igual. False: reproduzidocom erros
 
-Y.to_csv("Y.csv", sep=',', encoding='utf-8', index=False)
-Yd.to_csv("Yd.csv", sep=',', encoding='utf-8',index=False)
+    #Obtendo a classificacao do modelo( Predicao do modelo)
+    Y=pd.Series(np.ones(estado_reproducao.shape))
+    Y[estado_reproducao==False]='a'
+    Y[estado_reproducao==True]='n'
+    
+    #Analise rapida: acuracia
+    (Y.values==Yd.values).sum()
+    
+        
+else :
+
+    erro = Yout_test-Ytest
+    N=len(Yout_test)
+    EQMs = np.sum(erro*erro,axis=1)/350
+        
+    np.savetxt("EQM%s.csv"%(iteracao),EQMs , delimiter=",")
+    
+    limiar=0.03
+
+    Y=pd.Series(EQMs>limiar)
+    Yd[EQMs>limiar]
+    Y[EQMs>limiar]='a'
+    Y[EQMs<=limiar]='n'
+    
+    #Y.to_csv("Y.csv", sep=',', encoding='utf-8', index=False)
+    Yd.to_csv("Yd_rotulos.csv", sep=',', encoding='utf-8',index=False)
+    
+    Y.to_csv("Y_iter%s_limiar%s.csv"%(iteracao,limiar), sep=',', encoding='utf-8', index=False)
+    Yd.to_csv("Yd_iter%s_limiar%s.csv"%(iteracao,limiar), sep=',', encoding='utf-8',index=False)
