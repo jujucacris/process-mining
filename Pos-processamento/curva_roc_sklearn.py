@@ -3,7 +3,9 @@
 
 import matplotlib.pyplot as plt
 import csv
+import sys
 from sklearn.metrics import roc_curve
+from sklearn.metrics import precision_recall_curve
 
 def transpose_1(m):
     s = []
@@ -33,13 +35,8 @@ def setup():
     yd = transpose_1(yd)
     return y, yd
 
-def main():
-
-    y = setup()
-    yd = y[1]
-    y = y[0]
-
-    fpr, tpr, thresholds = roc_curve(yd, y, pos_label=1)
+def roc(y, yd):
+    fpr, tpr, thresholds = roc_curve(yd, y, pos_label=0)
     print(thresholds)
 
     plt.figure()
@@ -54,6 +51,34 @@ def main():
     plt.legend(loc="lower right")
     plt.show()
 
+def precision(y, yd):
+    precision, recall, thresholds = precision_recall_curve(yd, y, pos_label=0)
+    print(thresholds)
+
+    plt.figure()
+    lw = 2
+    plt.plot(recall, precision, color='darkblue',
+             lw=lw, label='Precision x Recall curve')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('Recall')
+    plt.ylabel('Precision')
+    plt.title('Precision X Recall curve')
+    plt.legend(loc="lower right")
+    plt.show()
+
+
+def main(arg):
+
+    y = setup()
+    yd = y[1]
+    y = y[0]
+
+    if arg == "r":
+        roc(y,yd)
+    elif arg == "p":
+        precision(y,yd)
 
 if __name__ == '__main__':
-    main()
+
+	main(sys.argv[1])
