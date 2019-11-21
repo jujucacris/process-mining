@@ -36,7 +36,7 @@ def setup():
     return y, yd
 
 def roc(y, yd):
-    fpr, tpr, thresholds = roc_curve(yd, y, pos_label=0)
+    fpr, tpr, thresholds = roc_curve(yd, y, pos_label=1)
     print(thresholds)
 
     plt.figure()
@@ -52,7 +52,7 @@ def roc(y, yd):
     plt.show()
 
 def precision(y, yd):
-    precision, recall, thresholds = precision_recall_curve(yd, y, pos_label=0)
+    precision, recall, thresholds = precision_recall_curve(yd, y, pos_label=1)
     print(thresholds)
 
     plt.figure()
