@@ -11,3 +11,4 @@ def grafica_evolucao_EQM(vet_erro_tr,vet_erro_val):
     plt.plot(range(0,len(vet_erro_val)), vet_erro_val, label='Validação')
     plt.legend(loc='upper right')
     plt.show()
+    plt.savefig('grafica_evolucao_EQM.png', bbox_inches='tight')
