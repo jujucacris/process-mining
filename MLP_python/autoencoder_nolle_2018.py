@@ -1,68 +1,77 @@
-import numpy as np
-import pandas as pd
-
+#Codigo baseado em : https://github.com/tnolle/binet
 class DAE:
 
     def __init__(self,params):
-        self.config = params # no: Numero de neuronios na camada oculta
+        """
+        self.parametros deve ser um diccionario contendo:
+            fator,no,nitmax
+        """
+          
+        self.fator = params.pop('fator') #vai ser usado no calculo dos neuronios da cadama oculta(no=ne * fator)
+        self.no = params.pop('no') #numero de neuronios na camada oculta
+        self.nitmax= params.pop('nitmax') #numero de iterações maximo (epocas)
+        self.modelo = []       
+        #self.hidden_layers = params.pop('hidden_layers') #FIX parameter not used in model_fn yet
+        #self.noise = params.pop('noise')    
     
-    def model_fn(dataset):
-        # Import keras locally
-        from keras.layers import Input, Dense, Dropout, GaussianNoise
-        from keras.models import Model
-        from keras.optimizers import Adam
+    @staticmethod
+    def model_fn(self,features):
+        
+        # Importar Keras
+        from tensorflow.keras.layers import Input, Dense, Dropout, GaussianNoise #FIX
+        from tensorflow.keras.models import Model #FIX
+        from tensorflow.keras.optimizers import Adam #FIX
     
-        hidden_layers = 5
+        # Numero de entradas ou numero de neuronios na camada de entrada(ne)
+        ne = features.shape[1] 
     
-        features = dataset
-    
-        # Parameters
-        input_size = features.shape[1]
-    
-        # Input layer
-        input = Input(shape=(input_size,), name='input')
+        # Camada de entrada
+        input = Input(shape=(ne,), name='input')
         x = input
+#    
+#        # Noise layer
+#        if noise is not None:
+#            x = GaussianNoise(noise)(x)
+#            
+        # Camada Oculta
+        if(self.fator is not None):
+            self.no=ne * self.fator #Numero de neuronios usados na camada oculta
+
+        x = Dense(int(self.no), activation='relu', name=f'hid{0 + 1}')(x)
+        #x = Dropout(0.5)(x)
     
-        # Hidden layers
-        x = Dense(hidden_layers, activation='relu', name=f'hid{i + 1}')(x)
+        # Camada de saida
+        output = Dense(ne, activation='sigmoid', name='output')(x)
     
-        # Output layer
-        output = Dense(input_size, activation='sigmoid', name='output')(x)
+        # Configurar modelo
+        modelo = Model(inputs=input, outputs=output)
     
-        # Build model
-        model = Model(inputs=input, outputs=output)
-    
-        # Compile model
-        model.compile(
+        # Compilar Modelo
+        modelo.compile(
             optimizer=Adam(lr=0.0001, beta_2=0.99),
             loss='mean_squared_error',
         )
     
-    #    return model, features, features
-        return model, features
+        return modelo
     
     def treinar(self, Xtr, Ytr, Xval, Yval):
-            """
-            Calculate the anomaly score for each event attribute in each trace.
-            Anomaly score here is the mean squared error.
-    
-            :param traces: traces to predict
-            :return:
-                scores: anomaly scores for each attribute;
-                                shape is (#traces, max_trace_length - 1, #attributes)
-    
-            """                                    
-            # Criar modelo
-            _, features, _ = self.model_fn(Xtr, **self.config)
-            
-            #Treinar modelo
-            self.model.fit(Xtr, Xtr, epochs=50, batch_size=500) #FIX fazer parametros de entrada da classe
+        """
+        # Xtr: conjunto de treinamento
+        # Ytr: labels do conjunto de treinamento
+        # XVal: conjunto de validacao
+        # YVal: labels do conjunto de validacao
+        """                                    
+        # Criar modelo  
+        self.modelo = self.model_fn(self,Xtr)
+        
+        #Treinar modelo
+        self.modelo.fit(Xtr, Xtr, epochs=self.nitmax, validation_data=(Xval,Yval), batch_size=len(Xtr)) 
             
             
     def test(self,Xtest, Ytest):
                 
         # Gerar predicoes
-        predictions = self.model.predict(Xtest)            
+        predictions = self.modelo.predict(Xtest)            
         return predictions
 
   
