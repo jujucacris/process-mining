@@ -7,9 +7,10 @@
 # v1.0 - main
 #*******************************************
 from cPreprocessor import cPreprocessor as cPreprocessor
+import os
 
 # Ler arquivo do log
-oPreprocessor = cPreprocessor("~/GIT/PM2/process-mining/Conversor de JSON/p2p-0.3-1.csv")
+oPreprocessor = cPreprocessor(os.path.join("..","Conversor de JSON","p2p-0.3-1.csv"))
 oPreprocessor.LerDataset()
 
 # Visualizar os primeiros registros do log
@@ -22,10 +23,9 @@ descricao_dataset_log = oPreprocessor.AnaliseDescritivo()
 # Conversao o log em dataset de traces
 data_traces = oPreprocessor.Converte_log_em_traces()
 
-# Geração de estatísticas do log
+# Geraï¿½ï¿½o de estatï¿½sticas do log
 descricao_dataset_trace = oPreprocessor.Descricao_dataset_traces()
+#print(descricao_dataset_trace)
 
-# Geração de graficas descritivas
+# Geraï¿½ï¿½o de graficas descritivas
 oPreprocessor.Gerar_graficos()
-
-

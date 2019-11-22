@@ -16,7 +16,7 @@ no = 10  # numero de nos da camada oculta
 nome_dataset = "p2p-0.3-1-usuarios-nolle.csv"
 k = 5 # iteracoes do crossvalidation
 
-f = open("pos_processamento/matrizes_saida.csv","w") # abrindo o arquivo de saídas de matrizes de confusão
+f = open("pos_processamento/matrizes_saida_%s.csv" % nome_dataset,"w") # abrindo o arquivo de saídas de matrizes de confusão
 f.write("log,nome,limiar,TP,FP,TN,FN,F1-score,recall,precision\n") # escrevendo o cabeçalho
 f.close()
 
