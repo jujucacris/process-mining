@@ -30,10 +30,6 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     # Itercoes contém conjuntos estratificados para treinamento e teste
     iteracao = list(StratifiedKFold(n_splits=k, shuffle=True).split(dataset_X, dataset_Y))
     
-    #Calcular porcentagem de dados para teste e validacao
-    porcentagem_dados_treinamento=iteracao[0][0].shape[0]/len(dataset_X)
-    porcentagem_dados_teste=iteracao[0][1].shape[0]/len(dataset_X)
-    
     iteracao_EQMs_nit = pd.DataFrame(columns=['iteracao','EQM','nit']) # matriz para almacenar os erros de cada iteracao
 
     # Cross-validation
