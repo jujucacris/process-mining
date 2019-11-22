@@ -115,6 +115,7 @@ class cPreprocessor(object):
     # Gerar os gráficos descritivos
     def Gerar_graficos(self):
         # Grafico de barras da distribuição das classes
+        plt.figure()
         plt.bar(['normal','anomalo'],self.dataset_trace['label'].value_counts().values, color='b')
         plt.title('Distribuição das classes no conjunto de dados')
         plt.xlabel('Label', color='b')
@@ -123,25 +124,16 @@ class cPreprocessor(object):
         plt.savefig('distribuicao_classes.png', bbox_inches='tight')
 
         # Distribuicao dos traces segundo seu tamanho
-        y = plt.hist(self.dataset_trace['nr_events'], color='y')
-        x = y[1]
-        y = y[0]
-        #print(x)
-        #print(y)
+        plt.figure()
+        plt.hist(self.dataset_trace['nr_events'], color='y')
         plt.title('Distribuição dos traces segundo seu tamanho')
         plt.xlabel('Tamanho do trace', color='y')
         plt.ylabel('Frequencia', color='y')
-        for x,y in zip(x,y):
-            label = int(y)
-            plt.annotate(label, # this is the text
-                         (x,y), # this is the point to label
-                         textcoords="offset points", # how to position the text
-                         xytext=(15,5), # distance from text to points (x,y)
-                         ha='center') # horizontal alignment can be left, right or center
         #plt.show()
         plt.savefig('distribuicao_traces_tamanho.png', bbox_inches='tight')
 
         # Distribuicao dos traces segundo os usuarios envolvidos nele
+        plt.figure()
         plt.hist(self.dataset_trace['nr_users'], color='y')
         plt.title('Distribuição dos traces segundo usuarios envolvidos')
         plt.xlabel('Quantidade de usuários envolvidos no trace', color='y')
@@ -150,6 +142,7 @@ class cPreprocessor(object):
         plt.savefig('distribuicao_traces_usuarios.png', bbox_inches='tight')
 
         #  Gráficos boxplot dos 3 atributos das classes
+        plt.figure()
         variacoes_traces =  self.dataset_trace.drop_duplicates(['trace'], keep='last')
         sns.set(style="whitegrid", color_codes=True)
         sns.boxplot(data=variacoes_traces)
@@ -157,6 +150,7 @@ class cPreprocessor(object):
         plt.savefig('boxplot_eventos_usuarios.png', bbox_inches='tight')
 
         # Distribução das variações de traces
+        plt.figure()
         sns.set(style="whitegrid", color_codes=True)
         sns.boxplot(data=self.dataset_trace['trace'].value_counts())
         plt.title('Distribuição das variacoes do traces no log')
