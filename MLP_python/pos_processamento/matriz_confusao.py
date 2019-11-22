@@ -39,7 +39,15 @@ def tabela(ver, pred, limiar, log, nome):
 
 
 def gera_matrizes():
-
+    """
+     Funcao que vai gerar as matrizes de confusao a partir do arquivo entradas.csv.
+     O arquivo entradas.csv deve conter:
+         Y : Predicoes do modelo
+         Yd : Rotulos
+         Limiar : atributo apenas descritivo
+         nome do log : atributo apenas descritivo
+         nome do experimento : atributo apenas descritivo
+    """
     arquivos = open(os.path.join("pos_processamento","entradas.csv"), "r")
     arquivos = csv.reader(arquivos)
     line = next(arquivos)

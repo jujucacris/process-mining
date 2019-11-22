@@ -23,12 +23,17 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
 
     # ler conjunto de dados
     dataset = pd.read_csv(os.path.join(projeto_origem,"..","Conversor de JSON", nome_dataset))
-    dataset_X = np.array(dataset.iloc[:, :-2])
-    dataset_Y = np.array(dataset['n'])
+    dataset_X = np.array(dataset.iloc[:, :-2]) #dados do dataset
+    dataset_Y = np.array(dataset['n']) #rotulos do dataset
 
-    # Divisao o conjunto de treinamento em kFold cada um com partes para Train e Valid
-    # Itercoes contém conjuntos estratificados para trainamento e teste
+    # Divisao do conjunto de treinamento em kFold cada um com partes para Trainamento e Valid
+    # Itercoes contém conjuntos estratificados para treinamento e teste
     iteracao = list(StratifiedKFold(n_splits=k, shuffle=True).split(dataset_X, dataset_Y))
+    
+    #Calcular porcentagem de dados para teste e validacao
+    porcentagem_dados_treinamento=iteracao[0][0].shape[0]/len(dataset_X)
+    porcentagem_dados_teste=iteracao[0][1].shape[0]/len(dataset_X)
+    
     iteracao_EQMs_nit = pd.DataFrame(columns=['iteracao','EQM','nit']) # matriz para almacenar os erros de cada iteracao
 
     # Cross-validation
@@ -47,23 +52,25 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         # Dividir o conjunto de Treinamento em Teste e Validacao
         Xtr, Xval, Ytr, Yval = train_test_split(X_train, Y_train, stratify=Y_train_cv, test_size=0.20)
 
-        # Etapa de entrenamento da rede
+        # Etapa de treinamento da rede
         [Yout_tr, vet_erro_tr, vet_erro_val, nit_parou] = oMLP.treinar_MLP(Xtr, Xtr, Xval, Xval, nitmax, alfa)
 
-        # Grafica de evolucao da rede
+        # Grafica de evolucao do EQM(funcao de perda) durante o treinamento
         grafica_evolucao_EQM(vet_erro_tr, vet_erro_val, nome_dataset, j)
 
         # Etapa de teste da rede como autoencoder
         [Yout_test, EQM_test] = oMLP.testar_MLP(X_test, Y_test)
         iteracao_EQMs_nit.loc[j] = [j, EQM_test, nit_parou]
-        print('\nIteracao: ', j, ' EQM: ', EQM_test, ' nit_parou: ', nit_parou)
+        print('\nIteracao: ', j, ' EQM_test: ', EQM_test, ' nit_parou(Treinamento): ', nit_parou)
 
-        # Calculo do erro do modelo quando se usou o conjunto de teste
+        # Calculo dos erros de reproducao do modelo quando foi usado o conjunto de teste
         erro = Yout_test - Y_test
         N = len(Yout_test)
-        EQMs = np.sum(erro * erro, axis=1) / N
-        limiar = np.sum(EQMs)/N
-        # Geracao da matriz de confusao
+        ns = Yout_test.shape[1] #numero de saidas(numero de neuronios de saida)
+        EQMs = np.sum(erro * erro, axis=1) / ns
+        limiar = EQMs.mean()
+        
+        # Geracao das predicoes do modelo(Y)
         Y = pd.Series(EQMs > limiar)
         Yd = pd.DataFrame(Y_test_cv)  # rotulos
         Y[EQMs > limiar] = 'a'
@@ -74,6 +81,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         EQMs = pd.DataFrame(EQMs)
         Xtrain = pd.DataFrame(X_train_cv)
         Xtest = pd.DataFrame(X_test_cv)
+
         EQMs.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_EQMs.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
         Y.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Y.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
         Yd.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Yd.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
@@ -81,27 +89,37 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         Xtest.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Xtest.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
 
         # Escrever no arquivo entradas.csv da Cris
+        Yd_arquivo = "Exp%s_Iter%s_Yd.csv" % (nro_experimento, j) #arquivo no qual sera salvado o Yd
+        Y_arquivo = "Exp%s_Iter%s_Y.csv" % (nro_experimento, j) #arquivo no qual sera salvado o Y
+        
         sr = open(os.path.join("pos_processamento","entradas.csv"), "w+")
-        line = "%s,%s,%s,%s,%s" % ("Exp%s_Iter%s_Yd.csv" % (nro_experimento, j), "Exp%s_Iter%s_Y.csv" % (nro_experimento, j), limiar, nome_dataset, nro_experimento)
+        line = "%s,%s,%s,%s,%s" % (Yd_arquivo,Y_arquivo, limiar, nome_dataset, nro_experimento)
         b = str(line)
         sr.write(b)
         sr.close()
 
         # Escrever no arquivo entradas_roc.csv da Cris
-        sr = open(os.path.join("pos_processamento","entradas_roc.csv"), "w+")
-        line = "%s,%s,%s" % ("Exp%s_Iter%s_EQMs.csv" % (nro_experimento, j), "Exp%s_Iter%s_Yd.csv" % (nro_experimento, j), nome_dataset)
+        EQM_arquivo="Exp%s_Iter%s_EQMs.csv" % (nro_experimento, j)
+        
+        sr = open(os.path.join("pos_processamento","entradas_roc.csv"), "w+")                
+        line = "%s,%s,%s" % (EQM_arquivo, Yd_arquivo, nome_dataset)
         b = str(line)
         sr.write(b)
         sr.close()
 
         # gerar matriz confusao
         gera_matrizes()
+         
+        #gerar curva roc
         curva_roc("r", j)
-        curva_roc("p", j)
+        
+        #gerar grafica precision recall
+        curva_roc("p", j) 
         #call(["python", ".\\entradas\\matriz_confusao.py"])
         #call(["python", ".\\entradas\\curva_roc_sklearn.py"])
         #call(["python", os.path.join(projeto_origem,"Pos-processamento","matriz_confusao.py")])
         #call(["python", os.path.join(projeto_origem, "Pos-processamento", "curva_roc_sklearn.py")])
+        #break
 
     # Guardar resumo de iteracoes do cross validation
     iteracao_EQMs_nit.to_csv("iteraca_EQMs_nit.csv", sep=',', encoding='utf-8', index=False)
