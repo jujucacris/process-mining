@@ -16,5 +16,9 @@ no = 10  # numero de nos da camada oculta
 nome_dataset = "p2p-0.3-1-nolle.csv"
 k = 5 # iteracoes do crossvalidation
 
+f = open("pos_processamento/matrizes_saida.csv","w") # abrindo o arquivo de saídas de matrizes de confusão
+f.write("log,nome,limiar,TP,FP,TN,FN,F1-score,recall,precision\n") # escrevendo o cabeçalho
+f.close()
+
 
 EQMmean = executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, nome_dataset, k)

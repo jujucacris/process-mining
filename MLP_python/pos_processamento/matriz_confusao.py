@@ -3,6 +3,7 @@
 
 from sklearn.metrics import confusion_matrix
 import csv
+import os
 
 #função para transpor a entrada de 1 coluna para 1 linha
 def transpose(m):
@@ -17,8 +18,10 @@ def transpose(m):
 # função principal para gerar as matrizes de confusão
 def tabela(ver, pred, limiar, log, nome):
 
-    y_ver = open("./entradas/"+ver, "r")
-    y_pred = open("./entradas/"+pred, "r")
+    print("Gerando matriz da saída '%s' sobre Yd '%s'" % (pred, ver))
+
+    y_ver = open(os.path.join("pos_processamento","entradas",ver), "r")
+    y_pred = open(os.path.join("pos_processamento","entradas",pred), "r")
 
     y_ver = csv.reader(y_ver, delimiter=",")
     y_pred = csv.reader(y_pred, delimiter=",")
@@ -34,20 +37,16 @@ def tabela(ver, pred, limiar, log, nome):
 
     return log, nome, float(limiar), tp, fp, tn, fn, fscore, recall, precision
 
-def imprime(matrizes):
-    m = open("matrizes_saida.csv", "w+")
-    m.write("log,nome,limiar,TP,FP,TN,FN,F1-score,recall,precision\n")
-    for item in matrizes:
-        m.write(str(item).replace("(","").replace(")","")+"\n")
 
 def gera_matrizes():
 
-    arquivos = open("entradas.csv", "r")
+    arquivos = open(os.path.join("pos_processamento","entradas.csv"), "r")
     arquivos = csv.reader(arquivos)
-    matrizes = []
-    for line in arquivos:
-        matrizes.append(tabela(line[0], line[1], line[2], line[3], line[4]))
-    imprime(matrizes)
+    line = next(arquivos)
+    vetores = tabela(line[0], line[1], line[2], line[3], line[4])
+    m = open(os.path.join("pos_processamento","matrizes_saida.csv"), "a")
+    m.write(str(vetores).replace("(","").replace(")","")+"\n")
+    m.close()
 
 
 if __name__ == '__main__':

@@ -12,15 +12,17 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     from sklearn.model_selection import train_test_split, StratifiedKFold
     from clase_MLP import cMLP as cMLP
     from graficas_autoencoder import grafica_evolucao_EQM as grafica_evolucao_EQM
+    from pos_processamento.matriz_confusao import gera_matrizes
+    from pos_processamento.curva_roc_sklearn import main as curva_roc
     #import matriz_confusao
     #import curva_roc_sklearn
-    projeto_origem = "D:\\GITHUB\\process-mining" #os.getcwd()
+    projeto_origem = os.getcwd() #"D:\\GITHUB\\process-mining"
 
     # definir a rede
     oMLP = cMLP(funcao_f, funcao_g, no)
 
     # ler conjunto de dados
-    dataset = pd.read_csv(os.path.join(projeto_origem, "Conversor de JSON", nome_dataset))
+    dataset = pd.read_csv(os.path.join(projeto_origem,"..","Conversor de JSON", nome_dataset))
     dataset_X = np.array(dataset.iloc[:, :-2])
     dataset_Y = np.array(dataset['n'])
 
@@ -49,7 +51,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         [Yout_tr, vet_erro_tr, vet_erro_val, nit_parou] = oMLP.treinar_MLP(Xtr, Xtr, Xval, Xval, nitmax, alfa)
 
         # Grafica de evolucao da rede
-        grafica_evolucao_EQM(vet_erro_tr, vet_erro_val)
+        grafica_evolucao_EQM(vet_erro_tr, vet_erro_val, nome_dataset, j)
 
         # Etapa de teste da rede como autoencoder
         [Yout_test, EQM_test] = oMLP.testar_MLP(X_test, Y_test)
@@ -72,29 +74,32 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         EQMs = pd.DataFrame(EQMs)
         Xtrain = pd.DataFrame(X_train_cv)
         Xtest = pd.DataFrame(X_test_cv)
-        EQMs.to_csv(os.path.join(projeto_origem, "Pos-processamento", "entradas", "Exp%s_Iter%s_EQMs.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
-        Y.to_csv(os.path.join(projeto_origem,"Pos-processamento","entradas","Exp%s_Iter%s_Y.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
-        Yd.to_csv(os.path.join(projeto_origem,"Pos-processamento","entradas","Exp%s_Iter%s_Yd.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
-        Xtrain.to_csv(os.path.join(projeto_origem,"Pos-processamento","entradas","Exp%s_Iter%s_Xtrain.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
-        Xtest.to_csv(os.path.join(projeto_origem,"Pos-processamento","entradas","Exp%s_Iter%s_Xtest.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
+        EQMs.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_EQMs.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
+        Y.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Y.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
+        Yd.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Yd.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
+        Xtrain.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Xtrain.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
+        Xtest.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Xtest.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
 
         # Escrever no arquivo entradas.csv da Cris
-        sr = os.open(os.path.join(projeto_origem,"Pos-processamento","Exp%s_Iter%s_entradas.csv" % (nro_experimento, j)), os.O_RDWR | os.O_CREAT)
-        line = "%s, %s, %s, %s, %s" % ("Exp%s_Iter%s_Y.csv" % (nro_experimento, j), "Exp%s_Iter%s_Yd.csv" % (nro_experimento, j), limiar, nome_dataset, nro_experimento)
-        b = str.encode(line)
-        os.write(sr, b)
-        os.close(sr)
+        sr = open(os.path.join("pos_processamento","entradas.csv"), "w+")
+        line = "%s,%s,%s,%s,%s" % ("Exp%s_Iter%s_Yd.csv" % (nro_experimento, j), "Exp%s_Iter%s_Y.csv" % (nro_experimento, j), limiar, nome_dataset, nro_experimento)
+        b = str(line)
+        sr.write(b)
+        sr.close()
 
         # Escrever no arquivo entradas_roc.csv da Cris
-        sr = os.open(os.path.join(projeto_origem, "Pos-processamento", "Exp%s_Iter%s_entradas_roc.csv" % (nro_experimento, j)), os.O_RDWR | os.O_CREAT)
-        line = "%s, %s" % ("Exp%s_Iter%s_EQMs.csv" % (nro_experimento, j), "Exp%s_Iter%s_Yd.csv" % (nro_experimento, j))
-        b = str.encode(line)
-        os.write(sr, b)
-        os.close(sr)
+        sr = open(os.path.join("pos_processamento","entradas_roc.csv"), "w+")
+        line = "%s,%s,%s" % ("Exp%s_Iter%s_EQMs.csv" % (nro_experimento, j), "Exp%s_Iter%s_Yd.csv" % (nro_experimento, j), nome_dataset)
+        b = str(line)
+        sr.write(b)
+        sr.close()
 
         # gerar matriz confusao
-        call(["python", ".\\entradas\\matriz_confusao.py"])
-        call(["python", ".\\entradas\\curva_roc_sklearn.py"])
+        gera_matrizes()
+        curva_roc("r", j)
+        curva_roc("p", j)
+        #call(["python", ".\\entradas\\matriz_confusao.py"])
+        #call(["python", ".\\entradas\\curva_roc_sklearn.py"])
         #call(["python", os.path.join(projeto_origem,"Pos-processamento","matriz_confusao.py")])
         #call(["python", os.path.join(projeto_origem, "Pos-processamento", "curva_roc_sklearn.py")])
 

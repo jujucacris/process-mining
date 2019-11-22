@@ -1,8 +1,0 @@
-log,nome,limiar,TP,FP,TN,FN,F1-score,recall,precision
-'p2p-0.3-1.csv', 'experimento_1', 0.01, 585, 152, 251, 10, 0.878, 0.983, 0.794
-'p2p-0.3-1.csv', 'experimento_2', 0.0001, 0, 737, 261, 0, nan, nan, 0.0
-'p2p-0.3-1.csv', 'experimento_3', 0.02, 599, 138, 157, 104, 0.832, 0.852, 0.813
-'p2p-0.3-1.csv', 'experimento_4', 0.03, 730, 7, 48, 213, 0.869, 0.774, 0.991
-'p2p-0.3-1.csv', 'experimento_5', 0.005, 0, 737, 261, 0, nan, nan, 0.0
-'p2p-0.3-1.csv', 'experimento_6', 0.008, 0, 737, 261, 0, nan, nan, 0.0
-'p2p-0.3-1.csv', 'experimento_7', 0.009, 585, 152, 256, 5, 0.882, 0.992, 0.794
