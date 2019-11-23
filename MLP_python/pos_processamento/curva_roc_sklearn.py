@@ -52,7 +52,7 @@ def roc(y, yd, f, j):
     plt.title('Receiver operating characteristic')
     plt.legend(loc="lower right")
     #plt.show()
-    plt.savefig(os.path.join("graficos","curva_roc_%s.png" % f), bbox_inches='tight')
+    plt.savefig(os.path.join("resultados","curva_roc_%s.png" % f), bbox_inches='tight')
 
 
 def precision(y, yd, f, j):
@@ -70,7 +70,7 @@ def precision(y, yd, f, j):
     plt.title('Precision X Recall curve')
     plt.legend(loc="lower right")
     #plt.show()
-    plt.savefig(os.path.join("graficos","curva_precision_recall_%s.png" % f), bbox_inches='tight')
+    plt.savefig(os.path.join("resultados","curva_precision_recall_%s.png" % f), bbox_inches='tight')
 
 
 
