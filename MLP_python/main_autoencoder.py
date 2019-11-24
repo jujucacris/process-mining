@@ -121,4 +121,4 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     iteracao_EQMs_nit.to_csv("iteraca_EQMs_nit.csv", sep=',', encoding='utf-8', index=False)
 
     # retorna erro geral do modelo
-    return iteracao_EQMs_nit["EQM"].mean
+    return iteracao_EQMs_nit["EQM"].mean()

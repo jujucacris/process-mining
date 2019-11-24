@@ -39,6 +39,7 @@ def setup():
 
 def roc(y, yd, f, j):
     fpr, tpr, thresholds = roc_curve(yd, y, pos_label=1)
+    print('thresholds')
     print(thresholds)
 
     fig = plt.figure(2)

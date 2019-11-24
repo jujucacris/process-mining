@@ -3,16 +3,13 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-from sklearn import svm, datasets
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
-from sklearn.utils.multiclass import unique_labels
-
+from sklearn.metrics import classification_report
 
 #iris = datasets.load_iris()
 #X = iris.data
 #y = iris.target
-class_names = iris.target_names
+#class_names = iris.target_names
 
 
 def plot_confusion_matrix(y_true, y_pred, classes,
@@ -70,23 +67,31 @@ def plot_confusion_matrix(y_true, y_pred, classes,
     return ax
 
 
+
+
+def mostrar_tabela_confusao_e_medidas_de_aval(path_pasta,nro_experimento,nro_iteracao):
+    y_pred = pd.read_csv(os.path.join(path_pasta,"Exp%s_Iter%s_Y.csv" % (nro_experimento, nro_iteracao))).values
+    y_true= pd.read_csv(os.path.join(path_pasta,"Exp%s_Iter%s_Yd.csv" % (nro_experimento, nro_iteracao))).values
+    classes=np.array(['a','n'])
+    
+    # Plot non-normalized confusion matrix
+    plot_confusion_matrix(y_true, y_pred, classes=classes,title='Confusion matrix, without normalization')
+    
+    # Plot normalized confusion matrix
+    plot_confusion_matrix(y_true, y_pred, classes=classes, normalize=True,
+                          title='Normalized confusion matrix')
+    
+    #Outras medidas
+    print(classification_report(y_true, y_pred))
+
+
 np.set_printoptions(precision=2)
 
+#configurar parametros 
 projeto_origem = os.getcwd()
-#dataset = pd.read_csv(os.path.join("pos_processamento","matrizes_saida_p2p-0.3-1-usuarios-nolle.csv"))
-caminho=os.path.join(projeto_origem,"pos_processamento","entradas")
-nro_experimento=1
-j=0
+path_pasta=os.path.join(projeto_origem,"pos_processamento","entradas")
+nro_experimento=2
+nro_iteracao=0
 
-y_pred = pd.read_csv(os.path.join(caminho,"Exp%s_Iter%s_Y.csv" % (nro_experimento, j))).values
-y_true= pd.read_csv(os.path.join(caminho,"Exp%s_Iter%s_Yd.csv" % (nro_experimento, j))).values
-classes=np.array(['a','n'])
-
-# Plot non-normalized confusion matrix
-plot_confusion_matrix(y_true, y_pred, classes=classes,title='Confusion matrix, without normalization')
-
-# Plot normalized confusion matrix
-plot_confusion_matrix(y_true, y_pred, classes=classes, normalize=True,
-                      title='Normalized confusion matrix')
-
+mostrar_tabela_confusao_e_medidas_de_aval(path_pasta,nro_experimento,nro_iteracao)
 plt.show()
