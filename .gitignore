@@ -2,3 +2,5 @@
 .idea/
 .idea
 ./MLP_python/pos_processamento/entradas/*
+./MLP_python/pos_processamento/entradas/
+./MLP_python/pos_processamento/entradas
