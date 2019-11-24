@@ -1,4 +1,4 @@
-def grafica_evolucao_EQM(vet_erro_tr,vet_erro_val,nome,j):
+def grafica_evolucao_EQM(vet_erro_tr,vet_erro_val,nome,j,nro_experimento):
     import numpy as np
     import matplotlib.pyplot as plt
     import os
@@ -13,4 +13,4 @@ def grafica_evolucao_EQM(vet_erro_tr,vet_erro_val,nome,j):
     plt.title('Evolução EQM')
     plt.legend(loc='upper right')
     #plt.show()
-    plt.savefig(os.path.join("resultados","evolucao_EQM_%s.png" % nome), bbox_inches='tight')
+    plt.savefig(os.path.join("resultados","exp%s_evolucao_EQM_%s.png" % (nro_experimento,nome)), bbox_inches='tight')

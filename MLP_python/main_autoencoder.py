@@ -52,7 +52,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         [Yout_tr, vet_erro_tr, vet_erro_val, nit_parou] = oMLP.treinar_MLP(Xtr, Xtr, Xval, Xval, nitmax, alfa)
 
         # Grafica de evolucao do EQM(funcao de perda) durante o treinamento
-        grafica_evolucao_EQM(vet_erro_tr, vet_erro_val, nome_dataset, j)
+        grafica_evolucao_EQM(vet_erro_tr, vet_erro_val, nome_dataset, j,nro_experimento)
 
         # Etapa de teste da rede como autoencoder
         [Yout_test, EQM_test] = oMLP.testar_MLP(X_test, Y_test)
@@ -107,15 +107,15 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         gera_matrizes()
          
         #gerar curva roc
-        curva_roc("r", j)
+        curva_roc("r", j,nro_experimento)
         
         #gerar grafica precision recall
-        curva_roc("p", j) 
+        curva_roc("p", j,nro_experimento) 
         #call(["python", ".\\entradas\\matriz_confusao.py"])
         #call(["python", ".\\entradas\\curva_roc_sklearn.py"])
         #call(["python", os.path.join(projeto_origem,"Pos-processamento","matriz_confusao.py")])
         #call(["python", os.path.join(projeto_origem, "Pos-processamento", "curva_roc_sklearn.py")])
-        #break
+        break
 
     # Guardar resumo de iteracoes do cross validation
     iteracao_EQMs_nit.to_csv("iteraca_EQMs_nit.csv", sep=',', encoding='utf-8', index=False)

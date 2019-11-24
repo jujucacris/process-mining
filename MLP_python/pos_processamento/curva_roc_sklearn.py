@@ -37,7 +37,7 @@ def setup():
     yd = transpose_1(yd)
     return y, yd, n
 
-def roc(y, yd, f, j):
+def roc(y, yd, f, j,nro_experimento):
     fpr, tpr, thresholds = roc_curve(yd, y, pos_label=1)
     print('thresholds')
     print(thresholds)
@@ -53,10 +53,10 @@ def roc(y, yd, f, j):
     plt.title('Receiver operating characteristic')
     plt.legend(loc="lower right")
     #plt.show()
-    plt.savefig(os.path.join("resultados","curva_roc_%s.png" % f), bbox_inches='tight')
+    plt.savefig(os.path.join("resultados","exp%s_curva_roc_%s.png" % (nro_experimento,f)), bbox_inches='tight')
 
 
-def precision(y, yd, f, j):
+def precision(y, yd, f, j,nro_experimento):
     precision, recall, thresholds = precision_recall_curve(yd, y, pos_label=1)
     print(thresholds)
 
@@ -71,11 +71,11 @@ def precision(y, yd, f, j):
     plt.title('Precision X Recall curve')
     plt.legend(loc="lower right")
     #plt.show()
-    plt.savefig(os.path.join("resultados","curva_precision_recall_%s.png" % f), bbox_inches='tight')
+    plt.savefig(os.path.join("resultados","exp%s_curva_precision_recall_%s.png" % (nro_experimento,f)), bbox_inches='tight')
 
 
 
-def main(arg, j):
+def main(arg, j,nro_experimento):
 
     y = setup()
     n = y[2]
@@ -83,9 +83,9 @@ def main(arg, j):
     y = y[0]
 
     if arg == "r":
-        roc(y,yd,n,j)
+        roc(y,yd,n,j,nro_experimento)
     elif arg == "p":
-        precision(y,yd,n,j)
+        precision(y,yd,n,j,nro_experimento)
 
 if __name__ == '__main__':
 
