@@ -12,7 +12,7 @@ from sklearn.utils.multiclass import unique_labels
 #iris = datasets.load_iris()
 #X = iris.data
 #y = iris.target
-class_names = iris.target_names
+#class_names = iris.target_names
 
 
 def plot_confusion_matrix(y_true, y_pred, classes,
