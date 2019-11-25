@@ -10,9 +10,9 @@ def transpose(m):
     s = []
     for item in m:
         if item[0] == 'a':
-            s.append(0)
-        else:
             s.append(1)
+        else:
+            s.append(0)
     return s
 
 # função principal para gerar as matrizes de confusão

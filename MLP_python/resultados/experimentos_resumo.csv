@@ -1,3 +1,3 @@
 nro_experimento,funcao_f,funcao_g,nitmax,alfa,no,nome_dataset,k_cv,EQMmean
-1,tan,sig,2,0.8,1,p2p-0.3-1-usuarios-nolle.csv,5,525.5720339780404
-2,tan,sig,10,0.8,1,p2p-0.3-1-usuarios-nolle.csv,5,147.7443981423919
+1,tan,sig,2,0.8,1,p2p-0.3-1-usuarios-nolle.csv,5,515.5873248261191
+2,tan,sig,10,0.8,1,p2p-0.3-1-usuarios-nolle.csv,5,156.15817654514228
