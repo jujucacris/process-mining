@@ -52,7 +52,7 @@ def gera_matrizes():
     arquivos = csv.reader(arquivos)
     line = next(arquivos) # seleciona a primeira linha
     vetores = tabela(line[0], line[1], line[2], line[3], line[4]) # armazena os restultados retornados pela função principal
-    m = open(os.path.join("resultados","matrizes_saida_%s.csv" % line[3]), "a") # abre o arquivo para saída
+    m = open(os.path.join("resultados","exp%s_matrizes_saida_%s.csv" % (line[4], line[3])), "a") # abre o arquivo para saída
     m.write(str(vetores).replace("(","").replace(")","")+"\n") # imprime os resultados no arquivo de saída
     m.close()
 
