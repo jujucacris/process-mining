@@ -16,16 +16,16 @@ def corta_traces():
 	for line in f:
 		if "1" in line[chars:]:
 			i += 1
-			row = line
-			row[2297] = "l"
-			csv_final.append(row)
+			#row = line
+			#row[2297] = "l"
+			#csv_final.append(row)
 		else:
-			row = line
-			row[2297] = "c"
+			row = line[:chars]
+			#row[2297] = "c"
 			csv_final.append(row)
 	print("popped %s items!" % i)
 
-	s = open("p2p-0.3-1-usuarios-curto-rotulos.csv", "w+")
+	s = open("p2p-0.3-1-usuarios-curto.csv", "w+")
 	for line in csv_final:
 		s.write(str(line).replace("[","").replace("]","").replace("'","").replace(", ",",")+"\n")
 	s.close()
