@@ -21,6 +21,7 @@ def corta_traces():
 			#csv_final.append(row)
 		else:
 			row = line[:chars]
+			row.append(line[trace])
 			#row[2297] = "c"
 			csv_final.append(row)
 	print("popped %s items!" % i)
