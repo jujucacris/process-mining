@@ -3,7 +3,7 @@ def grafica_evolucao_EQM(vet_erro_tr,vet_erro_val,nome,j,nro_experimento):
     import matplotlib.pyplot as plt
     import os
 
-    fig = plt.figure(1)
+    fig = plt.figure(nro_experimento * 3)
     fig.set_size_inches(10,10)
     plt.xlabel('Numero de epocas')
     plt.ylabel('EQM(Função de perda)')

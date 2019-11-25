@@ -49,7 +49,7 @@ def roc(y, yd, f, j,nro_experimento): # entradas: Y, Yd, nome do dataset, numero
     print('thresholds')
     print(thresholds)
 
-    fig = plt.figure(2) # configurando a figura a ser modificada
+    fig = plt.figure((nro_experimento * 3) + 1) # configurando a figura a ser modificada
     fig.set_size_inches(10,10) # tamanho da figura
     lw = 2 # grossura da linha
     plt.plot(fpr, tpr, lw=lw, label='Treinamento %s' % j) # plotando as curva no gráfico
@@ -67,7 +67,7 @@ def precision(y, yd, f, j,nro_experimento): # entradas: Y, Yd, nome do dataset, 
     precision, recall, thresholds = precision_recall_curve(yd, y, pos_label=1) # aplicação da função precision x recall do sklearn
     print(thresholds)
 
-    fig = plt.figure(3) # configurando a figura a ser modificada
+    fig = plt.figure((nro_experimento * 3) + 2) # configurando a figura a ser modificada
     fig.set_size_inches(10,10) # tamanho da figura
     lw = 2 # grossura da linha
     plt.plot(recall, precision, lw=lw, label='Treinamento %s' % j) # plotando a curva no gráfico
