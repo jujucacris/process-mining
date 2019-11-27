@@ -23,38 +23,49 @@ import os
 
 #Parametrizacao dos experimentos( Cada linha do dataframe sera um experimento)
 experimentos=[[
-        1, #nro_experimento
-        'tan',#funcao_f # funcao de ativacao da camada de entrada
-        'sig',#funcao_g  # funcao de ativacao da camada de saida
-        2, #nitmax # numero de iterações maximo(epocas)
-        0.8, #alfa  # taxa de aprendizado
-        1, #no # numero de nos da camada oculta
-        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
-        5, #k # iteracoes do crossvalidation
-        -1# Inicializacao do EQMmean(Saida do experimento)
-        ],[
+        #1, #nro_experimento
+        #'tan',#funcao_f # funcao de ativacao da camada de entrada
+        #'sig',#funcao_g  # funcao de ativacao da camada de saida
+        #2, #nitmax # numero de iterações maximo(epocas)
+        #0.8, #alfa  # taxa de aprendizado
+        #10, #no # numero de nos da camada oculta
+        #'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
+        #5, #k # iteracoes do crossvalidation
+        #-1# Inicializacao do EQMmean(Saida do experimento)
+        #],[
 
-        2, #nro_experimento
+        #2, #nro_experimento
+        #'tan',#funcao_f # funcao de ativacao da camada de entrada
+        #'sig',#funcao_g  # funcao de ativacao da camada de saida
+        #10, #nitmax # numero de iterações maximo(epocas)
+        #0.8, #alfa  # taxa de aprendizado
+        #1, #no # numero de nos da camada oculta
+        #'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
+        #5, #k # iteracoes do crossvalidation
+        #-1# Inicializacao do EQMmean(Saida do experimento)
+        #],
+        #[
+        #3, #nro_experimento
+        #'tan',#funcao_f # funcao de ativacao da camada de entrada
+        #'sig',#funcao_g  # funcao de ativacao da camada de saida
+        #10, #nitmax # numero de iterações maximo(epocas)
+        #0.8, #alfa  # taxa de aprendizado
+        #1, #no # numero de nos da camada oculta
+        #'p2p-0.3-1-usuarios-curto.csv', #nome_dataset
+        #5, #k # iteracoes do crossvalidation
+        #-1# Inicializacao do EQMmean(Saida do experimento)
+        #]
+        4, #nro_experimento
         'tan',#funcao_f # funcao de ativacao da camada de entrada
         'sig',#funcao_g  # funcao de ativacao da camada de saida
         10, #nitmax # numero de iterações maximo(epocas)
         0.8, #alfa  # taxa de aprendizado
-        1, #no # numero de nos da camada oculta
+        10, #no # numero de nos da camada oculta
         'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
-        5, #k # iteracoes do crossvalidation
-        -1# Inicializacao do EQMmean(Saida do experimento)
-        ],
-        [
-        3, #nro_experimento
-        'tan',#funcao_f # funcao de ativacao da camada de entrada
-        'sig',#funcao_g  # funcao de ativacao da camada de saida
-        10, #nitmax # numero de iterações maximo(epocas)
-        0.8, #alfa  # taxa de aprendizado
-        1, #no # numero de nos da camada oculta
-        'p2p-0.3-1-usuarios-curto.csv', #nome_dataset
         5, #k # iteracoes do crossvalidation
         -1# Inicializacao do EQMmean(Saida do experimento)
         ]
+
 ]
 experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv','EQMmean'])
 
