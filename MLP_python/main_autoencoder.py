@@ -33,6 +33,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     iteracao_EQMs_nit = pd.DataFrame(columns=['iteracao','EQM','nit']) # matriz para almacenar os erros de cada iteracao
 
     # Cross-validation
+    vet_limiar_heuristica=[]
     for j, (train_idx, test_idx) in enumerate(iteracao):
         # Recuperar os dados de fold j
         X_train_cv = np.array(dataset_X[train_idx])
@@ -66,13 +67,14 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         N = len(Yout_test)
         ns = Yout_test.shape[1] #numero de saidas(numero de neuronios de saida)
         EQMs = np.sum(erro * erro, axis=1) / ns
-        limiar = EQMs.mean()
+        limiar_heuristica = EQMs.mean()
+        vet_limiar_heuristica.append(limiar_heuristica)
 
         # Geracao das predicoes do modelo(Y)
-        Y = pd.Series(EQMs > limiar)
+        Y = pd.Series(EQMs > limiar_heuristica)
         Yd = pd.DataFrame(Y_test_cv)  # rotulos
-        Y[EQMs > limiar] = 'a'
-        Y[EQMs <= limiar] = 'n'
+        Y[EQMs > limiar_heuristica] = 'a'
+        Y[EQMs <= limiar_heuristica] = 'n'
 
         # Geracao arquivos para a matriz de confusao
         Y = pd.DataFrame(Y)
@@ -90,8 +92,8 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         Yd_arquivo = "Exp%s_Iter%s_Yd.csv" % (nro_experimento, j) #arquivo no qual sera salvado o Yd
         Y_arquivo = "Exp%s_Iter%s_Y.csv" % (nro_experimento, j) #arquivo no qual sera salvado o Y
 
-        sr = open(os.path.join("pos_processamento","entradas.csv"), "w+")
-        line = "%s,%s,%s,%s,%s" % (Yd_arquivo,Y_arquivo, limiar, nome_dataset, nro_experimento)
+        sr = open(os.path.join("pos_processamento","entradas.csv"%nro_experimento), "w+")
+        line = "%s,%s,%s,%s,%s" % (Yd_arquivo,Y_arquivo, limiar_heuristica, nome_dataset, nro_experimento)
         b = str(line)
         sr.write(b)
         sr.close()
@@ -117,10 +119,10 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         #call(["python", ".\\entradas\\curva_roc_sklearn.py"])
         #call(["python", os.path.join(projeto_origem,"Pos-processamento","matriz_confusao.py")])
         #call(["python", os.path.join(projeto_origem, "Pos-processamento", "curva_roc_sklearn.py")])
-        break
+        #break
 
     # Guardar resumo de iteracoes do cross validation
     iteracao_EQMs_nit.to_csv(os.path.join("resultados","Exp%s_EQMs_nit.csv"%nro_experimento), sep=',', encoding='utf-8', index=False)
 
     # retorna erro geral do modelo
-    return iteracao_EQMs_nit["EQM"].mean()
+    return [iteracao_EQMs_nit["EQM"].mean(), vet_limiar_heuristica]
