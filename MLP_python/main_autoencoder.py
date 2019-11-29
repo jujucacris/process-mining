@@ -50,6 +50,8 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
 
         # Etapa de treinamento da rede
         [Yout_tr, vet_erro_tr, vet_erro_val, nit_parou] = oMLP.treinar_MLP(Xtr, Xtr, Xval, Xval, nitmax, alfa)
+        #np.savetxt("exp%s_iter%s_WA.csv"%(nro_experimento,j), oMLP.WA, delimiter=",")
+        #np.savetxt("exp%s_iter%s_WB.csv"%(nro_experimento,j), oMLP.WB, delimiter=",")
 
         # Grafica de evolucao do EQM(funcao de perda) durante o treinamento
         grafica_evolucao_EQM(vet_erro_tr, vet_erro_val, nome_dataset, j,nro_experimento)
