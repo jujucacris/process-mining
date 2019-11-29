@@ -21,7 +21,8 @@ class cMLP(object):
         # YVal: labels do conjunto de validacao
         # nitmax: numero de iterações maximo (epocas)
         # alfa: taxa de aprendizado
-
+        
+        nit_melhor=0
         vet_erro=[] #inicializamos o vetor de erros de treinamento
         vet_erro_val=[] #inicializamos o vetor de erros de validacao
         ne = Xtr.shape[1] # ne: numero de entradas

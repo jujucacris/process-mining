@@ -117,10 +117,10 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         #call(["python", ".\\entradas\\curva_roc_sklearn.py"])
         #call(["python", os.path.join(projeto_origem,"Pos-processamento","matriz_confusao.py")])
         #call(["python", os.path.join(projeto_origem, "Pos-processamento", "curva_roc_sklearn.py")])
-        #break
+        break
 
     # Guardar resumo de iteracoes do cross validation
-    iteracao_EQMs_nit.to_csv("iteraca_EQMs_nit.csv", sep=',', encoding='utf-8', index=False)
+    iteracao_EQMs_nit.to_csv(os.path.join("resultados","Exp%s_EQMs_nit.csv"%nro_experimento), sep=',', encoding='utf-8', index=False)
 
     # retorna erro geral do modelo
     return iteracao_EQMs_nit["EQM"].mean()

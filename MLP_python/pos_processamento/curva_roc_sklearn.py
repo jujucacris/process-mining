@@ -46,8 +46,8 @@ def setup():
 # função principal da curva ROC
 def roc(y, yd, f, j,nro_experimento): # entradas: Y, Yd, nome do dataset, numero da iteração, numero do experimento
     fpr, tpr, thresholds = roc_curve(yd, y, pos_label=1) # aplicação da função roc_curve do sklearn
-    print('thresholds')
-    print(thresholds)
+    #print('thresholds')
+    #print(thresholds)
 
     fig = plt.figure((nro_experimento * 3) + 1) # configurando a figura a ser modificada
     fig.set_size_inches(10,10) # tamanho da figura
@@ -65,7 +65,7 @@ def roc(y, yd, f, j,nro_experimento): # entradas: Y, Yd, nome do dataset, numero
 
 def precision(y, yd, f, j,nro_experimento): # entradas: Y, Yd, nome do dataset, numero da iteração, numero do experimentos
     precision, recall, thresholds = precision_recall_curve(yd, y, pos_label=1) # aplicação da função precision x recall do sklearn
-    print(thresholds)
+    #print(thresholds)
 
     fig = plt.figure((nro_experimento * 3) + 2) # configurando a figura a ser modificada
     fig.set_size_inches(10,10) # tamanho da figura
