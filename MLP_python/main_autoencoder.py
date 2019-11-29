@@ -22,10 +22,9 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     oMLP = cMLP(funcao_f, funcao_g, no)
 
     # ler conjunto de dados
-    dataset = pd.read_csv(os.path.join(projeto_origem,"..","Conversor de JSON", nome_dataset))
+    dataset = pd.read_csv(os.path.join(projeto_origem,"..","Conversor de JSON", nome_dataset),header=None)
     dataset_X = np.array(dataset.iloc[:, :-2]) #dados do dataset
-    dataset_Y = np.array(dataset['n']) #rotulos do dataset
-
+    dataset_Y = np.array(dataset.iloc[:,-2]) #rotulos do dataset
     # Divisao do conjunto de treinamento em kFold cada um com partes para Trainamento e Valid
     # Itercoes contém conjuntos estratificados para treinamento e teste
     iteracao = list(StratifiedKFold(n_splits=k, shuffle=True).split(dataset_X, dataset_Y))
