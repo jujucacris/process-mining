@@ -10,7 +10,7 @@ from cPreprocessor import cPreprocessor as cPreprocessor
 import os
 
 # Ler arquivo do log
-oPreprocessor = cPreprocessor(os.path.join("..","Conversor de JSON","p2p-0.3-1.csv"))
+oPreprocessor = cPreprocessor(os.path.join("..","Conversor de JSON","p2p-0.3-1-usuarios.csv"))
 oPreprocessor.LerDataset()
 
 # Visualizar os primeiros registros do log
@@ -25,7 +25,7 @@ data_traces = oPreprocessor.Converte_log_em_traces()
 
 # Gera��o de estat�sticas do log
 descricao_dataset_trace = oPreprocessor.Descricao_dataset_traces()
-#print(descricao_dataset_trace)
+print(descricao_dataset_trace)
 
 # Gera��o de graficas descritivas
 oPreprocessor.Gerar_graficos()

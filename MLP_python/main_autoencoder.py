@@ -29,7 +29,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     # Divisao do conjunto de treinamento em kFold cada um com partes para Trainamento e Valid
     # Itercoes contém conjuntos estratificados para treinamento e teste
     iteracao = list(StratifiedKFold(n_splits=k, shuffle=True).split(dataset_X, dataset_Y))
-    
+
     iteracao_EQMs_nit = pd.DataFrame(columns=['iteracao','EQM','nit']) # matriz para almacenar os erros de cada iteracao
 
     # Cross-validation
@@ -67,7 +67,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         ns = Yout_test.shape[1] #numero de saidas(numero de neuronios de saida)
         EQMs = np.sum(erro * erro, axis=1) / ns
         limiar = EQMs.mean()
-        
+
         # Geracao das predicoes do modelo(Y)
         Y = pd.Series(EQMs > limiar)
         Yd = pd.DataFrame(Y_test_cv)  # rotulos
@@ -89,7 +89,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         # Escrever no arquivo entradas.csv da Cris
         Yd_arquivo = "Exp%s_Iter%s_Yd.csv" % (nro_experimento, j) #arquivo no qual sera salvado o Yd
         Y_arquivo = "Exp%s_Iter%s_Y.csv" % (nro_experimento, j) #arquivo no qual sera salvado o Y
-        
+
         sr = open(os.path.join("pos_processamento","entradas.csv"), "w+")
         line = "%s,%s,%s,%s,%s" % (Yd_arquivo,Y_arquivo, limiar, nome_dataset, nro_experimento)
         b = str(line)
@@ -98,8 +98,8 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
 
         # Escrever no arquivo entradas_roc.csv da Cris
         EQM_arquivo="Exp%s_Iter%s_EQMs.csv" % (nro_experimento, j)
-        
-        sr = open(os.path.join("pos_processamento","entradas_roc.csv"), "w+")                
+
+        sr = open(os.path.join("pos_processamento","entradas_roc.csv"), "w+")
         line = "%s,%s,%s" % (EQM_arquivo, Yd_arquivo, nome_dataset)
         b = str(line)
         sr.write(b)
@@ -107,17 +107,17 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
 
         # gerar matriz confusao
         gera_matrizes()
-         
+
         #gerar curva roc
         curva_roc("r", j,nro_experimento)
-        
+
         #gerar grafica precision recall
-        curva_roc("p", j,nro_experimento) 
+        curva_roc("p", j,nro_experimento)
         #call(["python", ".\\entradas\\matriz_confusao.py"])
         #call(["python", ".\\entradas\\curva_roc_sklearn.py"])
         #call(["python", os.path.join(projeto_origem,"Pos-processamento","matriz_confusao.py")])
         #call(["python", os.path.join(projeto_origem, "Pos-processamento", "curva_roc_sklearn.py")])
-        break
+        #break
 
     # Guardar resumo de iteracoes do cross validation
     iteracao_EQMs_nit.to_csv("iteraca_EQMs_nit.csv", sep=',', encoding='utf-8', index=False)

@@ -1,9 +1,9 @@
 .idea/*
 .idea/
 .idea
-./MLP_python/pos_processamento/entradas/*
-./MLP_python/pos_processamento/entradas/
-./MLP_python/pos_processamento/entradas
-/MLP_python/resultados_esther/*
-/MLP_python/resultados_esther
-
+MLP_python/pos_processamento/entradas/*
+MLP_python/pos_processamento/entradas/
+MLP_python/pos_processamento/entradas
+MLP_python/resultados/backup/*
+MLP_python/resultados_esther/*
+MLP_python/resultados_esther

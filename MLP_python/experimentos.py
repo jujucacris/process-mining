@@ -23,57 +23,79 @@ import os
 
 #Parametrizacao dos experimentos( Cada linha do dataframe sera um experimento)
 experimentos=[[
-        1, #nro_experimento
-        'tan',#funcao_f # funcao de ativacao da camada de entrada
-        'sig',#funcao_g  # funcao de ativacao da camada de saida
-        2, #nitmax # numero de iterações maximo(epocas)
-        0.8, #alfa  # taxa de aprendizado
-        1, #no # numero de nos da camada oculta
-        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
-        5, #k # iteracoes do crossvalidation
-        -1# Inicializacao do EQMmean(Saida do experimento)
-        ],[
-                
-        2, #nro_experimento
+        #1, #nro_experimento
+        #'tan',#funcao_f # funcao de ativacao da camada de entrada
+        #'sig',#funcao_g  # funcao de ativacao da camada de saida
+        #2, #nitmax # numero de iterações maximo(epocas)
+        #0.8, #alfa  # taxa de aprendizado
+        #10, #no # numero de nos da camada oculta
+        #'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
+        #5, #k # iteracoes do crossvalidation
+        #-1# Inicializacao do EQMmean(Saida do experimento)
+        #],[
+
+        #2, #nro_experimento
+        #'tan',#funcao_f # funcao de ativacao da camada de entrada
+        #'sig',#funcao_g  # funcao de ativacao da camada de saida
+        #10, #nitmax # numero de iterações maximo(epocas)
+        #0.8, #alfa  # taxa de aprendizado
+        #1, #no # numero de nos da camada oculta
+        #'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
+        #5, #k # iteracoes do crossvalidation
+        #-1# Inicializacao do EQMmean(Saida do experimento)
+        #],
+        #[
+        #3, #nro_experimento
+        #'tan',#funcao_f # funcao de ativacao da camada de entrada
+        #'sig',#funcao_g  # funcao de ativacao da camada de saida
+        #10, #nitmax # numero de iterações maximo(epocas)
+        #0.8, #alfa  # taxa de aprendizado
+        #1, #no # numero de nos da camada oculta
+        #'p2p-0.3-1-usuarios-curto.csv', #nome_dataset
+        #5, #k # iteracoes do crossvalidation
+        #-1# Inicializacao do EQMmean(Saida do experimento)
+        #]
+        4, #nro_experimento
         'tan',#funcao_f # funcao de ativacao da camada de entrada
         'sig',#funcao_g  # funcao de ativacao da camada de saida
         10, #nitmax # numero de iterações maximo(epocas)
         0.8, #alfa  # taxa de aprendizado
-        1, #no # numero de nos da camada oculta
+        10, #no # numero de nos da camada oculta
         'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
         5, #k # iteracoes do crossvalidation
         -1# Inicializacao do EQMmean(Saida do experimento)
         ]
+
 ]
-experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv','EQMmean']) 
+experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv','EQMmean'])
 
 # Execucao dos experimentos
 for index, experimento in experimentos.iterrows():
-    
+
     #Inicializando arquivo de matrices de confusao
-    f = open(os.path.join("resultados","matrizes_saida_%s.csv" % experimento['nome_dataset']),"w") # abrindo o arquivo de saídas de matrizes de confusão
+    f = open(os.path.join("resultados","exp%s_matrizes_saida_%s.csv" % (experimento['nro_experimento'], experimento['nome_dataset'])),"w") # abrindo o arquivo de saídas de matrizes de confusão
     f.write("log,nome,limiar,TP,FP,TN,FN,F1-score,recall,precision\n") # escrevendo o cabeçalho
     f.close()
-    
+
     #Executando nosso autoencoder
-    EQMmean = executar_autoencoder(experimento['nro_experimento'], 
-                                   experimento['funcao_f'], 
-                                   experimento['funcao_g'], 
-                                   experimento['nitmax'], 
-                                   experimento['alfa'], 
-                                   experimento['no'], 
-                                   experimento['nome_dataset'], 
+    EQMmean = executar_autoencoder(experimento['nro_experimento'],
+                                   experimento['funcao_f'],
+                                   experimento['funcao_g'],
+                                   experimento['nitmax'],
+                                   experimento['alfa'],
+                                   experimento['no'],
+                                   experimento['nome_dataset'],
                                    experimento['k_cv'])
 
-    #Salvando resultados do autoencoder 
+    #Salvando resultados do autoencoder
     experimentos.loc[index,'EQMmean']=EQMmean
     #experimento['f-score']=EQMmean
     #experimento['precisao']=EQMmean
     #experimento['recall']=EQMmean
-    
+
 
 #Visualisando tabela resumo dos experimentos:
-    
+
 print('\n')
 print("===============Tabela Resumo=================")
 print(experimentos)

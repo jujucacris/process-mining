@@ -56,7 +56,7 @@ class cMLP(object):
         vet_erro.append(EQM)
         vet_erro_val.append(EQM_val)
         nit_val=0
-        while(EQM>=1e-6 and nit<nitmax and nit_val<10000):
+        while(EQM>=23 and nit<nitmax and nit_val<10):
             nit = nit+1
             [gradA, gradB] = self.calc_grad(Xtr,Z,Y,erro,self.WB, N,self.funcao_f,self.funcao_g)
             #dirA=-gradA
@@ -90,7 +90,7 @@ class cMLP(object):
             if(not(np.all(XVal==0))):
                 self.WA=WA_melhor  # manter sempre o melhor WA
                 self.WB=WB_melhor  # manter sempre o melhor WB
-        
+
         vet_erro=np.asarray(vet_erro)
         vet_erro_val=np.asarray(vet_erro_val)
         return [Y,vet_erro,vet_erro_val,nit_melhor]
@@ -137,4 +137,3 @@ class cMLP(object):
         dJdZ = (erro*dg)@WB[:,1:]
         grad_WA = 1/N*((dJdZ*df).T)@Xtr
         return grad_WA,grad_WB
-
