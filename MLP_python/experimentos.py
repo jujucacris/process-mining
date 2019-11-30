@@ -8,16 +8,30 @@ import pandas as pd
 import os
 
 #Parametrizacao dos experimentos( Cada linha do dataframe sera um experimento)
-experimentos=[[
-        13, #nro_experimento,
-        'teste cris 5',
-        'tan',#funcao_f # funcao de ativacao da camada de entrada
-        'sig',#funcao_g  # funcao de ativacao da camada de saida
+experimentos=[
+#        [
+#        13, #nro_experimento,
+#        'teste cris 5',
+#        'tan',#funcao_f # funcao de ativacao da camada de entrada
+#        'sig',#funcao_g  # funcao de ativacao da camada de saida
+#        2, #nitmax # numero de iterações maximo(epocas)
+#        0.8, #alfa  # taxa de aprendizado
+#        1, #no # numero de nos da camada oculta
+#        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
+#        5 #k # iteracoes do crossvalidation
+#        'autoencoder_nolle'
+#        ],
+        [
+        20, #nro_experimento,
+        'algoritmo nolle',
+        '',#funcao_f # funcao de ativacao da camada de entrada
+        '',#funcao_g  # funcao de ativacao da camada de saida
         2, #nitmax # numero de iterações maximo(epocas)
         0.8, #alfa  # taxa de aprendizado
         1, #no # numero de nos da camada oculta
         'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
-        5 #k # iteracoes do crossvalidation
+        5, #k # iteracoes do crossvalidation
+        'autoencoder_nolle'
         ]
 #,[
         #2, #nro_experimento,
@@ -53,7 +67,7 @@ experimentos=[[
 #        ]
 
 ]
-experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','nome_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv'])
+experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','nome_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv','tipo_experimento'])
 # Execucao dos experimentos
 for index, experimento in experimentos.iterrows():
 
@@ -70,7 +84,8 @@ for index, experimento in experimentos.iterrows():
                                    experimento['alfa'],
                                    experimento['no'],
                                    experimento['nome_dataset'],
-                                   experimento['k_cv'])
+                                   experimento['k_cv'],
+                                   experimento['tipo_experimento'])
 
     #Salvando resultados do autoencoder na variavel 'experimentos'
     experimentos.loc[index,'EQMmean']=EQMmean

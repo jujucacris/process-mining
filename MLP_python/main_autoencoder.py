@@ -3,7 +3,7 @@
 # CROSS VALIDATION ESTRATIFICADO
 # v1.2
 # *******************************************
-def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, nome_dataset, k):
+def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, nome_dataset, k,tipo_autoencoder):
     # Importacao de librarias
     import os
     from subprocess import call
@@ -17,6 +17,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     from pos_processamento.curva_roc_sklearn import main as curva_roc
     from pos_processamento.curva_roc_sklearn import add_nolle
     from pos_processamento.analise_resultados import mostrar_tabela_confusao_e_medidas_de_aval as mostra_tabela
+    from autoencoder_nolle import DAE as DAE
     #import matriz_confusao
     #import curva_roc_sklearn
     projeto_origem = os.getcwd() #"D:\\GITHUB\\process-mining"
@@ -51,19 +52,33 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         # Dividir o conjunto de Treinamento em Teste e Validacao
         Xtr, Xval, Ytr, Yval = train_test_split(X_train, Y_train, stratify=Y_train_cv, test_size=0.20)
 
-        # Etapa de treinamento da rede
-        [Yout_tr, vet_erro_tr, vet_erro_val, nit_parou] = oMLP.treinar_MLP(Xtr, Xtr, Xval, Xval, nitmax, alfa)
-        #np.savetxt("exp%s_iter%s_WA.csv"%(nro_experimento,j), oMLP.WA, delimiter=",")
-        #np.savetxt("exp%s_iter%s_WB.csv"%(nro_experimento,j), oMLP.WB, delimiter=",")
-
-        # Grafica de evolucao do EQM(funcao de perda) durante o treinamento
-        grafica_evolucao_EQM(vet_erro_tr, vet_erro_val, nome_dataset, j,nro_experimento)
-
-        # Etapa de teste da rede como autoencoder
-        [Yout_test, EQM_test] = oMLP.testar_MLP(X_test, Y_test)
-        iteracao_EQMs_nit.loc[j] = [j, EQM_test, nit_parou]
-        print('\nIteracao: ', j, ' EQM_test: ', EQM_test, ' nit_parou(Treinamento): ', nit_parou)
-
+        
+        if(tipo_autoencoder=="autoencoder_proprio"):
+            # Etapa de treinamento da rede
+            [Yout_tr, vet_erro_tr, vet_erro_val, nit_parou] = oMLP.treinar_MLP(Xtr, Xtr, Xval, Xval, nitmax, alfa)            
+            #np.savetxt("exp%s_iter%s_WA.csv"%(nro_experimento,j), oMLP.WA, delimiter=",")
+            #np.savetxt("exp%s_iter%s_WB.csv"%(nro_experimento,j), oMLP.WB, delimiter=",")
+    
+            # Grafica de evolucao do EQM(funcao de perda) durante o treinamento
+            grafica_evolucao_EQM(vet_erro_tr, vet_erro_val, nome_dataset, j,nro_experimento)            
+            
+            # Etapa de teste da rede como autoencoder
+            [Yout_test, EQM_test] = oMLP.testar_MLP(X_test, Y_test)            
+            iteracao_EQMs_nit.loc[j] = [j, EQM_test, nit_parou]
+            print('\nIteracao: ', j, ' EQM_test: ', EQM_test, ' nit_parou(Treinamento): ', nit_parou)            
+            
+        elif(tipo_autoencoder=='autoencoder_nolle'):
+            #Configurar parametros
+            no_lista=[no,no] #[neuronios para a primeira camada, neuronios para a segunda camada]
+            params = dict(no=no_lista,nitmax=nitmax,nro_camadas_ocultas=2,ruido_desv_padrao=0.1)
+            oDAE=DAE(params)            
+            
+            # Etapa de treinamento da rede
+            oDAE.treinar(Xtr,Ytr,Xval,Yval)
+            
+            # Etapa de teste da rede como autoencoder
+            Yout_test=oDAE.test(X_test,Y_test)
+                    
         # Calculo dos erros de reproducao do modelo quando foi usado o conjunto de teste
         erro = Yout_test - Y_test
         N = len(Yout_test)
