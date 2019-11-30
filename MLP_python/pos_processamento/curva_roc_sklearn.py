@@ -80,6 +80,27 @@ def precision(y, yd, f, j,nro_experimento): # entradas: Y, Yd, nome do dataset, 
     #plt.show()
     plt.savefig(os.path.join("resultados","exp%s_curva_precision_recall_%s.png" % (nro_experimento,f)), bbox_inches='tight') # salvando a figura
 
+#função para adicionar o ponto do limiar do nolle às curvas
+def add_nolle(nro_experimento, dataset):
+    arquivo = open(os.path.join("resultados","exp%s_matrizes_saida_%s.csv" % (nro_experimento, dataset)),"r")
+    arquivo = csv.reader(arquivo)
+    next(arquivo)
+    for line in arquivo:
+        tp = int(line[3])
+        fp = int(line[4])
+        tn = int(line[5])
+        fn = int(line[6])
+        recall = float(line[8])
+        precision = float(line[9])
+    tp_rate = tp / (tp + fn)
+    fp_rate = fp / (tp + fp)
+    fig = plt.figure((nro_experimento * 3) + 1) # configurando a figura a ser modificada
+    plt.plot(fp_rate, tp_rate, 'bo')
+    plt.savefig(os.path.join("resultados","exp%s_curva_roc_%s.png" % (nro_experimento,dataset)), bbox_inches='tight') # salvando a figura
+    fig = plt.figure((nro_experimento * 3) + 2) # configurando a figura a ser modificada
+    plt.plot(recall, precision, 'bo')
+    plt.savefig(os.path.join("resultados","exp%s_curva_precision_recall_%s.png" % (nro_experimento,dataset)), bbox_inches='tight') # salvando a figura
+
 
 # função main chamada a partir do main_autoencoder
 def main(arg, j,nro_experimento): # tipo do gráfico requisitado, número da iteração, número do experimento

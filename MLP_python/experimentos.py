@@ -9,11 +9,11 @@ import os
 
 #Parametrizacao dos experimentos( Cada linha do dataframe sera um experimento)
 experimentos=[[
-        12, #nro_experimento,
+        13, #nro_experimento,
         'teste cris 5',
         'tan',#funcao_f # funcao de ativacao da camada de entrada
         'sig',#funcao_g  # funcao de ativacao da camada de saida
-        5, #nitmax # numero de iterações maximo(epocas)
+        2, #nitmax # numero de iterações maximo(epocas)
         0.8, #alfa  # taxa de aprendizado
         1, #no # numero de nos da camada oculta
         'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset

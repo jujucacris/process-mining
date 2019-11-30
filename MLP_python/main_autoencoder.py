@@ -13,7 +13,9 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     from clase_MLP import cMLP as cMLP
     from graficas_autoencoder import grafica_evolucao_EQM as grafica_evolucao_EQM
     from pos_processamento.matriz_confusao import gera_matrizes
+    from pos_processamento.matriz_confusao import resultado
     from pos_processamento.curva_roc_sklearn import main as curva_roc
+    from pos_processamento.curva_roc_sklearn import add_nolle
     from pos_processamento.analise_resultados import mostrar_tabela_confusao_e_medidas_de_aval as mostra_tabela
     #import matriz_confusao
     #import curva_roc_sklearn
@@ -92,7 +94,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         Yd_arquivo = "Exp%s_Iter%s_Yd.csv" % (nro_experimento, j) #arquivo no qual sera salvado o Yd
         Y_arquivo = "Exp%s_Iter%s_Y.csv" % (nro_experimento, j) #arquivo no qual sera salvado o Y
 
-        sr = open(os.path.join("pos_processamento","entradas.csv"%nro_experimento), "w+")
+        sr = open(os.path.join("pos_processamento","entradas.csv"), "w+")
         line = "%s,%s,%s,%s,%s" % (Yd_arquivo,Y_arquivo, limiar_heuristica, nome_dataset, nro_experimento)
         b = str(line)
         sr.write(b)
@@ -115,6 +117,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
 
         #gerar grafica precision recall
         curva_roc("p", j,nro_experimento)
+
         #call(["python", ".\\entradas\\matriz_confusao.py"])
         #call(["python", ".\\entradas\\curva_roc_sklearn.py"])
         #call(["python", os.path.join(projeto_origem,"Pos-processamento","matriz_confusao.py")])
@@ -122,6 +125,12 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
 
     # Guardar resumo de iteracoes do cross validation
     iteracao_EQMs_nit.to_csv(os.path.join("resultados","Exp%s_EQMs_nit.csv"%nro_experimento), sep=',', encoding='utf-8', index=False)
+
+    # gerar matriz de confusão final
+    resultado(nro_experimento, nome_dataset)
+    # adicionar pontos do nolle
+    add_nolle(nro_experimento, nome_dataset)
+
 
     # retorna erro geral do modelo
     return [iteracao_EQMs_nit["EQM"].mean(), vet_limiar_heuristica]
