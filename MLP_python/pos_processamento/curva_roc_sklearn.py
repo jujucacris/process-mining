@@ -85,6 +85,7 @@ def add_nolle(nro_experimento, dataset):
     arquivo = open(os.path.join("resultados","exp%s_matrizes_saida_%s.csv" % (nro_experimento, dataset)),"r")
     arquivo = csv.reader(arquivo)
     next(arquivo)
+    i = 0
     for line in arquivo:
         tp = int(line[3])
         fp = int(line[4])
@@ -92,15 +93,17 @@ def add_nolle(nro_experimento, dataset):
         fn = int(line[6])
         recall = float(line[8])
         precision = float(line[9])
-    tp_rate = tp / (tp + fn)
-    fp_rate = fp / (tp + fp)
-    fig = plt.figure((nro_experimento * 3) + 1) # configurando a figura a ser modificada
-    plt.plot(fp_rate, tp_rate, 'bo')
-    plt.savefig(os.path.join("resultados","exp%s_curva_roc_%s.png" % (nro_experimento,dataset)), bbox_inches='tight') # salvando a figura
-    fig = plt.figure((nro_experimento * 3) + 2) # configurando a figura a ser modificada
-    plt.plot(recall, precision, 'bo')
-    plt.savefig(os.path.join("resultados","exp%s_curva_precision_recall_%s.png" % (nro_experimento,dataset)), bbox_inches='tight') # salvando a figura
-
+        tp_rate = tp / (tp + fn)
+        fp_rate = fp / (tp + fp)
+        fig = plt.figure((nro_experimento * 3) + 1) # configurando a figura a ser modificada
+        plt.plot(fp_rate, tp_rate, 'o', label='Nolle %s' % i)
+        plt.savefig(os.path.join("resultados","exp%s_curva_roc_%s.png" % (nro_experimento,dataset)), bbox_inches='tight') # salvando a figura
+        plt.legend(loc="lower right")
+        fig = plt.figure((nro_experimento * 3) + 2) # configurando a figura a ser modificada
+        plt.plot(recall, precision, 'o', label='Nolle %s' % i)
+        plt.savefig(os.path.join("resultados","exp%s_curva_precision_recall_%s.png" % (nro_experimento,dataset)), bbox_inches='tight') # salvando a figura
+        plt.legend(loc="lower right")
+        i += 1
 
 # função main chamada a partir do main_autoencoder
 def main(arg, j,nro_experimento): # tipo do gráfico requisitado, número da iteração, número do experimento

@@ -4,7 +4,7 @@
 import pandas as pd
 import os
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plot
 
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
@@ -18,7 +18,7 @@ from sklearn.metrics import classification_report
 def plot_confusion_matrix(nro_experimento,nro_iteracao,y_true, y_pred, classes,
                           normalize=False,
                           title=None,
-                          cmap=plt.cm.Blues,
+                          cmap=plot.cm.Blues,
                           ):
     """
     This function prints and plots the confusion matrix.
@@ -46,8 +46,8 @@ def plot_confusion_matrix(nro_experimento,nro_iteracao,y_true, y_pred, classes,
         title_table = "nao_normalizada"
 
     print(cm)
-
-    fig, ax = plt.subplots()
+    fig = plot.figure((nro_experimento * 3) + 4)
+    fig, ax = plot.subplots()
     im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
     ax.figure.colorbar(im, ax=ax)
     # We want to show all ticks...
@@ -60,7 +60,7 @@ def plot_confusion_matrix(nro_experimento,nro_iteracao,y_true, y_pred, classes,
            xlabel='Rotulo predito')
 
     # Rotate the tick labels and set their alignment.
-    plt.setp(ax.get_xticklabels(), rotation=45, ha="right",
+    plot.setp(ax.get_xticklabels(), rotation=45, ha="right",
              rotation_mode="anchor")
 
     # Loop over data dimensions and create text annotations.
@@ -72,7 +72,7 @@ def plot_confusion_matrix(nro_experimento,nro_iteracao,y_true, y_pred, classes,
                     ha="center", va="center",
                     color="white" if cm[i, j] > thresh else "black")
     fig.tight_layout()
-    plt.savefig(os.path.join("resultados","exp%s_matriz_confusao_%s_%s.png" % (nro_experimento,title_table,nro_iteracao)), bbox_inches='tight') # salvando a figura
+    plot.savefig(os.path.join("resultados","exp%s_matriz_confusao_%s_%s.png" % (nro_experimento,title_table,nro_iteracao)), bbox_inches='tight') # salvando a figura
     return ax
 
 
