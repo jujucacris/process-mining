@@ -1,2 +1,2 @@
 nro_experimento,nome_experimento,funcao_f,funcao_g,nitmax,alfa,no,nome_dataset,k_cv,EQMmean
-13,teste cris 5,tan,sig,2,0.8,1,p2p-0.3-1-usuarios-nolle.csv,5,524.6777357222024
+14,teste cris 5,tan,sig,1,0.8,1,p2p-0.3-1-usuarios-nolle.csv,5,575.1211154879732

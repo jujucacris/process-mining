@@ -68,10 +68,11 @@ def resultado(nro_experimento, dataset):
     fscore = 0
     precision = 0
     recall = 0
+    limiar = 0
     i = 0
     for line in tabela:
         exp = int(line[1])
-        limiar = float(line[2])
+        limiar += float(line[2])
         tp += int(line[3])
         fp += int(line[4])
         tn += int(line[5])
@@ -80,6 +81,7 @@ def resultado(nro_experimento, dataset):
         recall += float(line[8])
         precision += float(line[9])
         i += 1
+    limiar = limiar / i
     fscore = round(fscore / i, 3)
     precision = round(precision / i, 3)
     recall = round(recall / i, 3)
