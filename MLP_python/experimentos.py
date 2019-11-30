@@ -10,7 +10,7 @@ import os
 #Parametrizacao dos experimentos( Cada linha do dataframe sera um experimento)
 experimentos=[
 #        [
-#        13, #nro_experimento,
+#        14, #nro_experimento,
 #        'teste cris 5',
 #        'tan',#funcao_f # funcao de ativacao da camada de entrada
 #        'sig',#funcao_g  # funcao de ativacao da camada de saida
