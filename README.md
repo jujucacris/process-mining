@@ -32,8 +32,8 @@ Para a execução dos experimentos, é necessário ter instaladas no ambiente as
 
 Pode ser utilizado tanto um IDE quanto um terminal para, de dentro da pasta MLP_Python, simplesmente executar o arquivo
 'experimentos.py', ou na linha de comando como segue:
-``python3 experimentos.py`
-Os resultados resumidos da execução do experimento s`erão impressos na console, e os arquivos com os resultados extensivos
+``python3 experimentos.py``
+Os resultados resumidos da execução do experimento serão impressos na console, e os arquivos com os resultados extensivos
 da execução podem ser encontrados na pasta /MLP_python/resultados, como segue:
    - exp(nro_experimento)_curva_precision_recall_(nome_dataset).png -> curva precision-recall
    - exp(nro_experimento)_curva_roc_(nome_dataset).png -> curva ROC
