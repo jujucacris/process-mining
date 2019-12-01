@@ -57,7 +57,7 @@ class cMLP(object):
         vet_erro.append(EQM)
         vet_erro_val.append(EQM_val)
         nit_val=0
-        while(EQM>=23 and nit<nitmax and nit_val<10):
+        while(EQM>=5 and nit<nitmax and nit_val<10):
             nit = nit+1
             [gradA, gradB] = self.calc_grad(Xtr,Z,Y,erro,self.WB, N,self.funcao_f,self.funcao_g)
             #dirA=-gradA
