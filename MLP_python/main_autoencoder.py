@@ -20,7 +20,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     from pos_processamento.analise_resultados import mostrar_tabela_confusao_e_medidas_de_aval as mostra_tabela
     from autoencoder_nolle import DAE as DAE
     from sklearn.metrics import classification_report
-    
+
     #import matriz_confusao
     #import curva_roc_sklearn
     projeto_origem = os.getcwd() #"D:\\GITHUB\\process-mining"
@@ -32,7 +32,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     dataset = pd.read_csv(os.path.join(projeto_origem,"datasets", nome_dataset),header=None)
     if(tipo_autoencoder=="traces_curtos"):
         vetor_rotulos = dataset.iloc[:,-1]
-        
+
     dataset_X = np.array(dataset.iloc[:, :-2]) #dados do dataset
     dataset_Y = np.array(dataset.iloc[:,-2]) #rotulos do dataset
     # Divisao do conjunto de treinamento em kFold cada um com partes para Trainamento e Valid
@@ -84,7 +84,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
 
             # Etapa de teste da rede como autoencoder
             Yout_test=oDAE.test(X_test,Y_test)
-       
+
         # Salvar
 #        np.savetxt(os.path.join("resultados","Exp%s_Iter%s_Yout_test.csv" % (nro_experimento, j)), Yout_test, delimiter=",")
 #        np.savetxt(os.path.join("resultados","Exp%s_Iter%s_Y_test.csv" % (nro_experimento, j)), Y_test, delimiter=",")
@@ -111,18 +111,18 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         Yd = pd.DataFrame(Y_test_cv)  # rotulos
         Y[EQMs > limiar_heuristica] = 'a'
         Y[EQMs <= limiar_heuristica] = 'n'
-        
+
         print(classification_report(Yd,Y))
 
-        if(tipo_autoencoder=='traces_curtos'):            
-            Y_indice = vetor_rotulos[test_idx]            
+        if(tipo_autoencoder=='traces_curtos'):
+            Y_indice = vetor_rotulos[test_idx]
             dataframe_compara = pd.DataFrame(columns=['longo','original', 'predito'])
             dataframe_compara['longo'] = Y_indice
             dataframe_compara['original'] = np.array(Yd.iloc[:, 0])
             dataframe_compara['predito'] = np.array(Y)
             dataframe_compara.query("longo=='l' and predito=='a'", inplace=True)
-            dataframe_compara.groupby('original').count()
-             
+            print(dataframe_compara.groupby('original').count())
+
         # Geracao arquivos para a matriz de confusao
         Y = pd.DataFrame(Y)
         EQMs = pd.DataFrame(EQMs)
