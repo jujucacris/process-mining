@@ -94,7 +94,7 @@ def add_nolle(nro_experimento, dataset):
         recall = float(line[8])
         precision = float(line[9])
         tp_rate = tp / (tp + fn)
-        fp_rate = fp / (tp + fp)
+        fp_rate = fp / (tn + fp)
         fig = plt.figure((nro_experimento * 3) + 1) # configurando a figura a ser modificada
         plt.plot(fp_rate, tp_rate, 'o', label='Nolle %s' % i)
         plt.savefig(os.path.join("resultados","exp%s_curva_roc_%s.png" % (nro_experimento,dataset)), bbox_inches='tight') # salvando a figura
