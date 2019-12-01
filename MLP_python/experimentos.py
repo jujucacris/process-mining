@@ -21,18 +21,18 @@ experimentos=[
 #        5 #k # iteracoes do crossvalidation
 #        'autoencoder_proprio'
 #        ],
-        [
-        20, #nro_experimento,
-        'algoritmo nolle',
-        '',#funcao_f # funcao de ativacao da camada de entrada
-        '',#funcao_g  # funcao de ativacao da camada de saida
-        50, #nitmax # numero de iterações maximo(epocas)
-        0.8, #alfa  # taxa de aprendizado
-        1148, #no # numero de nos da camada oculta
-        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
-        5, #k # iteracoes do crossvalidation
-        'autoencoder_nolle'
-        ]
+#        [
+#        20, #nro_experimento,
+#        'algoritmo nolle',
+#        '',#funcao_f # funcao de ativacao da camada de entrada
+#        '',#funcao_g  # funcao de ativacao da camada de saida
+#        50, #nitmax # numero de iterações maximo(epocas)
+#        0.8, #alfa  # taxa de aprendizado
+#        1148, #no # numero de nos da camada oculta
+#        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
+#        5, #k # iteracoes do crossvalidation
+#        'autoencoder_nolle'
+#        ]
 #,[
         #2, #nro_experimento,
         #'teste esther 1'
@@ -55,16 +55,17 @@ experimentos=[
         #'p2p-0.3-1-usuarios-curto.csv', #nome_dataset
         #5 #k # iteracoes do crossvalidation
         #]
-#        4, #nro_experimento
-#        '',
-#        'tan',#funcao_f # funcao de ativacao da camada de entrada
-#        'sig',#funcao_g  # funcao de ativacao da camada de saida
-#        10, #nitmax # numero de iterações maximo(epocas)
-#        0.8, #alfa  # taxa de aprendizado
-#        10, #no # numero de nos da camada oculta
-#        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
-#        5 #k # iteracoes do crossvalidation
-#        ]
+      [  11, #nro_experimento
+        'traces-curtos-longos',
+        'tan',#funcao_f # funcao de ativacao da camada de entrada
+        'sig',#funcao_g  # funcao de ativacao da camada de saida
+        10, #nitmax # numero de iterações maximo(epocas)
+        0.8, #alfa  # taxa de aprendizado
+        1, #no # numero de nos da camada oculta
+        'p2p-0.3-1-usuarios-curto-rotulos.csv', #nome_dataset
+        5, #k # iteracoes do crossvalidation
+        "traces_curtos"
+        ]
 
 ]
 experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','nome_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv','tipo_experimento'])
