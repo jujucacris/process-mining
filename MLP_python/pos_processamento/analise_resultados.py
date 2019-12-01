@@ -46,7 +46,7 @@ def plot_confusion_matrix(nro_experimento,nro_iteracao,y_true, y_pred, classes,
         title_table = "nao_normalizada"
 
     print(cm)
-    fig = plot.figure((nro_experimento * 3) + 4)
+    fig = plot.figure((nro_experimento * 10) + 4)
     fig, ax = plot.subplots()
     im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
     ax.figure.colorbar(im, ax=ax)
