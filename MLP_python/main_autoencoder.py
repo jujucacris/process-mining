@@ -26,7 +26,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     oMLP = cMLP(funcao_f, funcao_g, no)
 
     # ler conjunto de dados
-    dataset = pd.read_csv(os.path.join(projeto_origem,"..","Conversor de JSON", nome_dataset),header=None)
+    dataset = pd.read_csv(os.path.join(projeto_origem,"datasets", nome_dataset),header=None)
     dataset_X = np.array(dataset.iloc[:, :-2]) #dados do dataset
     dataset_Y = np.array(dataset.iloc[:,-2]) #rotulos do dataset
     # Divisao do conjunto de treinamento em kFold cada um com partes para Trainamento e Valid
@@ -52,33 +52,33 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         # Dividir o conjunto de Treinamento em Teste e Validacao
         Xtr, Xval, Ytr, Yval = train_test_split(X_train, Y_train, stratify=Y_train_cv, test_size=0.20)
 
-        
+
         if(tipo_autoencoder=="autoencoder_proprio"):
             # Etapa de treinamento da rede
-            [Yout_tr, vet_erro_tr, vet_erro_val, nit_parou] = oMLP.treinar_MLP(Xtr, Xtr, Xval, Xval, nitmax, alfa)            
+            [Yout_tr, vet_erro_tr, vet_erro_val, nit_parou] = oMLP.treinar_MLP(Xtr, Xtr, Xval, Xval, nitmax, alfa)
             #np.savetxt("exp%s_iter%s_WA.csv"%(nro_experimento,j), oMLP.WA, delimiter=",")
             #np.savetxt("exp%s_iter%s_WB.csv"%(nro_experimento,j), oMLP.WB, delimiter=",")
-    
+
             # Grafica de evolucao do EQM(funcao de perda) durante o treinamento
-            grafica_evolucao_EQM(vet_erro_tr, vet_erro_val, nome_dataset, j,nro_experimento)            
-            
+            grafica_evolucao_EQM(vet_erro_tr, vet_erro_val, nome_dataset, j,nro_experimento)
+
             # Etapa de teste da rede como autoencoder
-            [Yout_test, EQM_test] = oMLP.testar_MLP(X_test, Y_test)            
+            [Yout_test, EQM_test] = oMLP.testar_MLP(X_test, Y_test)
             iteracao_EQMs_nit.loc[j] = [j, EQM_test, nit_parou]
-            print('\nIteracao: ', j, ' EQM_test: ', EQM_test, ' nit_parou(Treinamento): ', nit_parou)            
-            
+            print('\nIteracao: ', j, ' EQM_test: ', EQM_test, ' nit_parou(Treinamento): ', nit_parou)
+
         elif(tipo_autoencoder=='autoencoder_nolle'):
             #Configurar parametros
             no_lista=[no,no] #[neuronios para a primeira camada, neuronios para a segunda camada]
             params = dict(no=no_lista,nitmax=nitmax,nro_camadas_ocultas=2,ruido_desv_padrao=0.1)
-            oDAE=DAE(params)            
-            
+            oDAE=DAE(params)
+
             # Etapa de treinamento da rede
             oDAE.treinar(Xtr,Ytr,Xval,Yval)
-            
+
             # Etapa de teste da rede como autoencoder
             Yout_test=oDAE.test(X_test,Y_test)
-                    
+
         # Calculo dos erros de reproducao do modelo quando foi usado o conjunto de teste
         erro = Yout_test - Y_test
         N = len(Yout_test)
