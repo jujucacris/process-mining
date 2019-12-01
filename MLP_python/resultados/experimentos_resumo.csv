@@ -1,2 +1,5 @@
 nro_experimento,nome_experimento,funcao_f,funcao_g,nitmax,alfa,no,nome_dataset,k_cv,tipo_experimento,EQMmean
-20,algoritmo nolle,,,50,,30,p2p-0.3-1-usuarios-nolle.csv,5,autoencoder_nolle,
+14,traces_curtos,tan,sig,20,0.8,10,p2p-0.3-1-usuarios-curto.csv,5,autoencoder_proprio,86.47500694656455
+15,traces_longos_rotulos,tan,sig,20,0.8,10,p2p-0.3-1-usuarios-longo-rotulos.csv,5,traces_curtos,354.7373278411873
+17,traces_curtos,sig,sig,500,0.8,50,p2p-0.3-1-usuarios-curto.csv,5,autoencoder_proprio,10.798939875901933
+16,traces_longos_rotulos parametros otimos,sig,sig,500,0.8,50,p2p-0.3-1-usuarios-longo-rotulos.csv,5,traces_curtos,11.751768741391578

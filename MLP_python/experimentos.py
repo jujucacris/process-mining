@@ -21,20 +21,20 @@ def executar_experimentos(tipo_experimentos):
                 10, #no # numero de nos da camada oculta
                 'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
                 5, #k # iteracoes do crossvalidation
-                'autoencoder_proprio'        
+                'autoencoder_proprio'
                 ]
         ]
-        experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','nome_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv','tipo_experimento'])                     
+        experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','nome_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv','tipo_experimento'])
     elif(tipo_experimentos=='experimentos_traces_longos_curtos'):
         #print('')
         #Parametrizacao dos experimentos( Cada linha do dataframe sera um experimento)
         experimentos=[
                 [
-                15, #nro_experimento,
-                'traces_longos_curtos10neuronios',
+                14, #nro_experimento,
+                'traces_curtos',
                 'tan',#funcao_f # funcao de ativacao da camada de entrada
                 'sig',#funcao_g  # funcao de ativacao da camada de saida
-                50, #nitmax # numero de iterações maximo(epocas)
+                20, #nitmax # numero de iterações maximo(epocas)
                 0.8, #alfa  # taxa de aprendizado
                 10, #no # numero de nos da camada oculta
                 'p2p-0.3-1-usuarios-curto.csv', #nome_dataset
@@ -42,21 +42,45 @@ def executar_experimentos(tipo_experimentos):
                 'autoencoder_proprio'
                 ],
                 [
-                3, #nro_experimento
-                'traces_longos_curtos20neuronios'
+                15, #nro_experimento
+                'traces_longos_rotulos',
                 'tan',#funcao_f # funcao de ativacao da camada de entrada
                 'sig',#funcao_g  # funcao de ativacao da camada de saida
-                50, #nitmax # numero de iterações maximo(epocas)
+                20, #nitmax # numero de iterações maximo(epocas)
                 0.8, #alfa  # taxa de aprendizado
-                20, #no # numero de nos da camada oculta
-                'p2p-0.3-1-usuarios-curto.csv', #nome_dataset
+                10, #no # numero de nos da camada oculta
+                'p2p-0.3-1-usuarios-longo-rotulos.csv', #nome_dataset
                 5, #k # iteracoes do crossvalidation
-                "autoencoder_proprio"
+                "traces_curtos"
+                ],
+                [
+                    17,  # nro_experimento,
+                    'traces_curtos',
+                    'sig',  # funcao_f # funcao de ativacao da camada de entrada
+                    'sig',  # funcao_g  # funcao de ativacao da camada de saida
+                    500,  # nitmax # numero de iterações maximo(epocas)
+                    0.8,  # alfa  # taxa de aprendizado
+                    50,  # no # numero de nos da camada oculta
+                    'p2p-0.3-1-usuarios-curto.csv',  # nome_dataset
+                    5,  # k # iteracoes do crossvalidation
+                    'autoencoder_proprio'
+                ],
+                [
+                    16,  # nro_experimento
+                    'traces_longos_rotulos parametros otimos',
+                    'sig',  # funcao_f # funcao de ativacao da camada de entrada
+                    'sig',  # funcao_g  # funcao de ativacao da camada de saida
+                    500,  # nitmax # numero de iterações maximo(epocas)
+                    0.8,  # alfa  # taxa de aprendizado
+                    50,  # no # numero de nos da camada oculta
+                    'p2p-0.3-1-usuarios-longo-rotulos.csv',  # nome_dataset
+                    5,  # k # iteracoes do crossvalidation
+                    "traces_curtos"
                 ]
-        
+
         ]
-        #experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','nome_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv','tipo_experimento'])             
-    elif(tipo_experimentos=='autoencoder_nolle'): #Experimentos para achar os melhores parametros        
+        experimentos = pd.DataFrame(experimentos, columns=['nro_experimento','nome_experimento','funcao_f','funcao_g','nitmax','alfa','no','nome_dataset','k_cv','tipo_experimento'])
+    elif(tipo_experimentos=='autoencoder_nolle'): #Experimentos para achar os melhores parametros
         print('')
     elif(tipo_experimentos=='experimentos_parametros'): #Experimentos para achar os melhores parametros
         #10 Experimentos basicos
@@ -73,15 +97,15 @@ def executar_experimentos(tipo_experimentos):
             'tipo_experimento':'autoencoder_proprio'
         })
         experimentos['nome_experimento']=experimentos['nome_experimento']+experimentos['nro_experimento'].astype(str)
-            
+
     # Execucao dos experimentos
     for index, experimento in experimentos.iterrows():
-    
+
         #Inicializando arquivo de matrices de confusao
         f = open(os.path.join("resultados","exp%s_matrizes_saida_%s.csv" % (experimento['nro_experimento'], experimento['nome_dataset'])),"w") # abrindo o arquivo de saídas de matrizes de confusão
         f.write("log,nome,limiar,TP,FP,TN,FN,F1-score,recall,precision\n") # escrevendo o cabeçalho
         f.close()
-    
+
         #Executando nosso autoencoder
         [EQMmean, limiar] = executar_autoencoder(experimento['nro_experimento'],
                                        experimento['funcao_f'],
@@ -92,21 +116,21 @@ def executar_experimentos(tipo_experimentos):
                                        experimento['nome_dataset'],
                                        experimento['k_cv'],
                                        experimento['tipo_experimento'])
-    
+
         #Salvando resultados do autoencoder na variavel 'experimentos'
         experimentos.loc[index,'EQMmean']=EQMmean
         #experimento['f-score']=EQMmean
         #experimento['precisao']=EQMmean
         #experimento['recall']=EQMmean
-    
+
     #Visualisando tabela resumo dos experimentos:
-    
+
     print('\n')
     print("===============Tabela Resumo=================")
     print(experimentos)
-    
+
     #Salvando tabela de experimentos ( parametros e resultados)
     experimentos.to_csv(os.path.join("resultados",'experimentos_resumo.csv'), sep=',', encoding='utf-8',index=False)
 
-tipo_experimentos='experimentos_outros'
+tipo_experimentos='experimentos_traces_longos_curtos'
 executar_experimentos(tipo_experimentos)

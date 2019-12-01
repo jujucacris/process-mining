@@ -1,3 +1,0 @@
-log,nome,limiar,TP,FP,TN,FN,F1-score,recall,precision
-'p2p-0.3-1-usuarios-nolle.csv', '1', 0.2367098338242123, 132, 545, 167, 157, 0.273, 0.457, 0.195
-'p2p-0.3-1-usuarios-nolle.csv', '1', 0.24936021916818088, 127, 589, 123, 162, 0.252, 0.439, 0.177
