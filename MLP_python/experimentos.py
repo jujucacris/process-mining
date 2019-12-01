@@ -41,30 +41,6 @@ def executar_experimentos(tipo_experimentos):
         ###        5 #k # iteracoes do crossvalidation
         ###        'autoencoder_proprio'
         ###        ],
-        ##        [
-        ##        20, #nro_experimento,
-        ##        'algoritmo nolle',
-        ##        '',#funcao_f # funcao de ativacao da camada de entrada
-        ##        '',#funcao_g  # funcao de ativacao da camada de saida
-        ##        50, #nitmax # numero de iterações maximo(epocas)
-        ##        0.8, #alfa  # taxa de aprendizado
-        ##        1148, #no # numero de nos da camada oculta
-        ##        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
-        ##        5, #k # iteracoes do crossvalidation
-        ##        'autoencoder_nolle'
-        ##        ]
-        #        [
-        #        1, #nro_experimento,
-        #        'teste esther 1',
-        #        'tan',#funcao_f # funcao de ativacao da camada de entrada
-        #        'sig',#funcao_g  # funcao de ativacao da camada de saida
-        #        50, #nitmax # numero de iterações maximo(epocas)
-        #        0.8, #alfa  # taxa de aprendizado
-        #        10, #no # numero de nos da camada oculta
-        #        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
-        #        5, #k # iteracoes do crossvalidation
-        #        'autoencoder_proprio'        
-        #        ]
         ##        #[
         ##        #3, #nro_experimento
         ##        #'log curto'
@@ -130,7 +106,6 @@ def executar_experimentos(tipo_experimentos):
     
     #Salvando tabela de experimentos ( parametros e resultados)
     experimentos.to_csv(os.path.join("resultados",'experimentos_resumo.csv'), sep=',', encoding='utf-8',index=False)
-
 
 tipo_experimentos='experimentos_outros'
 executar_experimentos(tipo_experimentos)
