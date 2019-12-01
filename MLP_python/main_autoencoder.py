@@ -19,6 +19,8 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
     from pos_processamento.curva_roc_sklearn import add_nolle
     from pos_processamento.analise_resultados import mostrar_tabela_confusao_e_medidas_de_aval as mostra_tabela
     from autoencoder_nolle import DAE as DAE
+    from sklearn.metrics import classification_report
+    
     #import matriz_confusao
     #import curva_roc_sklearn
     projeto_origem = os.getcwd() #"D:\\GITHUB\\process-mining"
@@ -109,6 +111,8 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         Yd = pd.DataFrame(Y_test_cv)  # rotulos
         Y[EQMs > limiar_heuristica] = 'a'
         Y[EQMs <= limiar_heuristica] = 'n'
+        
+        print(classification_report(Yd,Y))
 
         if(tipo_autoencoder=='traces_curtos'):            
             Y_indice = vetor_rotulos[test_idx]            
