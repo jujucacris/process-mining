@@ -4,6 +4,7 @@
 # v1.2
 # *******************************************
 def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, nome_dataset, k,tipo_autoencoder):
+    #tipo_autoencoder : parametro para definir o tipo de autoencoder usado ('autoencoder_proprio' ou 'autoencoder_nolle')
     # Importacao de librarias
     import os
     from subprocess import call
@@ -78,13 +79,26 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
             
             # Etapa de teste da rede como autoencoder
             Yout_test=oDAE.test(X_test,Y_test)
-                    
+
+        # Salvar
+#        np.savetxt(os.path.join("resultados","Exp%s_Iter%s_Yout_test.csv" % (nro_experimento, j)), Yout_test, delimiter=",")
+#        np.savetxt(os.path.join("resultados","Exp%s_Iter%s_Y_test.csv" % (nro_experimento, j)), Y_test, delimiter=",")
+        
+        #nro_experimento=20
+        #j=0
+#        Yout_test=np.genfromtxt(os.path.join("resultados","Exp%s_Iter%s_Yout_test.csv" % (nro_experimento, j)),delimiter=',')
+#        Y_test=np.genfromtxt(os.path.join("resultados","Exp%s_Iter%s_Y_test.csv" % (nro_experimento, j)),delimiter=',')
+        #Yout_test.to_csv(os.path.join("resultados","Exp%s_Iter%s_Yout_test.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)                    
+        #Y_test.to_csv(os.path.join("resultados","Exp%s_Iter%s_Y_test.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)                    
+        #dataset = pd.read_csv(os.path.join("resultados","Exp%s_Iter%s_Yout_test.csv" % (nro_experimento, j)),header=None)
+        
         # Calculo dos erros de reproducao do modelo quando foi usado o conjunto de teste
         erro = Yout_test - Y_test
         N = len(Yout_test)
         ns = Yout_test.shape[1] #numero de saidas(numero de neuronios de saida)
         EQMs = np.sum(erro * erro, axis=1) / ns
-        limiar_heuristica = EQMs.mean()
+        fator_escala=0.9
+        limiar_heuristica = fator_escala*EQMs.mean()
         vet_limiar_heuristica.append(limiar_heuristica)
 
         # Geracao das predicoes do modelo(Y)
@@ -102,8 +116,8 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         EQMs.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_EQMs.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
         Y.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Y.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
         Yd.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Yd.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
-        Xtrain.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Xtrain.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
-        Xtest.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Xtest.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
+        #Xtrain.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Xtrain.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
+        #Xtest.to_csv(os.path.join(projeto_origem,"pos_processamento","entradas","Exp%s_Iter%s_Xtest.csv" % (nro_experimento, j)), sep=',', encoding='utf-8', index=False)
 
         # Escrever no arquivo entradas.csv da Cris
         Yd_arquivo = "Exp%s_Iter%s_Yd.csv" % (nro_experimento, j) #arquivo no qual sera salvado o Yd
@@ -127,6 +141,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         # gerar matriz confusao
         gera_matrizes()
         mostra_tabela(nro_experimento, j)
+        
         #gerar curva roc
         curva_roc("r", j,nro_experimento)
 
@@ -137,6 +152,7 @@ def executar_autoencoder(nro_experimento, funcao_f, funcao_g, nitmax, alfa, no, 
         #call(["python", ".\\entradas\\curva_roc_sklearn.py"])
         #call(["python", os.path.join(projeto_origem,"Pos-processamento","matriz_confusao.py")])
         #call(["python", os.path.join(projeto_origem, "Pos-processamento", "curva_roc_sklearn.py")])
+        #break
 
     # Guardar resumo de iteracoes do cross validation
     iteracao_EQMs_nit.to_csv(os.path.join("resultados","Exp%s_EQMs_nit.csv"%nro_experimento), sep=',', encoding='utf-8', index=False)

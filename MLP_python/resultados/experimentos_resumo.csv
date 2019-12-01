@@ -1,2 +1,2 @@
 nro_experimento,nome_experimento,funcao_f,funcao_g,nitmax,alfa,no,nome_dataset,k_cv,tipo_experimento,EQMmean
-20,algoritmo nolle,,,2,0.8,1,p2p-0.3-1-usuarios-nolle.csv,5,autoencoder_nolle,
+20,algoritmo nolle,,,50,,30,p2p-0.3-1-usuarios-nolle.csv,5,autoencoder_nolle,
