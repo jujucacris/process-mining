@@ -19,20 +19,20 @@ experimentos=[
 #        1, #no # numero de nos da camada oculta
 #        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
 #        5 #k # iteracoes do crossvalidation
-#        'autoencoder_nolle'
+#        'autoencoder_proprio'
 #        ],
-#        [
-#        20, #nro_experimento,
-#        'algoritmo nolle',
-#        '',#funcao_f # funcao de ativacao da camada de entrada
-#        '',#funcao_g  # funcao de ativacao da camada de saida
-#        50, #nitmax # numero de iterações maximo(epocas)
-#        '', #alfa  # taxa de aprendizado
-#        1148, #no # numero de nos da camada oculta
-#        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
-#        5, #k # iteracoes do crossvalidation
-#        'autoencoder_nolle'
-#        ]
+        [
+        20, #nro_experimento,
+        'algoritmo nolle',
+        '',#funcao_f # funcao de ativacao da camada de entrada
+        '',#funcao_g  # funcao de ativacao da camada de saida
+        50, #nitmax # numero de iterações maximo(epocas)
+        0.8, #alfa  # taxa de aprendizado
+        1148, #no # numero de nos da camada oculta
+        'p2p-0.3-1-usuarios-nolle.csv', #nome_dataset
+        5, #k # iteracoes do crossvalidation
+        'autoencoder_nolle'
+        ]
 #,[
         #2, #nro_experimento,
         #'teste esther 1'
