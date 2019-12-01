@@ -65,7 +65,7 @@ class DAE:
         self.modelo = self.model_fn(self,Xtr)
         
         #Treinar modelo
-        self.modelo.fit(Xtr, Xtr, epochs=self.nitmax, validation_data=(Xval,Yval), batch_size=len(Xtr)) 
+        self.modelo.fit(Xtr, Xtr, epochs=self.nitmax, validation_data=(Xval,Yval), batch_size=500) 
             
             
     def test(self,Xtest, Ytest):
